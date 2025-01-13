@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[3]:
 
 
 import os
@@ -41,16 +41,21 @@ def extract_text_from_srt(lines: List[str]) -> str:
         str: Extracted text as a single paragraph
     """
     paragraph_lines = []
-    # Updated timestamp pattern to handle more format variations
-    timestamp_pattern = re.compile(r'^\d{1,2}:\d{2}:\d{2}[,\.]\d{1,3}\s*-->\s*\d{1,2}:\d{2}:\d{2}[,\.]\d{1,3}')
+    # Updated timestamp patterns to handle both formats:
+    # 1. HH:MM:SS,mmm --> HH:MM:SS,mmm
+    # 2. HH:MM:SS --> HH:MM:SS
+    timestamp_patterns = [
+        re.compile(r'^\d{1,2}:\d{2}:\d{2}[,\.]\d{1,3}\s*-->\s*\d{1,2}:\d{2}:\d{2}[,\.]\d{1,3}'),
+        re.compile(r'^\d{1,2}:\d{2}:\d{2}\s*-->\s*\d{1,2}:\d{2}:\d{2}')
+    ]
     
     for line in lines:
         stripped_line = line.strip()
         # Skip empty lines
         if not stripped_line:
             continue
-        # Skip timestamp lines
-        if timestamp_pattern.match(stripped_line):
+        # Skip timestamp lines using both patterns
+        if any(pattern.match(stripped_line) for pattern in timestamp_patterns):
             continue
         # Skip subtitle number lines
         if stripped_line.isdigit():
