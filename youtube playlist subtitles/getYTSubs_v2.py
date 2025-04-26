@@ -130,7 +130,7 @@ class SubtitleDownloader:
 
 def main():
     # Path to Edge WebDriver
-    driver_path = r"C:\Users\moham\Workplace\edgedriver_win64\msedgedriver.exe"
+    driver_path = r"F:\Github2\Helping-Study-Tools\edgedriver_win64\msedgedriver.exe"
     downloader = SubtitleDownloader(driver_path)
 
     while True:
