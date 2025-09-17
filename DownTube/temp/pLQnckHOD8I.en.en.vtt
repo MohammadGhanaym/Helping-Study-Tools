@@ -1,0 +1,3880 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.040 --> 00:00:02.909 align:start position:0%
+ 
+in<00:00:00.160><c> SQL</c><00:00:00.680><c> we</c><00:00:00.840><c> have</c><00:00:01.360><c> five</c><00:00:01.680><c> different</c><00:00:02.040><c> techniques</c>
+
+00:00:02.909 --> 00:00:02.919 align:start position:0%
+in SQL we have five different techniques
+ 
+
+00:00:02.919 --> 00:00:05.390 align:start position:0%
+in SQL we have five different techniques
+that<00:00:03.120><c> we</c><00:00:03.320><c> usually</c><00:00:03.679><c> use</c><00:00:04.040><c> in</c><00:00:04.240><c> order</c><00:00:04.560><c> to</c><00:00:04.799><c> reduce</c>
+
+00:00:05.390 --> 00:00:05.400 align:start position:0%
+that we usually use in order to reduce
+ 
+
+00:00:05.400 --> 00:00:08.549 align:start position:0%
+that we usually use in order to reduce
+and<00:00:05.720><c> optimize</c><00:00:06.720><c> the</c><00:00:07.000><c> complexity</c><00:00:07.680><c> of</c><00:00:08.080><c> SQL</c>
+
+00:00:08.549 --> 00:00:08.559 align:start position:0%
+and optimize the complexity of SQL
+ 
+
+00:00:08.559 --> 00:00:11.110 align:start position:0%
+and optimize the complexity of SQL
+queries<00:00:09.360><c> the</c><00:00:09.519><c> five</c><00:00:09.760><c> techniques</c><00:00:10.200><c> are</c>
+
+00:00:11.110 --> 00:00:11.120 align:start position:0%
+queries the five techniques are
+ 
+
+00:00:11.120 --> 00:00:15.709 align:start position:0%
+queries the five techniques are
+subqueries<00:00:12.160><c> CTE</c><00:00:13.160><c> view</c><00:00:13.960><c> temporary</c><00:00:14.559><c> tables</c><00:00:15.440><c> and</c>
+
+00:00:15.709 --> 00:00:15.719 align:start position:0%
+subqueries CTE view temporary tables and
+ 
+
+00:00:15.719 --> 00:00:18.670 align:start position:0%
+subqueries CTE view temporary tables and
+C<00:00:16.240><c> as</c><00:00:17.000><c> and</c><00:00:17.119><c> now</c><00:00:17.320><c> before</c><00:00:17.560><c> we</c><00:00:17.720><c> do</c><00:00:17.920><c> a</c><00:00:18.039><c> deep</c><00:00:18.320><c> dive</c>
+
+00:00:18.670 --> 00:00:18.680 align:start position:0%
+C as and now before we do a deep dive
+ 
+
+00:00:18.680 --> 00:00:20.950 align:start position:0%
+C as and now before we do a deep dive
+into<00:00:19.000><c> the</c><00:00:19.160><c> details</c><00:00:19.640><c> for</c><00:00:19.920><c> each</c><00:00:20.119><c> one</c><00:00:20.560><c> I</c><00:00:20.680><c> want</c>
+
+00:00:20.950 --> 00:00:20.960 align:start position:0%
+into the details for each one I want
+ 
+
+00:00:20.960 --> 00:00:23.150 align:start position:0%
+into the details for each one I want
+first<00:00:21.240><c> to</c><00:00:21.400><c> put</c><00:00:21.760><c> the</c><00:00:21.960><c> fundamentals</c><00:00:22.760><c> of</c><00:00:22.920><c> two</c>
+
+00:00:23.150 --> 00:00:23.160 align:start position:0%
+first to put the fundamentals of two
+ 
+
+00:00:23.160 --> 00:00:25.589 align:start position:0%
+first to put the fundamentals of two
+things<00:00:23.680><c> first</c><00:00:24.000><c> we</c><00:00:24.119><c> have</c><00:00:24.240><c> to</c><00:00:24.680><c> understand</c><00:00:25.400><c> why</c>
+
+00:00:25.589 --> 00:00:25.599 align:start position:0%
+things first we have to understand why
+ 
+
+00:00:25.599 --> 00:00:27.470 align:start position:0%
+things first we have to understand why
+we<00:00:25.760><c> need</c><00:00:26.119><c> those</c><00:00:26.400><c> techniques</c><00:00:26.880><c> in</c><00:00:27.000><c> the</c><00:00:27.160><c> first</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+we need those techniques in the first
+ 
+
+00:00:27.480 --> 00:00:29.390 align:start position:0%
+we need those techniques in the first
+place<00:00:28.080><c> and</c><00:00:28.240><c> the</c><00:00:28.400><c> second</c><00:00:28.679><c> thing</c><00:00:28.960><c> I</c><00:00:29.039><c> would</c><00:00:29.240><c> like</c>
+
+00:00:29.390 --> 00:00:29.400 align:start position:0%
+place and the second thing I would like
+ 
+
+00:00:29.400 --> 00:00:31.950 align:start position:0%
+place and the second thing I would like
+to<00:00:29.560><c> give</c><00:00:29.679><c> you</c><00:00:30.000><c> an</c><00:00:30.199><c> overview</c><00:00:30.759><c> of</c><00:00:30.960><c> the</c><00:00:31.320><c> database</c>
+
+00:00:31.950 --> 00:00:31.960 align:start position:0%
+to give you an overview of the database
+ 
+
+00:00:31.960 --> 00:00:33.430 align:start position:0%
+to give you an overview of the database
+architecture<00:00:32.800><c> and</c><00:00:32.960><c> this</c><00:00:33.079><c> is</c><00:00:33.239><c> what</c><00:00:33.320><c> we're</c>
+
+00:00:33.430 --> 00:00:33.440 align:start position:0%
+architecture and this is what we're
+ 
+
+00:00:33.440 --> 00:00:34.990 align:start position:0%
+architecture and this is what we're
+going<00:00:33.559><c> to</c><00:00:33.680><c> do</c><00:00:33.879><c> now</c><00:00:34.200><c> so</c><00:00:34.360><c> now</c><00:00:34.480><c> let's</c><00:00:34.680><c> start</c><00:00:34.879><c> with</c>
+
+00:00:34.990 --> 00:00:35.000 align:start position:0%
+going to do now so now let's start with
+ 
+
+00:00:35.000 --> 00:00:37.069 align:start position:0%
+going to do now so now let's start with
+the<00:00:35.160><c> first</c><00:00:35.399><c> question</c><00:00:36.200><c> why</c><00:00:36.360><c> do</c><00:00:36.480><c> we</c><00:00:36.600><c> need</c><00:00:36.879><c> those</c>
+
+00:00:37.069 --> 00:00:37.079 align:start position:0%
+the first question why do we need those
+ 
+
+00:00:37.079 --> 00:00:39.310 align:start position:0%
+the first question why do we need those
+techniques<00:00:37.559><c> in</c><00:00:37.680><c> the</c><00:00:37.800><c> first</c><00:00:38.200><c> place</c><00:00:38.800><c> so</c><00:00:39.000><c> now</c>
+
+00:00:39.310 --> 00:00:39.320 align:start position:0%
+techniques in the first place so now
+ 
+
+00:00:39.320 --> 00:00:44.069 align:start position:0%
+techniques in the first place so now
+it's<00:00:39.600><c> story</c><00:00:40.039><c> time</c><00:00:40.520><c> let's</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+ 
+ 
+
+00:00:44.079 --> 00:00:46.670 align:start position:0%
+ 
+go<00:00:45.079><c> normally</c><00:00:45.520><c> in</c><00:00:45.680><c> Project</c><00:00:46.160><c> we</c><00:00:46.320><c> have</c><00:00:46.480><c> a</c>
+
+00:00:46.670 --> 00:00:46.680 align:start position:0%
+go normally in Project we have a
+ 
+
+00:00:46.680 --> 00:00:48.630 align:start position:0%
+go normally in Project we have a
+database<00:00:47.360><c> and</c><00:00:47.480><c> we</c><00:00:47.600><c> have</c><00:00:47.719><c> a</c><00:00:47.920><c> person</c><00:00:48.239><c> that</c><00:00:48.360><c> is</c>
+
+00:00:48.630 --> 00:00:48.640 align:start position:0%
+database and we have a person that is
+ 
+
+00:00:48.640 --> 00:00:50.389 align:start position:0%
+database and we have a person that is
+responsible<00:00:49.239><c> for</c><00:00:49.440><c> the</c><00:00:49.600><c> database</c><00:00:50.239><c> the</c>
+
+00:00:50.389 --> 00:00:50.399 align:start position:0%
+responsible for the database the
+ 
+
+00:00:50.399 --> 00:00:52.910 align:start position:0%
+responsible for the database the
+database<00:00:51.000><c> administrator</c><00:00:52.000><c> that</c><00:00:52.239><c> take</c><00:00:52.520><c> cares</c>
+
+00:00:52.910 --> 00:00:52.920 align:start position:0%
+database administrator that take cares
+ 
+
+00:00:52.920 --> 00:00:54.950 align:start position:0%
+database administrator that take cares
+of<00:00:53.160><c> the</c><00:00:53.359><c> database</c><00:00:53.800><c> structure</c><00:00:54.399><c> and</c><00:00:54.520><c> now</c><00:00:54.719><c> in</c>
+
+00:00:54.950 --> 00:00:54.960 align:start position:0%
+of the database structure and now in
+ 
+
+00:00:54.960 --> 00:00:56.430 align:start position:0%
+of the database structure and now in
+very<00:00:55.160><c> simple</c><00:00:55.480><c> scenario</c><00:00:55.920><c> we're</c><00:00:56.039><c> going</c><00:00:56.120><c> to</c><00:00:56.280><c> have</c>
+
+00:00:56.430 --> 00:00:56.440 align:start position:0%
+very simple scenario we're going to have
+ 
+
+00:00:56.440 --> 00:00:59.270 align:start position:0%
+very simple scenario we're going to have
+a<00:00:56.600><c> user</c><00:00:57.199><c> that</c><00:00:57.359><c> is</c><00:00:57.559><c> writing</c><00:00:58.320><c> queries</c><00:00:58.879><c> in</c><00:00:59.000><c> order</c>
+
+00:00:59.270 --> 00:00:59.280 align:start position:0%
+a user that is writing queries in order
+ 
+
+00:00:59.280 --> 00:01:01.430 align:start position:0%
+a user that is writing queries in order
+to<00:00:59.399><c> retrieve</c><00:00:59.760><c> that</c><00:01:00.160><c> from</c><00:01:00.280><c> the</c><00:01:00.440><c> database</c><00:01:01.120><c> so</c><00:01:01.320><c> he</c>
+
+00:01:01.430 --> 00:01:01.440 align:start position:0%
+to retrieve that from the database so he
+ 
+
+00:01:01.440 --> 00:01:03.790 align:start position:0%
+to retrieve that from the database so he
+or<00:01:01.600><c> she</c><00:01:01.800><c> going</c><00:01:01.920><c> to</c><00:01:02.079><c> write</c><00:01:02.359><c> an</c><00:01:02.519><c> SQL</c><00:01:03.079><c> query</c><00:01:03.680><c> and</c>
+
+00:01:03.790 --> 00:01:03.800 align:start position:0%
+or she going to write an SQL query and
+ 
+
+00:01:03.800 --> 00:01:05.350 align:start position:0%
+or she going to write an SQL query and
+then<00:01:03.960><c> this</c><00:01:04.119><c> query</c><00:01:04.439><c> going</c><00:01:04.519><c> to</c><00:01:04.640><c> be</c><00:01:04.720><c> sent</c><00:01:05.000><c> to</c><00:01:05.159><c> the</c>
+
+00:01:05.350 --> 00:01:05.360 align:start position:0%
+then this query going to be sent to the
+ 
+
+00:01:05.360 --> 00:01:07.190 align:start position:0%
+then this query going to be sent to the
+database<00:01:05.880><c> where</c><00:01:06.040><c> it's</c><00:01:06.159><c> going</c><00:01:06.280><c> to</c><00:01:06.439><c> executed</c>
+
+00:01:07.190 --> 00:01:07.200 align:start position:0%
+database where it's going to executed
+ 
+
+00:01:07.200 --> 00:01:08.910 align:start position:0%
+database where it's going to executed
+and<00:01:07.360><c> then</c><00:01:07.520><c> the</c><00:01:07.680><c> database</c><00:01:08.200><c> going</c><00:01:08.320><c> to</c><00:01:08.640><c> return</c>
+
+00:01:08.910 --> 00:01:08.920 align:start position:0%
+and then the database going to return
+ 
+
+00:01:08.920 --> 00:01:11.149 align:start position:0%
+and then the database going to return
+the<00:01:09.200><c> results</c><00:01:09.840><c> so</c><00:01:10.080><c> at</c><00:01:10.200><c> the</c><00:01:10.320><c> end</c><00:01:10.560><c> our</c><00:01:10.759><c> user</c><00:01:11.040><c> going</c>
+
+00:01:11.149 --> 00:01:11.159 align:start position:0%
+the results so at the end our user going
+ 
+
+00:01:11.159 --> 00:01:13.830 align:start position:0%
+the results so at the end our user going
+to<00:01:11.320><c> see</c><00:01:11.560><c> the</c><00:01:11.880><c> result</c><00:01:12.280><c> of</c><00:01:12.479><c> the</c><00:01:12.680><c> query</c><00:01:13.200><c> that</c><00:01:13.680><c> he</c>
+
+00:01:13.830 --> 00:01:13.840 align:start position:0%
+to see the result of the query that he
+ 
+
+00:01:13.840 --> 00:01:16.630 align:start position:0%
+to see the result of the query that he
+wrote<00:01:14.439><c> so</c><00:01:14.680><c> this</c><00:01:14.799><c> is</c><00:01:15.000><c> a</c><00:01:15.240><c> very</c><00:01:15.640><c> simplified</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+wrote so this is a very simplified
+ 
+
+00:01:16.640 --> 00:01:20.030 align:start position:0%
+wrote so this is a very simplified
+scenario<00:01:17.640><c> on</c><00:01:17.920><c> how</c><00:01:18.159><c> we</c><00:01:18.320><c> use</c><00:01:18.640><c> a</c><00:01:18.840><c> database</c><00:01:19.680><c> but</c><00:01:19.880><c> my</c>
+
+00:01:20.030 --> 00:01:20.040 align:start position:0%
+scenario on how we use a database but my
+ 
+
+00:01:20.040 --> 00:01:22.190 align:start position:0%
+scenario on how we use a database but my
+friends<00:01:20.360><c> in</c><00:01:20.520><c> the</c><00:01:20.720><c> real</c><00:01:20.960><c> world</c><00:01:21.479><c> things</c><00:01:21.759><c> are</c>
+
+00:01:22.190 --> 00:01:22.200 align:start position:0%
+friends in the real world things are
+ 
+
+00:01:22.200 --> 00:01:24.069 align:start position:0%
+friends in the real world things are
+totally<00:01:22.640><c> different</c><00:01:23.280><c> things</c><00:01:23.520><c> in</c><00:01:23.720><c> real</c>
+
+00:01:24.069 --> 00:01:24.079 align:start position:0%
+totally different things in real
+ 
+
+00:01:24.079 --> 00:01:26.710 align:start position:0%
+totally different things in real
+projects<00:01:24.479><c> get</c><00:01:24.960><c> very</c><00:01:25.240><c> complicated</c><00:01:26.040><c> like</c><00:01:26.280><c> this</c>
+
+00:01:26.710 --> 00:01:26.720 align:start position:0%
+projects get very complicated like this
+ 
+
+00:01:26.720 --> 00:01:28.590 align:start position:0%
+projects get very complicated like this
+so<00:01:26.880><c> for</c><00:01:27.079><c> example</c><00:01:27.400><c> you</c><00:01:27.520><c> have</c><00:01:27.680><c> a</c><00:01:27.880><c> financial</c>
+
+00:01:28.590 --> 00:01:28.600 align:start position:0%
+so for example you have a financial
+ 
+
+00:01:28.600 --> 00:01:32.069 align:start position:0%
+so for example you have a financial
+analyst<00:01:29.400><c> that</c><00:01:29.560><c> is</c><00:01:29.960><c> writing</c><00:01:30.720><c> a</c><00:01:30.960><c> huge</c><00:01:31.320><c> block</c><00:01:31.799><c> of</c>
+
+00:01:32.069 --> 00:01:32.079 align:start position:0%
+analyst that is writing a huge block of
+ 
+
+00:01:32.079 --> 00:01:35.550 align:start position:0%
+analyst that is writing a huge block of
+SQL<00:01:32.640><c> query</c><00:01:33.479><c> that</c><00:01:33.720><c> is</c><00:01:34.280><c> very</c><00:01:34.600><c> complex</c><00:01:35.280><c> and</c><00:01:35.439><c> there</c>
+
+00:01:35.550 --> 00:01:35.560 align:start position:0%
+SQL query that is very complex and there
+ 
+
+00:01:35.560 --> 00:01:37.429 align:start position:0%
+SQL query that is very complex and there
+will<00:01:35.720><c> be</c><00:01:35.920><c> like</c><00:01:36.159><c> another</c><00:01:36.600><c> user</c><00:01:37.040><c> that</c><00:01:37.240><c> have</c>
+
+00:01:37.429 --> 00:01:37.439 align:start position:0%
+will be like another user that have
+ 
+
+00:01:37.439 --> 00:01:39.910 align:start position:0%
+will be like another user that have
+different<00:01:37.880><c> role</c><00:01:38.399><c> like</c><00:01:38.600><c> a</c><00:01:38.799><c> risk</c><00:01:39.040><c> manager</c><00:01:39.759><c> that</c>
+
+00:01:39.910 --> 00:01:39.920 align:start position:0%
+different role like a risk manager that
+ 
+
+00:01:39.920 --> 00:01:43.270 align:start position:0%
+different role like a risk manager that
+is<00:01:40.159><c> as</c><00:01:40.360><c> we're</c><00:01:40.680><c> writing</c><00:01:41.560><c> a</c><00:01:41.840><c> very</c><00:01:42.119><c> complex</c><00:01:42.600><c> query</c>
+
+00:01:43.270 --> 00:01:43.280 align:start position:0%
+is as we're writing a very complex query
+ 
+
+00:01:43.280 --> 00:01:45.270 align:start position:0%
+is as we're writing a very complex query
+and<00:01:43.479><c> from</c><00:01:43.880><c> different</c><00:01:44.240><c> departments</c><00:01:45.000><c> from</c>
+
+00:01:45.270 --> 00:01:45.280 align:start position:0%
+and from different departments from
+ 
+
+00:01:45.280 --> 00:01:47.550 align:start position:0%
+and from different departments from
+different<00:01:45.640><c> projects</c><00:01:46.399><c> for</c><00:01:46.680><c> different</c><00:01:47.040><c> tasks</c>
+
+00:01:47.550 --> 00:01:47.560 align:start position:0%
+different projects for different tasks
+ 
+
+00:01:47.560 --> 00:01:50.149 align:start position:0%
+different projects for different tasks
+you<00:01:47.680><c> will</c><00:01:47.920><c> have</c><00:01:48.159><c> a</c><00:01:48.360><c> lot</c><00:01:48.600><c> of</c><00:01:48.799><c> analysts</c><00:01:49.719><c> that</c><00:01:49.840><c> are</c>
+
+00:01:50.149 --> 00:01:50.159 align:start position:0%
+you will have a lot of analysts that are
+ 
+
+00:01:50.159 --> 00:01:53.469 align:start position:0%
+you will have a lot of analysts that are
+writing<00:01:51.159><c> many</c><00:01:51.680><c> complex</c><00:01:52.159><c> queries</c><00:01:52.880><c> so</c><00:01:53.159><c> all</c>
+
+00:01:53.469 --> 00:01:53.479 align:start position:0%
+writing many complex queries so all
+ 
+
+00:01:53.479 --> 00:01:55.950 align:start position:0%
+writing many complex queries so all
+those<00:01:53.799><c> analyst</c><00:01:54.320><c> and</c><00:01:54.520><c> managers</c><00:01:55.200><c> have</c><00:01:55.439><c> a</c><00:01:55.600><c> direct</c>
+
+00:01:55.950 --> 00:01:55.960 align:start position:0%
+those analyst and managers have a direct
+ 
+
+00:01:55.960 --> 00:01:57.830 align:start position:0%
+those analyst and managers have a direct
+access<00:01:56.159><c> to</c><00:01:56.280><c> your</c><00:01:56.479><c> database</c><00:01:57.240><c> and</c><00:01:57.399><c> they</c><00:01:57.520><c> are</c>
+
+00:01:57.830 --> 00:01:57.840 align:start position:0%
+access to your database and they are
+ 
+
+00:01:57.840 --> 00:02:00.950 align:start position:0%
+access to your database and they are
+executing<00:01:58.680><c> a</c><00:01:58.920><c> complex</c><00:01:59.399><c> analytic</c><00:02:00.159><c> queries</c><00:02:00.840><c> in</c>
+
+00:02:00.950 --> 00:02:00.960 align:start position:0%
+executing a complex analytic queries in
+ 
+
+00:02:00.960 --> 00:02:02.749 align:start position:0%
+executing a complex analytic queries in
+order<00:02:01.280><c> to</c><00:02:01.439><c> generate</c><00:02:01.880><c> maybe</c><00:02:02.079><c> a</c><00:02:02.240><c> report</c><00:02:02.600><c> or</c>
+
+00:02:02.749 --> 00:02:02.759 align:start position:0%
+order to generate maybe a report or
+ 
+
+00:02:02.759 --> 00:02:05.029 align:start position:0%
+order to generate maybe a report or
+something<00:02:03.399><c> now</c><00:02:03.640><c> not</c><00:02:03.840><c> only</c><00:02:04.200><c> those</c><00:02:04.479><c> guys</c><00:02:04.759><c> are</c>
+
+00:02:05.029 --> 00:02:05.039 align:start position:0%
+something now not only those guys are
+ 
+
+00:02:05.039 --> 00:02:07.590 align:start position:0%
+something now not only those guys are
+doing<00:02:05.439><c> analysis</c><00:02:05.960><c> on</c><00:02:06.159><c> your</c><00:02:06.399><c> database</c><00:02:07.240><c> you</c><00:02:07.360><c> will</c>
+
+00:02:07.590 --> 00:02:07.600 align:start position:0%
+doing analysis on your database you will
+ 
+
+00:02:07.600 --> 00:02:09.589 align:start position:0%
+doing analysis on your database you will
+have<00:02:07.880><c> as</c><00:02:08.039><c> well</c><00:02:08.239><c> our</c><00:02:08.560><c> friend</c><00:02:09.160><c> the</c><00:02:09.319><c> data</c>
+
+00:02:09.589 --> 00:02:09.599 align:start position:0%
+have as well our friend the data
+ 
+
+00:02:09.599 --> 00:02:11.430 align:start position:0%
+have as well our friend the data
+engineer<00:02:10.360><c> that</c><00:02:10.520><c> is</c><00:02:10.640><c> saying</c><00:02:11.000><c> you</c><00:02:11.160><c> know</c><00:02:11.319><c> what</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+engineer that is saying you know what
+ 
+
+00:02:11.440 --> 00:02:13.190 align:start position:0%
+engineer that is saying you know what
+I'm<00:02:11.599><c> building</c><00:02:11.959><c> a</c><00:02:12.160><c> data</c><00:02:12.400><c> warehouse</c><00:02:12.959><c> and</c><00:02:13.120><c> I</c>
+
+00:02:13.190 --> 00:02:13.200 align:start position:0%
+I'm building a data warehouse and I
+ 
+
+00:02:13.200 --> 00:02:15.550 align:start position:0%
+I'm building a data warehouse and I
+would<00:02:13.360><c> like</c><00:02:13.520><c> to</c><00:02:13.760><c> extract</c><00:02:14.239><c> your</c><00:02:14.560><c> data</c><00:02:15.080><c> so</c><00:02:15.360><c> that</c>
+
+00:02:15.550 --> 00:02:15.560 align:start position:0%
+would like to extract your data so that
+ 
+
+00:02:15.560 --> 00:02:17.350 align:start position:0%
+would like to extract your data so that
+data<00:02:15.720><c> engineer</c><00:02:16.080><c> going</c><00:02:16.200><c> to</c><00:02:16.319><c> go</c><00:02:16.440><c> and</c><00:02:16.640><c> write</c><00:02:17.000><c> an</c>
+
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+data engineer going to go and write an
+ 
+
+00:02:17.360 --> 00:02:19.750 align:start position:0%
+data engineer going to go and write an
+extract<00:02:18.000><c> query</c><00:02:18.560><c> in</c><00:02:18.720><c> order</c><00:02:19.000><c> to</c><00:02:19.200><c> extract</c><00:02:19.599><c> the</c>
+
+00:02:19.750 --> 00:02:19.760 align:start position:0%
+extract query in order to extract the
+ 
+
+00:02:19.760 --> 00:02:22.150 align:start position:0%
+extract query in order to extract the
+data<00:02:20.040><c> from</c><00:02:20.239><c> the</c><00:02:20.400><c> database</c><00:02:21.200><c> and</c><00:02:21.360><c> then</c><00:02:21.519><c> he</c><00:02:21.680><c> has</c><00:02:21.920><c> a</c>
+
+00:02:22.150 --> 00:02:22.160 align:start position:0%
+data from the database and then he has a
+ 
+
+00:02:22.160 --> 00:02:24.390 align:start position:0%
+data from the database and then he has a
+different<00:02:22.560><c> script</c><00:02:22.920><c> for</c><00:02:23.120><c> the</c><00:02:23.400><c> transformations</c>
+
+00:02:24.390 --> 00:02:24.400 align:start position:0%
+different script for the transformations
+ 
+
+00:02:24.400 --> 00:02:27.110 align:start position:0%
+different script for the transformations
+in<00:02:24.560><c> order</c><00:02:24.879><c> to</c><00:02:25.080><c> manipulate</c><00:02:25.879><c> filter</c><00:02:26.440><c> clean</c><00:02:26.760><c> up</c>
+
+00:02:27.110 --> 00:02:27.120 align:start position:0%
+in order to manipulate filter clean up
+ 
+
+00:02:27.120 --> 00:02:29.390 align:start position:0%
+in order to manipulate filter clean up
+aggregate<00:02:27.760><c> your</c><00:02:28.000><c> data</c><00:02:28.599><c> and</c><00:02:28.760><c> then</c><00:02:28.920><c> a</c><00:02:29.120><c> third</c>
+
+00:02:29.390 --> 00:02:29.400 align:start position:0%
+aggregate your data and then a third
+ 
+
+00:02:29.400 --> 00:02:32.110 align:start position:0%
+aggregate your data and then a third
+script<00:02:29.959><c> in</c><00:02:30.160><c> order</c><00:02:30.840><c> to</c><00:02:31.080><c> collect</c><00:02:31.440><c> the</c><00:02:31.640><c> result</c><00:02:31.959><c> of</c>
+
+00:02:32.110 --> 00:02:32.120 align:start position:0%
+script in order to collect the result of
+ 
+
+00:02:32.120 --> 00:02:34.710 align:start position:0%
+script in order to collect the result of
+the<00:02:32.280><c> Transformations</c><00:02:33.200><c> and</c><00:02:33.400><c> load</c><00:02:33.760><c> it</c><00:02:34.080><c> in</c>
+
+00:02:34.710 --> 00:02:34.720 align:start position:0%
+the Transformations and load it in
+ 
+
+00:02:34.720 --> 00:02:37.589 align:start position:0%
+the Transformations and load it in
+another<00:02:35.400><c> database</c><00:02:35.959><c> called</c><00:02:36.440><c> Data</c><00:02:36.800><c> Warehouse</c>
+
+00:02:37.589 --> 00:02:37.599 align:start position:0%
+another database called Data Warehouse
+ 
+
+00:02:37.599 --> 00:02:40.030 align:start position:0%
+another database called Data Warehouse
+data<00:02:37.879><c> warehouse</c><00:02:38.239><c> is</c><00:02:38.400><c> like</c><00:02:38.680><c> special</c><00:02:39.080><c> database</c>
+
+00:02:40.030 --> 00:02:40.040 align:start position:0%
+data warehouse is like special database
+ 
+
+00:02:40.040 --> 00:02:41.990 align:start position:0%
+data warehouse is like special database
+that<00:02:40.319><c> collect</c><00:02:40.720><c> data</c><00:02:40.959><c> from</c><00:02:41.159><c> different</c><00:02:41.480><c> sources</c>
+
+00:02:41.990 --> 00:02:42.000 align:start position:0%
+that collect data from different sources
+ 
+
+00:02:42.000 --> 00:02:44.110 align:start position:0%
+that collect data from different sources
+and<00:02:42.200><c> integrate</c><00:02:42.680><c> it</c><00:02:42.840><c> in</c><00:02:43.000><c> one</c><00:02:43.280><c> place</c><00:02:43.760><c> in</c><00:02:43.879><c> order</c>
+
+00:02:44.110 --> 00:02:44.120 align:start position:0%
+and integrate it in one place in order
+ 
+
+00:02:44.120 --> 00:02:46.630 align:start position:0%
+and integrate it in one place in order
+to<00:02:44.280><c> do</c><00:02:44.519><c> analytics</c><00:02:45.120><c> and</c><00:02:45.360><c> Reporting</c><00:02:46.159><c> and</c><00:02:46.280><c> now</c><00:02:46.519><c> at</c>
+
+00:02:46.630 --> 00:02:46.640 align:start position:0%
+to do analytics and Reporting and now at
+ 
+
+00:02:46.640 --> 00:02:48.509 align:start position:0%
+to do analytics and Reporting and now at
+the<00:02:46.720><c> end</c><00:02:46.920><c> of</c><00:02:47.080><c> this</c><00:02:47.200><c> chain</c><00:02:47.480><c> you</c><00:02:47.599><c> will</c><00:02:47.840><c> have</c><00:02:48.280><c> a</c>
+
+00:02:48.509 --> 00:02:48.519 align:start position:0%
+the end of this chain you will have a
+ 
+
+00:02:48.519 --> 00:02:50.630 align:start position:0%
+the end of this chain you will have a
+data<00:02:48.800><c> analyst</c><00:02:49.400><c> and</c><00:02:49.560><c> she</c><00:02:49.760><c> writes</c><00:02:50.159><c> as</c><00:02:50.319><c> well</c>
+
+00:02:50.630 --> 00:02:50.640 align:start position:0%
+data analyst and she writes as well
+ 
+
+00:02:50.640 --> 00:02:53.110 align:start position:0%
+data analyst and she writes as well
+queries<00:02:51.480><c> in</c><00:02:51.640><c> order</c><00:02:51.920><c> to</c><00:02:52.120><c> analyze</c><00:02:52.599><c> the</c><00:02:52.760><c> data</c><00:02:53.000><c> in</c>
+
+00:02:53.110 --> 00:02:53.120 align:start position:0%
+queries in order to analyze the data in
+ 
+
+00:02:53.120 --> 00:02:55.070 align:start position:0%
+queries in order to analyze the data in
+the<00:02:53.280><c> data</c><00:02:53.519><c> warehouse</c><00:02:54.159><c> or</c><00:02:54.319><c> you</c><00:02:54.480><c> might</c><00:02:54.720><c> have</c><00:02:54.920><c> a</c>
+
+00:02:55.070 --> 00:02:55.080 align:start position:0%
+the data warehouse or you might have a
+ 
+
+00:02:55.080 --> 00:02:57.030 align:start position:0%
+the data warehouse or you might have a
+different<00:02:55.440><c> query</c><00:02:55.800><c> in</c><00:02:55.920><c> order</c><00:02:56.200><c> to</c><00:02:56.440><c> prepare</c><00:02:56.800><c> the</c>
+
+00:02:57.030 --> 00:02:57.040 align:start position:0%
+different query in order to prepare the
+ 
+
+00:02:57.040 --> 00:02:59.830 align:start position:0%
+different query in order to prepare the
+data<00:02:57.400><c> before</c><00:02:57.800><c> inserting</c><00:02:58.319><c> it</c><00:02:58.680><c> to</c><00:02:58.879><c> a</c><00:02:59.040><c> tool</c><00:02:59.360><c> like</c>
+
+00:02:59.830 --> 00:02:59.840 align:start position:0%
+data before inserting it to a tool like
+ 
+
+00:02:59.840 --> 00:03:02.830 align:start position:0%
+data before inserting it to a tool like
+RBI<00:03:00.720><c> in</c><00:03:00.879><c> order</c><00:03:01.200><c> to</c><00:03:01.400><c> generate</c><00:03:02.120><c> visualizations</c>
+
+00:03:02.830 --> 00:03:02.840 align:start position:0%
+RBI in order to generate visualizations
+ 
+
+00:03:02.840 --> 00:03:05.149 align:start position:0%
+RBI in order to generate visualizations
+and<00:03:03.040><c> reports</c><00:03:03.879><c> so</c><00:03:04.080><c> we</c><00:03:04.239><c> call</c><00:03:04.480><c> this</c><00:03:04.680><c> a</c><00:03:04.879><c> data</c>
+
+00:03:05.149 --> 00:03:05.159 align:start position:0%
+and reports so we call this a data
+ 
+
+00:03:05.159 --> 00:03:06.670 align:start position:0%
+and reports so we call this a data
+warehouse<00:03:05.640><c> system</c><00:03:05.959><c> or</c><00:03:06.159><c> a</c><00:03:06.319><c> business</c>
+
+00:03:06.670 --> 00:03:06.680 align:start position:0%
+warehouse system or a business
+ 
+
+00:03:06.680 --> 00:03:08.830 align:start position:0%
+warehouse system or a business
+intelligence<00:03:07.280><c> system</c><00:03:07.920><c> that</c><00:03:08.200><c> extract</c><00:03:08.640><c> an</c>
+
+00:03:08.830 --> 00:03:08.840 align:start position:0%
+intelligence system that extract an
+ 
+
+00:03:08.840 --> 00:03:10.869 align:start position:0%
+intelligence system that extract an
+extra<00:03:09.239><c> covery</c><00:03:09.519><c> from</c><00:03:09.680><c> your</c><00:03:09.920><c> data</c><00:03:10.680><c> and</c>
+
+00:03:10.869 --> 00:03:10.879 align:start position:0%
+extra covery from your data and
+ 
+
+00:03:10.879 --> 00:03:12.830 align:start position:0%
+extra covery from your data and
+manipulate<00:03:11.400><c> it</c><00:03:11.560><c> and</c><00:03:11.760><c> transform</c><00:03:12.280><c> it</c><00:03:12.519><c> for</c>
+
+00:03:12.830 --> 00:03:12.840 align:start position:0%
+manipulate it and transform it for
+ 
+
+00:03:12.840 --> 00:03:15.070 align:start position:0%
+manipulate it and transform it for
+analyzes<00:03:13.680><c> now</c><00:03:13.879><c> not</c><00:03:14.080><c> only</c><00:03:14.319><c> we</c><00:03:14.480><c> have</c><00:03:14.640><c> a</c><00:03:14.840><c> data</c>
+
+00:03:15.070 --> 00:03:15.080 align:start position:0%
+analyzes now not only we have a data
+ 
+
+00:03:15.080 --> 00:03:17.270 align:start position:0%
+analyzes now not only we have a data
+engineer<00:03:15.560><c> and</c><00:03:15.879><c> data</c><00:03:16.120><c> analyst</c><00:03:16.640><c> accessing</c><00:03:17.040><c> your</c>
+
+00:03:17.270 --> 00:03:17.280 align:start position:0%
+engineer and data analyst accessing your
+ 
+
+00:03:17.280 --> 00:03:19.470 align:start position:0%
+engineer and data analyst accessing your
+database<00:03:17.720><c> and</c><00:03:17.879><c> doing</c><00:03:18.200><c> queries</c><00:03:19.000><c> we</c><00:03:19.159><c> have</c><00:03:19.360><c> as</c>
+
+00:03:19.470 --> 00:03:19.480 align:start position:0%
+database and doing queries we have as
+ 
+
+00:03:19.480 --> 00:03:21.630 align:start position:0%
+database and doing queries we have as
+well<00:03:19.680><c> our</c><00:03:19.920><c> friend</c><00:03:20.400><c> the</c><00:03:20.640><c> data</c><00:03:20.920><c> scientist</c><00:03:21.480><c> so</c>
+
+00:03:21.630 --> 00:03:21.640 align:start position:0%
+well our friend the data scientist so
+ 
+
+00:03:21.640 --> 00:03:23.589 align:start position:0%
+well our friend the data scientist so
+now<00:03:21.799><c> our</c><00:03:22.040><c> data</c><00:03:22.280><c> scientist</c><00:03:22.799><c> as</c><00:03:22.959><c> well</c><00:03:23.200><c> has</c><00:03:23.360><c> a</c>
+
+00:03:23.589 --> 00:03:23.599 align:start position:0%
+now our data scientist as well has a
+ 
+
+00:03:23.599 --> 00:03:26.190 align:start position:0%
+now our data scientist as well has a
+direct<00:03:24.480><c> access</c><00:03:24.799><c> to</c><00:03:24.959><c> your</c><00:03:25.159><c> database</c><00:03:25.840><c> so</c><00:03:26.040><c> he</c>
+
+00:03:26.190 --> 00:03:26.200 align:start position:0%
+direct access to your database so he
+ 
+
+00:03:26.200 --> 00:03:28.030 align:start position:0%
+direct access to your database so he
+might<00:03:26.440><c> write</c><00:03:26.799><c> like</c><00:03:27.040><c> different</c><00:03:27.400><c> queries</c><00:03:27.879><c> in</c>
+
+00:03:28.030 --> 00:03:28.040 align:start position:0%
+might write like different queries in
+ 
+
+00:03:28.040 --> 00:03:30.030 align:start position:0%
+might write like different queries in
+order<00:03:28.319><c> to</c><00:03:28.519><c> extract</c><00:03:28.920><c> the</c><00:03:29.080><c> data</c><00:03:29.319><c> and</c><00:03:29.480><c> as</c><00:03:29.920><c> to</c>
+
+00:03:30.030 --> 00:03:30.040 align:start position:0%
+order to extract the data and as to
+ 
+
+00:03:30.040 --> 00:03:32.270 align:start position:0%
+order to extract the data and as to
+manipulate<00:03:30.480><c> the</c><00:03:30.680><c> data</c><00:03:31.280><c> that</c><00:03:31.439><c> are</c><00:03:31.680><c> needed</c><00:03:32.120><c> in</c>
+
+00:03:32.270 --> 00:03:32.280 align:start position:0%
+manipulate the data that are needed in
+ 
+
+00:03:32.280 --> 00:03:34.630 align:start position:0%
+manipulate the data that are needed in
+order<00:03:32.599><c> to</c><00:03:32.840><c> develop</c><00:03:33.360><c> a</c><00:03:33.519><c> model</c><00:03:34.120><c> and</c><00:03:34.280><c> doing</c>
+
+00:03:34.630 --> 00:03:34.640 align:start position:0%
+order to develop a model and doing
+ 
+
+00:03:34.640 --> 00:03:36.869 align:start position:0%
+order to develop a model and doing
+machine<00:03:35.000><c> learning</c><00:03:35.480><c> and</c><00:03:35.720><c> Ai</c><00:03:36.319><c> and</c><00:03:36.439><c> now</c><00:03:36.599><c> one</c><00:03:36.720><c> more</c>
+
+00:03:36.869 --> 00:03:36.879 align:start position:0%
+machine learning and Ai and now one more
+ 
+
+00:03:36.879 --> 00:03:38.830 align:start position:0%
+machine learning and Ai and now one more
+scenario<00:03:37.360><c> that</c><00:03:37.480><c> I</c><00:03:37.599><c> see</c><00:03:37.879><c> in</c><00:03:38.000><c> many</c><00:03:38.280><c> projects</c>
+
+00:03:38.830 --> 00:03:38.840 align:start position:0%
+scenario that I see in many projects
+ 
+
+00:03:38.840 --> 00:03:40.869 align:start position:0%
+scenario that I see in many projects
+where<00:03:39.080><c> the</c><00:03:39.319><c> result</c><00:03:39.680><c> of</c><00:03:39.879><c> the</c><00:03:40.159><c> data</c><00:03:40.439><c> analyst</c>
+
+00:03:40.869 --> 00:03:40.879 align:start position:0%
+where the result of the data analyst
+ 
+
+00:03:40.879 --> 00:03:43.070 align:start position:0%
+where the result of the data analyst
+going<00:03:41.040><c> to</c><00:03:41.159><c> be</c><00:03:41.360><c> used</c><00:03:41.840><c> in</c><00:03:42.040><c> another</c><00:03:42.439><c> query</c><00:03:42.959><c> in</c>
+
+00:03:43.070 --> 00:03:43.080 align:start position:0%
+going to be used in another query in
+ 
+
+00:03:43.080 --> 00:03:44.869 align:start position:0%
+going to be used in another query in
+order<00:03:43.319><c> to</c><00:03:43.519><c> prepare</c><00:03:43.879><c> the</c><00:03:44.040><c> result</c><00:03:44.360><c> for</c><00:03:44.599><c> data</c>
+
+00:03:44.869 --> 00:03:44.879 align:start position:0%
+order to prepare the result for data
+ 
+
+00:03:44.879 --> 00:03:47.750 align:start position:0%
+order to prepare the result for data
+visualizations<00:03:45.840><c> powerbi</c><00:03:46.840><c> or</c><00:03:47.080><c> in</c><00:03:47.200><c> order</c><00:03:47.519><c> to</c>
+
+00:03:47.750 --> 00:03:47.760 align:start position:0%
+visualizations powerbi or in order to
+ 
+
+00:03:47.760 --> 00:03:50.070 align:start position:0%
+visualizations powerbi or in order to
+export<00:03:48.280><c> like</c><00:03:48.640><c> Excel</c><00:03:49.040><c> list</c><00:03:49.439><c> so</c><00:03:49.599><c> as</c><00:03:49.680><c> you</c><00:03:49.760><c> can</c><00:03:49.879><c> see</c>
+
+00:03:50.070 --> 00:03:50.080 align:start position:0%
+export like Excel list so as you can see
+ 
+
+00:03:50.080 --> 00:03:51.830 align:start position:0%
+export like Excel list so as you can see
+we<00:03:50.239><c> have</c><00:03:50.400><c> a</c><00:03:50.599><c> lot</c><00:03:50.760><c> of</c><00:03:50.959><c> people</c><00:03:51.319><c> with</c><00:03:51.519><c> different</c>
+
+00:03:51.830 --> 00:03:51.840 align:start position:0%
+we have a lot of people with different
+ 
+
+00:03:51.840 --> 00:03:54.830 align:start position:0%
+we have a lot of people with different
+roles<00:03:52.599><c> that</c><00:03:52.760><c> want</c><00:03:53.040><c> to</c><00:03:53.360><c> access</c><00:03:53.760><c> your</c><00:03:53.920><c> database</c>
+
+00:03:54.830 --> 00:03:54.840 align:start position:0%
+roles that want to access your database
+ 
+
+00:03:54.840 --> 00:03:57.110 align:start position:0%
+roles that want to access your database
+and<00:03:55.000><c> do</c><00:03:55.319><c> analysis</c><00:03:55.840><c> on</c><00:03:56.040><c> top</c><00:03:56.200><c> of</c><00:03:56.360><c> it</c><00:03:56.720><c> and</c><00:03:56.879><c> that's</c>
+
+00:03:57.110 --> 00:03:57.120 align:start position:0%
+and do analysis on top of it and that's
+ 
+
+00:03:57.120 --> 00:03:58.869 align:start position:0%
+and do analysis on top of it and that's
+because<00:03:57.400><c> everyone</c><00:03:57.760><c> want</c><00:03:58.000><c> to</c><00:03:58.239><c> answer</c>
+
+00:03:58.869 --> 00:03:58.879 align:start position:0%
+because everyone want to answer
+ 
+
+00:03:58.879 --> 00:04:01.190 align:start position:0%
+because everyone want to answer
+questions<00:03:59.400><c> based</c><00:03:59.920><c> on</c><00:04:00.040><c> the</c><00:04:00.200><c> data</c><00:04:00.680><c> and</c><00:04:00.799><c> now</c><00:04:00.959><c> if</c><00:04:01.079><c> I</c>
+
+00:04:01.190 --> 00:04:01.200 align:start position:0%
+questions based on the data and now if I
+ 
+
+00:04:01.200 --> 00:04:03.110 align:start position:0%
+questions based on the data and now if I
+look<00:04:01.400><c> to</c><00:04:01.599><c> this</c><00:04:01.840><c> I</c><00:04:01.959><c> still</c><00:04:02.280><c> think</c><00:04:02.560><c> this</c><00:04:02.720><c> is</c><00:04:02.920><c> a</c>
+
+00:04:03.110 --> 00:04:03.120 align:start position:0%
+look to this I still think this is a
+ 
+
+00:04:03.120 --> 00:04:05.630 align:start position:0%
+look to this I still think this is a
+simplified<00:04:03.720><c> version</c><00:04:04.400><c> and</c><00:04:04.640><c> how</c><00:04:04.879><c> things</c><00:04:05.200><c> works</c>
+
+00:04:05.630 --> 00:04:05.640 align:start position:0%
+simplified version and how things works
+ 
+
+00:04:05.640 --> 00:04:07.550 align:start position:0%
+simplified version and how things works
+in<00:04:05.760><c> the</c><00:04:06.000><c> data</c><00:04:06.280><c> projects</c><00:04:06.879><c> and</c><00:04:07.000><c> I</c><00:04:07.120><c> can</c><00:04:07.280><c> tell</c><00:04:07.400><c> you</c>
+
+00:04:07.550 --> 00:04:07.560 align:start position:0%
+in the data projects and I can tell you
+ 
+
+00:04:07.560 --> 00:04:09.630 align:start position:0%
+in the data projects and I can tell you
+a<00:04:07.760><c> real</c><00:04:08.040><c> project</c><00:04:08.519><c> things</c><00:04:08.760><c> are</c><00:04:09.159><c> way</c><00:04:09.360><c> more</c>
+
+00:04:09.630 --> 00:04:09.640 align:start position:0%
+a real project things are way more
+ 
+
+00:04:09.640 --> 00:04:11.710 align:start position:0%
+a real project things are way more
+complicated<00:04:10.239><c> than</c><00:04:10.480><c> this</c><00:04:10.879><c> so</c><00:04:11.079><c> now</c><00:04:11.200><c> if</c><00:04:11.319><c> you</c><00:04:11.439><c> sit</c>
+
+00:04:11.710 --> 00:04:11.720 align:start position:0%
+complicated than this so now if you sit
+ 
+
+00:04:11.720 --> 00:04:14.390 align:start position:0%
+complicated than this so now if you sit
+back<00:04:11.920><c> and</c><00:04:12.079><c> look</c><00:04:12.280><c> to</c><00:04:12.519><c> this</c><00:04:13.079><c> we</c><00:04:13.200><c> will</c><00:04:13.480><c> find</c><00:04:14.040><c> many</c>
+
+00:04:14.390 --> 00:04:14.400 align:start position:0%
+back and look to this we will find many
+ 
+
+00:04:14.400 --> 00:04:16.710 align:start position:0%
+back and look to this we will find many
+challenges<00:04:14.959><c> and</c><00:04:15.200><c> problems</c><00:04:15.840><c> for</c><00:04:16.040><c> example</c><00:04:16.440><c> all</c>
+
+00:04:16.710 --> 00:04:16.720 align:start position:0%
+challenges and problems for example all
+ 
+
+00:04:16.720 --> 00:04:18.390 align:start position:0%
+challenges and problems for example all
+those<00:04:16.919><c> people</c><00:04:17.280><c> are</c><00:04:17.479><c> not</c><00:04:17.759><c> talking</c><00:04:18.079><c> to</c><00:04:18.239><c> each</c>
+
+00:04:18.390 --> 00:04:18.400 align:start position:0%
+those people are not talking to each
+ 
+
+00:04:18.400 --> 00:04:20.550 align:start position:0%
+those people are not talking to each
+others<00:04:18.880><c> and</c><00:04:19.120><c> each</c><00:04:19.320><c> one</c><00:04:19.479><c> of</c><00:04:19.600><c> them</c><00:04:19.759><c> are</c><00:04:20.000><c> creating</c>
+
+00:04:20.550 --> 00:04:20.560 align:start position:0%
+others and each one of them are creating
+ 
+
+00:04:20.560 --> 00:04:22.950 align:start position:0%
+others and each one of them are creating
+like<00:04:21.160><c> their</c><00:04:21.359><c> own</c><00:04:21.680><c> query</c><00:04:22.240><c> but</c><00:04:22.360><c> if</c><00:04:22.479><c> you</c><00:04:22.600><c> go</c><00:04:22.800><c> and</c>
+
+00:04:22.950 --> 00:04:22.960 align:start position:0%
+like their own query but if you go and
+ 
+
+00:04:22.960 --> 00:04:24.950 align:start position:0%
+like their own query but if you go and
+take<00:04:23.199><c> all</c><00:04:23.400><c> those</c><00:04:23.600><c> queries</c><00:04:24.120><c> and</c><00:04:24.320><c> compare</c><00:04:24.759><c> them</c>
+
+00:04:24.950 --> 00:04:24.960 align:start position:0%
+take all those queries and compare them
+ 
+
+00:04:24.960 --> 00:04:26.790 align:start position:0%
+take all those queries and compare them
+side<00:04:25.199><c> by</c><00:04:25.479><c> side</c><00:04:25.840><c> you</c><00:04:25.960><c> will</c><00:04:26.160><c> find</c><00:04:26.440><c> in</c><00:04:26.600><c> the</c>
+
+00:04:26.790 --> 00:04:26.800 align:start position:0%
+side by side you will find in the
+ 
+
+00:04:26.800 --> 00:04:29.749 align:start position:0%
+side by side you will find in the
+scripts<00:04:27.160><c> and</c><00:04:27.440><c> queries</c><00:04:28.400><c> logic</c><00:04:28.919><c> that</c><00:04:29.080><c> is</c><00:04:29.320><c> keep</c>
+
+00:04:29.749 --> 00:04:29.759 align:start position:0%
+scripts and queries logic that is keep
+ 
+
+00:04:29.759 --> 00:04:31.629 align:start position:0%
+scripts and queries logic that is keep
+repeating<00:04:30.400><c> so</c><00:04:30.680><c> the</c><00:04:30.840><c> queries</c><00:04:31.199><c> from</c><00:04:31.400><c> the</c>
+
+00:04:31.629 --> 00:04:31.639 align:start position:0%
+repeating so the queries from the
+ 
+
+00:04:31.639 --> 00:04:33.749 align:start position:0%
+repeating so the queries from the
+analyst<00:04:32.160><c> or</c><00:04:32.360><c> the</c><00:04:32.560><c> data</c><00:04:32.840><c> scientist</c><00:04:33.280><c> and</c><00:04:33.520><c> data</c>
+
+00:04:33.749 --> 00:04:33.759 align:start position:0%
+analyst or the data scientist and data
+ 
+
+00:04:33.759 --> 00:04:37.350 align:start position:0%
+analyst or the data scientist and data
+Engineers<00:04:34.759><c> they</c><00:04:35.000><c> might</c><00:04:35.360><c> contain</c><00:04:36.240><c> a</c><00:04:36.560><c> redundant</c>
+
+00:04:37.350 --> 00:04:37.360 align:start position:0%
+Engineers they might contain a redundant
+ 
+
+00:04:37.360 --> 00:04:39.670 align:start position:0%
+Engineers they might contain a redundant
+logic<00:04:37.960><c> and</c><00:04:38.080><c> of</c><00:04:38.240><c> course</c><00:04:38.479><c> the</c><00:04:38.600><c> issue</c><00:04:38.840><c> of</c><00:04:39.039><c> this</c><00:04:39.479><c> we</c>
+
+00:04:39.670 --> 00:04:39.680 align:start position:0%
+logic and of course the issue of this we
+ 
+
+00:04:39.680 --> 00:04:42.670 align:start position:0%
+logic and of course the issue of this we
+have<00:04:40.039><c> the</c><00:04:40.280><c> same</c><00:04:40.600><c> effort</c><00:04:41.160><c> repeating</c><00:04:42.000><c> over</c><00:04:42.360><c> and</c>
+
+00:04:42.670 --> 00:04:42.680 align:start position:0%
+have the same effort repeating over and
+ 
+
+00:04:42.680 --> 00:04:44.790 align:start position:0%
+have the same effort repeating over and
+over<00:04:43.199><c> and</c><00:04:43.360><c> maybe</c><00:04:43.639><c> not</c><00:04:43.960><c> everyone</c><00:04:44.320><c> is</c><00:04:44.479><c> getting</c>
+
+00:04:44.790 --> 00:04:44.800 align:start position:0%
+over and maybe not everyone is getting
+ 
+
+00:04:44.800 --> 00:04:47.029 align:start position:0%
+over and maybe not everyone is getting
+the<00:04:45.000><c> logic</c><00:04:45.360><c> implemented</c><00:04:46.120><c> correctly</c><00:04:46.759><c> because</c>
+
+00:04:47.029 --> 00:04:47.039 align:start position:0%
+the logic implemented correctly because
+ 
+
+00:04:47.039 --> 00:04:49.230 align:start position:0%
+the logic implemented correctly because
+not<00:04:47.240><c> all</c><00:04:47.400><c> of</c><00:04:47.560><c> them</c><00:04:47.759><c> having</c><00:04:48.479><c> the</c><00:04:48.720><c> right</c><00:04:48.919><c> skills</c>
+
+00:04:49.230 --> 00:04:49.240 align:start position:0%
+not all of them having the right skills
+ 
+
+00:04:49.240 --> 00:04:51.990 align:start position:0%
+not all of them having the right skills
+in<00:04:49.400><c> SQL</c><00:04:50.240><c> so</c><00:04:50.560><c> this</c><00:04:50.680><c> is</c><00:04:50.840><c> a</c><00:04:51.000><c> big</c><00:04:51.280><c> issue</c><00:04:51.600><c> in</c><00:04:51.800><c> this</c>
+
+00:04:51.990 --> 00:04:52.000 align:start position:0%
+in SQL so this is a big issue in this
+ 
+
+00:04:52.000 --> 00:04:54.390 align:start position:0%
+in SQL so this is a big issue in this
+setup<00:04:52.520><c> and</c><00:04:52.639><c> now</c><00:04:52.800><c> we</c><00:04:52.919><c> have</c><00:04:53.080><c> another</c><00:04:53.479><c> challenge</c>
+
+00:04:54.390 --> 00:04:54.400 align:start position:0%
+setup and now we have another challenge
+ 
+
+00:04:54.400 --> 00:04:56.189 align:start position:0%
+setup and now we have another challenge
+having<00:04:54.800><c> this</c><00:04:55.000><c> scenario</c><00:04:55.680><c> if</c><00:04:55.800><c> you</c><00:04:55.919><c> don't</c>
+
+00:04:56.189 --> 00:04:56.199 align:start position:0%
+having this scenario if you don't
+ 
+
+00:04:56.199 --> 00:04:58.150 align:start position:0%
+having this scenario if you don't
+optimize<00:04:56.639><c> it</c><00:04:56.840><c> you</c><00:04:56.919><c> will</c><00:04:57.160><c> have</c><00:04:57.360><c> a</c><00:04:57.560><c> performance</c>
+
+00:04:58.150 --> 00:04:58.160 align:start position:0%
+optimize it you will have a performance
+ 
+
+00:04:58.160 --> 00:05:00.749 align:start position:0%
+optimize it you will have a performance
+issue<00:04:58.880><c> everywhere</c><00:04:59.720><c> so</c><00:04:59.919><c> the</c><00:05:00.080><c> data</c><00:05:00.320><c> warehouse</c>
+
+00:05:00.749 --> 00:05:00.759 align:start position:0%
+issue everywhere so the data warehouse
+ 
+
+00:05:00.759 --> 00:05:02.790 align:start position:0%
+issue everywhere so the data warehouse
+or<00:05:00.919><c> the</c><00:05:01.080><c> data</c><00:05:01.280><c> engineer</c><00:05:01.720><c> scripts</c><00:05:02.199><c> might</c><00:05:02.440><c> take</c>
+
+00:05:02.790 --> 00:05:02.800 align:start position:0%
+or the data engineer scripts might take
+ 
+
+00:05:02.800 --> 00:05:05.390 align:start position:0%
+or the data engineer scripts might take
+like<00:05:03.240><c> 5</c><00:05:03.560><c> hours</c><00:05:04.280><c> and</c><00:05:04.440><c> the</c><00:05:04.600><c> query</c><00:05:05.000><c> from</c><00:05:05.199><c> the</c>
+
+00:05:05.390 --> 00:05:05.400 align:start position:0%
+like 5 hours and the query from the
+ 
+
+00:05:05.400 --> 00:05:07.670 align:start position:0%
+like 5 hours and the query from the
+analyst<00:05:05.880><c> might</c><00:05:06.080><c> take</c><00:05:06.320><c> like</c><00:05:06.479><c> 40</c><00:05:06.880><c> minutes</c><00:05:07.479><c> and</c>
+
+00:05:07.670 --> 00:05:07.680 align:start position:0%
+analyst might take like 40 minutes and
+ 
+
+00:05:07.680 --> 00:05:09.710 align:start position:0%
+analyst might take like 40 minutes and
+before<00:05:07.919><c> inserting</c><00:05:08.360><c> the</c><00:05:08.520><c> data</c><00:05:08.720><c> to</c><00:05:08.960><c> reports</c><00:05:09.560><c> we</c>
+
+00:05:09.710 --> 00:05:09.720 align:start position:0%
+before inserting the data to reports we
+ 
+
+00:05:09.720 --> 00:05:12.110 align:start position:0%
+before inserting the data to reports we
+might<00:05:09.960><c> have</c><00:05:10.160><c> 30</c><00:05:10.479><c> minutes</c><00:05:11.039><c> and</c><00:05:11.280><c> 1</c><00:05:11.479><c> hour</c><00:05:11.840><c> there</c>
+
+00:05:12.110 --> 00:05:12.120 align:start position:0%
+might have 30 minutes and 1 hour there
+ 
+
+00:05:12.120 --> 00:05:14.390 align:start position:0%
+might have 30 minutes and 1 hour there
+30<00:05:12.400><c> minutes</c><00:05:12.759><c> there</c><00:05:13.120><c> and</c><00:05:13.360><c> everyone</c><00:05:13.759><c> else</c><00:05:14.000><c> is</c><00:05:14.240><c> as</c>
+
+00:05:14.390 --> 00:05:14.400 align:start position:0%
+30 minutes there and everyone else is as
+ 
+
+00:05:14.400 --> 00:05:16.189 align:start position:0%
+30 minutes there and everyone else is as
+well<00:05:14.600><c> suffering</c><00:05:15.000><c> from</c><00:05:15.240><c> Bad</c><00:05:15.520><c> performance</c><00:05:16.000><c> on</c>
+
+00:05:16.189 --> 00:05:16.199 align:start position:0%
+well suffering from Bad performance on
+ 
+
+00:05:16.199 --> 00:05:18.110 align:start position:0%
+well suffering from Bad performance on
+their<00:05:16.440><c> queries</c><00:05:17.160><c> and</c><00:05:17.360><c> the</c><00:05:17.560><c> performance</c>
+
+00:05:18.110 --> 00:05:18.120 align:start position:0%
+their queries and the performance
+ 
+
+00:05:18.120 --> 00:05:20.469 align:start position:0%
+their queries and the performance
+everywhere<00:05:18.680><c> is</c><00:05:18.919><c> really</c><00:05:19.199><c> bad</c><00:05:19.680><c> so</c><00:05:19.960><c> if</c><00:05:20.160><c> everyone</c>
+
+00:05:20.469 --> 00:05:20.479 align:start position:0%
+everywhere is really bad so if everyone
+ 
+
+00:05:20.479 --> 00:05:22.830 align:start position:0%
+everywhere is really bad so if everyone
+is<00:05:20.639><c> writing</c><00:05:21.039><c> big</c><00:05:21.319><c> complex</c><00:05:21.720><c> queries</c><00:05:22.479><c> don't</c>
+
+00:05:22.830 --> 00:05:22.840 align:start position:0%
+is writing big complex queries don't
+ 
+
+00:05:22.840 --> 00:05:24.189 align:start position:0%
+is writing big complex queries don't
+expect<00:05:23.160><c> that</c><00:05:23.360><c> they</c><00:05:23.479><c> will</c><00:05:23.720><c> have</c><00:05:23.880><c> a</c><00:05:24.039><c> good</c>
+
+00:05:24.189 --> 00:05:24.199 align:start position:0%
+expect that they will have a good
+ 
+
+00:05:24.199 --> 00:05:26.189 align:start position:0%
+expect that they will have a good
+performance<00:05:24.960><c> now</c><00:05:25.120><c> to</c><00:05:25.280><c> the</c><00:05:25.440><c> third</c><00:05:25.720><c> challenge</c>
+
+00:05:26.189 --> 00:05:26.199 align:start position:0%
+performance now to the third challenge
+ 
+
+00:05:26.199 --> 00:05:28.270 align:start position:0%
+performance now to the third challenge
+that<00:05:26.360><c> I</c><00:05:26.520><c> observed</c><00:05:27.039><c> in</c><00:05:27.160><c> many</c><00:05:27.440><c> projects</c><00:05:28.080><c> and</c>
+
+00:05:28.270 --> 00:05:28.280 align:start position:0%
+that I observed in many projects and
+ 
+
+00:05:28.280 --> 00:05:30.670 align:start position:0%
+that I observed in many projects and
+that<00:05:28.479><c> is</c><00:05:28.720><c> the</c><00:05:28.960><c> complexity</c><00:05:29.880><c> now</c><00:05:30.120><c> behind</c><00:05:30.520><c> the</c>
+
+00:05:30.670 --> 00:05:30.680 align:start position:0%
+that is the complexity now behind the
+ 
+
+00:05:30.680 --> 00:05:32.550 align:start position:0%
+that is the complexity now behind the
+original<00:05:31.080><c> database</c><00:05:31.560><c> you</c><00:05:31.680><c> might</c><00:05:31.919><c> have</c><00:05:32.080><c> a</c><00:05:32.280><c> data</c>
+
+00:05:32.550 --> 00:05:32.560 align:start position:0%
+original database you might have a data
+ 
+
+00:05:32.560 --> 00:05:35.070 align:start position:0%
+original database you might have a data
+model<00:05:33.000><c> that</c><00:05:33.199><c> is</c><00:05:33.800><c> prepared</c><00:05:34.280><c> and</c><00:05:34.520><c> optimized</c>
+
+00:05:35.070 --> 00:05:35.080 align:start position:0%
+model that is prepared and optimized
+ 
+
+00:05:35.080 --> 00:05:37.029 align:start position:0%
+model that is prepared and optimized
+only<00:05:35.319><c> for</c><00:05:35.600><c> one</c><00:05:35.880><c> application</c><00:05:36.680><c> so</c><00:05:36.840><c> you</c><00:05:36.919><c> will</c>
+
+00:05:37.029 --> 00:05:37.039 align:start position:0%
+only for one application so you will
+ 
+
+00:05:37.039 --> 00:05:38.870 align:start position:0%
+only for one application so you will
+have<00:05:37.199><c> in</c><00:05:37.280><c> the</c><00:05:37.440><c> data</c><00:05:37.720><c> model</c><00:05:38.039><c> a</c><00:05:38.160><c> lot</c><00:05:38.319><c> of</c><00:05:38.440><c> tables</c>
+
+00:05:38.870 --> 00:05:38.880 align:start position:0%
+have in the data model a lot of tables
+ 
+
+00:05:38.880 --> 00:05:40.550 align:start position:0%
+have in the data model a lot of tables
+and<00:05:39.039><c> all</c><00:05:39.240><c> those</c><00:05:39.479><c> tables</c><00:05:39.919><c> have</c><00:05:40.160><c> different</c>
+
+00:05:40.550 --> 00:05:40.560 align:start position:0%
+and all those tables have different
+ 
+
+00:05:40.560 --> 00:05:42.390 align:start position:0%
+and all those tables have different
+relationship<00:05:41.120><c> between</c><00:05:41.440><c> them</c><00:05:41.800><c> and</c><00:05:41.919><c> of</c><00:05:42.080><c> course</c>
+
+00:05:42.390 --> 00:05:42.400 align:start position:0%
+relationship between them and of course
+ 
+
+00:05:42.400 --> 00:05:44.909 align:start position:0%
+relationship between them and of course
+only<00:05:42.720><c> the</c><00:05:42.880><c> developers</c><00:05:43.560><c> and</c><00:05:43.759><c> the</c><00:05:44.039><c> experts</c><00:05:44.680><c> of</c>
+
+00:05:44.909 --> 00:05:44.919 align:start position:0%
+only the developers and the experts of
+ 
+
+00:05:44.919 --> 00:05:47.150 align:start position:0%
+only the developers and the experts of
+this<00:05:45.160><c> database</c><00:05:46.160><c> understand</c><00:05:46.360><c> the</c><00:05:46.639><c> physical</c>
+
+00:05:47.150 --> 00:05:47.160 align:start position:0%
+this database understand the physical
+ 
+
+00:05:47.160 --> 00:05:49.710 align:start position:0%
+this database understand the physical
+data<00:05:47.440><c> model</c><00:05:47.960><c> behind</c><00:05:48.400><c> this</c><00:05:48.759><c> database</c><00:05:49.479><c> and</c><00:05:49.560><c> now</c>
+
+00:05:49.710 --> 00:05:49.720 align:start position:0%
+data model behind this database and now
+ 
+
+00:05:49.720 --> 00:05:52.070 align:start position:0%
+data model behind this database and now
+if<00:05:49.800><c> you</c><00:05:49.919><c> give</c><00:05:50.199><c> access</c><00:05:50.479><c> to</c><00:05:50.639><c> all</c><00:05:50.880><c> those</c><00:05:51.160><c> analyst</c>
+
+00:05:52.070 --> 00:05:52.080 align:start position:0%
+if you give access to all those analyst
+ 
+
+00:05:52.080 --> 00:05:54.070 align:start position:0%
+if you give access to all those analyst
+they<00:05:52.240><c> will</c><00:05:52.520><c> have</c><00:05:52.720><c> a</c><00:05:52.919><c> lot</c><00:05:53.120><c> of</c><00:05:53.319><c> questions</c>
+
+00:05:54.070 --> 00:05:54.080 align:start position:0%
+they will have a lot of questions
+ 
+
+00:05:54.080 --> 00:05:56.270 align:start position:0%
+they will have a lot of questions
+because<00:05:54.520><c> first</c><00:05:54.880><c> they</c><00:05:55.039><c> have</c><00:05:55.160><c> to</c><00:05:55.759><c> understand</c>
+
+00:05:56.270 --> 00:05:56.280 align:start position:0%
+because first they have to understand
+ 
+
+00:05:56.280 --> 00:05:58.990 align:start position:0%
+because first they have to understand
+the<00:05:56.520><c> data</c><00:05:56.840><c> model</c><00:05:57.240><c> before</c><00:05:57.600><c> writing</c><00:05:58.199><c> any</c><00:05:58.520><c> query</c>
+
+00:05:58.990 --> 00:05:59.000 align:start position:0%
+the data model before writing any query
+ 
+
+00:05:59.000 --> 00:06:01.469 align:start position:0%
+the data model before writing any query
+so<00:05:59.199><c> that</c><00:05:59.319><c> means</c><00:05:59.720><c> a</c><00:05:59.840><c> lot</c><00:06:00.000><c> of</c><00:06:00.240><c> data</c><00:06:00.520><c> workers</c><00:06:01.080><c> are</c>
+
+00:06:01.469 --> 00:06:01.479 align:start position:0%
+so that means a lot of data workers are
+ 
+
+00:06:01.479 --> 00:06:03.950 align:start position:0%
+so that means a lot of data workers are
+keep<00:06:01.880><c> asking</c><00:06:02.639><c> our</c><00:06:03.080><c> expert</c><00:06:03.560><c> from</c><00:06:03.720><c> these</c>
+
+00:06:03.950 --> 00:06:03.960 align:start position:0%
+keep asking our expert from these
+ 
+
+00:06:03.960 --> 00:06:05.950 align:start position:0%
+keep asking our expert from these
+database<00:06:04.520><c> questions</c><00:06:05.120><c> so</c><00:06:05.240><c> for</c><00:06:05.400><c> example</c><00:06:05.720><c> how</c><00:06:05.800><c> to</c>
+
+00:06:05.950 --> 00:06:05.960 align:start position:0%
+database questions so for example how to
+ 
+
+00:06:05.960 --> 00:06:08.070 align:start position:0%
+database questions so for example how to
+connect<00:06:06.240><c> the</c><00:06:06.400><c> table</c><00:06:06.639><c> a</c><00:06:06.880><c> with</c><00:06:07.039><c> the</c><00:06:07.160><c> table</c><00:06:07.400><c> B</c><00:06:07.919><c> and</c>
+
+00:06:08.070 --> 00:06:08.080 align:start position:0%
+connect the table a with the table B and
+ 
+
+00:06:08.080 --> 00:06:10.270 align:start position:0%
+connect the table a with the table B and
+where<00:06:08.280><c> do</c><00:06:08.440><c> I</c><00:06:08.560><c> find</c><00:06:08.880><c> my</c><00:06:09.080><c> columns</c><00:06:09.840><c> what</c><00:06:10.080><c> this</c>
+
+00:06:10.270 --> 00:06:10.280 align:start position:0%
+where do I find my columns what this
+ 
+
+00:06:10.280 --> 00:06:12.589 align:start position:0%
+where do I find my columns what this
+table<00:06:10.599><c> means</c><00:06:11.160><c> I'm</c><00:06:11.319><c> getting</c><00:06:11.639><c> bad</c><00:06:11.880><c> result</c><00:06:12.280><c> in</c><00:06:12.440><c> my</c>
+
+00:06:12.589 --> 00:06:12.599 align:start position:0%
+table means I'm getting bad result in my
+ 
+
+00:06:12.599 --> 00:06:14.629 align:start position:0%
+table means I'm getting bad result in my
+query<00:06:13.039><c> because</c><00:06:13.720><c> your</c><00:06:13.960><c> data</c><00:06:14.240><c> is</c><00:06:14.360><c> really</c>
+
+00:06:14.629 --> 00:06:14.639 align:start position:0%
+query because your data is really
+ 
+
+00:06:14.639 --> 00:06:16.469 align:start position:0%
+query because your data is really
+corrupt<00:06:15.240><c> so</c><00:06:15.599><c> the</c><00:06:15.759><c> developers</c><00:06:16.199><c> of</c><00:06:16.319><c> the</c>
+
+00:06:16.469 --> 00:06:16.479 align:start position:0%
+corrupt so the developers of the
+ 
+
+00:06:16.479 --> 00:06:18.510 align:start position:0%
+corrupt so the developers of the
+database<00:06:16.960><c> will</c><00:06:17.199><c> get</c><00:06:17.440><c> a</c><00:06:17.639><c> lot</c><00:06:17.840><c> of</c><00:06:18.080><c> questions</c>
+
+00:06:18.510 --> 00:06:18.520 align:start position:0%
+database will get a lot of questions
+ 
+
+00:06:18.520 --> 00:06:20.070 align:start position:0%
+database will get a lot of questions
+from<00:06:18.720><c> the</c><00:06:18.880><c> analyst</c><00:06:19.479><c> and</c><00:06:19.599><c> they</c><00:06:19.759><c> have</c><00:06:19.880><c> to</c>
+
+00:06:20.070 --> 00:06:20.080 align:start position:0%
+from the analyst and they have to
+ 
+
+00:06:20.080 --> 00:06:22.749 align:start position:0%
+from the analyst and they have to
+explain<00:06:20.560><c> over</c><00:06:20.840><c> and</c><00:06:21.080><c> over</c><00:06:21.599><c> their</c><00:06:21.880><c> data</c><00:06:22.199><c> model</c>
+
+00:06:22.749 --> 00:06:22.759 align:start position:0%
+explain over and over their data model
+ 
+
+00:06:22.759 --> 00:06:25.270 align:start position:0%
+explain over and over their data model
+so<00:06:22.960><c> that</c><00:06:23.160><c> the</c><00:06:23.319><c> users</c><00:06:23.880><c> are</c><00:06:24.199><c> able</c><00:06:24.560><c> to</c><00:06:24.800><c> write</c>
+
+00:06:25.270 --> 00:06:25.280 align:start position:0%
+so that the users are able to write
+ 
+
+00:06:25.280 --> 00:06:27.350 align:start position:0%
+so that the users are able to write
+those<00:06:25.520><c> complex</c><00:06:25.960><c> queries</c><00:06:26.599><c> so</c><00:06:26.800><c> that</c><00:06:26.919><c> means</c><00:06:27.160><c> all</c>
+
+00:06:27.350 --> 00:06:27.360 align:start position:0%
+those complex queries so that means all
+ 
+
+00:06:27.360 --> 00:06:29.629 align:start position:0%
+those complex queries so that means all
+those<00:06:27.599><c> users</c><00:06:28.039><c> are</c><00:06:28.280><c> stressing</c><00:06:29.000><c> the</c><00:06:29.199><c> database</c>
+
+00:06:29.629 --> 00:06:29.639 align:start position:0%
+those users are stressing the database
+ 
+
+00:06:29.639 --> 00:06:31.710 align:start position:0%
+those users are stressing the database
+esteemed<00:06:30.039><c> by</c><00:06:30.240><c> many</c><00:06:30.520><c> questions</c><00:06:31.240><c> and</c><00:06:31.400><c> as</c><00:06:31.520><c> well</c>
+
+00:06:31.710 --> 00:06:31.720 align:start position:0%
+esteemed by many questions and as well
+ 
+
+00:06:31.720 --> 00:06:33.950 align:start position:0%
+esteemed by many questions and as well
+the<00:06:31.840><c> users</c><00:06:32.240><c> are</c><00:06:32.520><c> writing</c><00:06:33.240><c> very</c><00:06:33.520><c> complex</c>
+
+00:06:33.950 --> 00:06:33.960 align:start position:0%
+the users are writing very complex
+ 
+
+00:06:33.960 --> 00:06:36.510 align:start position:0%
+the users are writing very complex
+queries<00:06:34.639><c> so</c><00:06:34.880><c> the</c><00:06:35.080><c> complexity</c><00:06:35.720><c> is</c><00:06:36.039><c> a</c><00:06:36.240><c> really</c>
+
+00:06:36.510 --> 00:06:36.520 align:start position:0%
+queries so the complexity is a really
+ 
+
+00:06:36.520 --> 00:06:38.350 align:start position:0%
+queries so the complexity is a really
+big<00:06:36.759><c> challenge</c><00:06:37.319><c> now</c><00:06:37.479><c> as</c><00:06:37.599><c> well</c><00:06:37.800><c> by</c><00:06:37.919><c> looking</c><00:06:38.120><c> to</c>
+
+00:06:38.350 --> 00:06:38.360 align:start position:0%
+big challenge now as well by looking to
+ 
+
+00:06:38.360 --> 00:06:40.029 align:start position:0%
+big challenge now as well by looking to
+this<00:06:38.479><c> picture</c><00:06:38.800><c> you</c><00:06:38.880><c> will</c><00:06:39.080><c> find</c><00:06:39.440><c> a</c><00:06:39.599><c> lot</c><00:06:39.800><c> of</c>
+
+00:06:40.029 --> 00:06:40.039 align:start position:0%
+this picture you will find a lot of
+ 
+
+00:06:40.039 --> 00:06:41.790 align:start position:0%
+this picture you will find a lot of
+arrows<00:06:40.560><c> from</c><00:06:40.800><c> those</c><00:06:41.000><c> quaries</c><00:06:41.400><c> to</c><00:06:41.560><c> the</c>
+
+00:06:41.790 --> 00:06:41.800 align:start position:0%
+arrows from those quaries to the
+ 
+
+00:06:41.800 --> 00:06:44.870 align:start position:0%
+arrows from those quaries to the
+database<00:06:42.800><c> and</c><00:06:43.080><c> this</c><00:06:43.319><c> might</c><00:06:43.639><c> cause</c><00:06:44.240><c> a</c><00:06:44.440><c> lot</c><00:06:44.639><c> of</c>
+
+00:06:44.870 --> 00:06:44.880 align:start position:0%
+database and this might cause a lot of
+ 
+
+00:06:44.880 --> 00:06:47.390 align:start position:0%
+database and this might cause a lot of
+database<00:06:45.560><c> stress</c><00:06:46.120><c> so</c><00:06:46.400><c> keep</c><00:06:46.720><c> executing</c>
+
+00:06:47.390 --> 00:06:47.400 align:start position:0%
+database stress so keep executing
+ 
+
+00:06:47.400 --> 00:06:50.350 align:start position:0%
+database stress so keep executing
+repeatedly<00:06:48.400><c> a</c><00:06:48.639><c> big</c><00:06:49.000><c> complex</c><00:06:49.479><c> queries</c><00:06:50.199><c> going</c>
+
+00:06:50.350 --> 00:06:50.360 align:start position:0%
+repeatedly a big complex queries going
+ 
+
+00:06:50.360 --> 00:06:52.350 align:start position:0%
+repeatedly a big complex queries going
+to<00:06:50.479><c> makes</c><00:06:51.000><c> really</c><00:06:51.319><c> big</c><00:06:51.520><c> stress</c><00:06:51.960><c> for</c><00:06:52.160><c> the</c>
+
+00:06:52.350 --> 00:06:52.360 align:start position:0%
+to makes really big stress for the
+ 
+
+00:06:52.360 --> 00:06:54.070 align:start position:0%
+to makes really big stress for the
+database<00:06:53.160><c> and</c><00:06:53.319><c> it</c><00:06:53.479><c> going</c><00:06:53.599><c> to</c><00:06:53.720><c> bring</c><00:06:53.919><c> the</c>
+
+00:06:54.070 --> 00:06:54.080 align:start position:0%
+database and it going to bring the
+ 
+
+00:06:54.080 --> 00:06:56.189 align:start position:0%
+database and it going to bring the
+database<00:06:54.599><c> down</c><00:06:55.160><c> and</c><00:06:55.319><c> the</c><00:06:55.440><c> last</c><00:06:55.639><c> challenge</c><00:06:56.039><c> of</c>
+
+00:06:56.189 --> 00:06:56.199 align:start position:0%
+database down and the last challenge of
+ 
+
+00:06:56.199 --> 00:06:58.629 align:start position:0%
+database down and the last challenge of
+this<00:06:56.360><c> picture</c><00:06:56.680><c> is</c><00:06:56.879><c> that</c><00:06:57.479><c> the</c><00:06:57.720><c> data</c><00:06:58.039><c> security</c>
+
+00:06:58.629 --> 00:06:58.639 align:start position:0%
+this picture is that the data security
+ 
+
+00:06:58.639 --> 00:07:00.309 align:start position:0%
+this picture is that the data security
+so<00:06:58.800><c> if</c><00:06:58.879><c> you</c><00:06:59.000><c> leave</c><00:06:59.199><c> it</c><00:06:59.319><c> like</c><00:06:59.680><c> this</c><00:06:59.840><c> by</c><00:07:00.000><c> giving</c>
+
+00:07:00.309 --> 00:07:00.319 align:start position:0%
+so if you leave it like this by giving
+ 
+
+00:07:00.319 --> 00:07:02.710 align:start position:0%
+so if you leave it like this by giving
+the<00:07:00.479><c> users</c><00:07:01.120><c> a</c><00:07:01.440><c> direct</c><00:07:01.960><c> access</c><00:07:02.319><c> to</c><00:07:02.479><c> your</c>
+
+00:07:02.710 --> 00:07:02.720 align:start position:0%
+the users a direct access to your
+ 
+
+00:07:02.720 --> 00:07:04.990 align:start position:0%
+the users a direct access to your
+database<00:07:03.199><c> tables</c><00:07:03.840><c> you</c><00:07:04.000><c> might</c><00:07:04.240><c> have</c><00:07:04.400><c> a</c><00:07:04.639><c> problem</c>
+
+00:07:04.990 --> 00:07:05.000 align:start position:0%
+database tables you might have a problem
+ 
+
+00:07:05.000 --> 00:07:06.990 align:start position:0%
+database tables you might have a problem
+because<00:07:05.479><c> it</c><00:07:05.599><c> might</c><00:07:05.800><c> be</c><00:07:06.039><c> okay</c><00:07:06.280><c> for</c><00:07:06.560><c> like</c><00:07:06.759><c> some</c>
+
+00:07:06.990 --> 00:07:07.000 align:start position:0%
+because it might be okay for like some
+ 
+
+00:07:07.000 --> 00:07:09.110 align:start position:0%
+because it might be okay for like some
+data<00:07:07.240><c> engineers</c><00:07:07.840><c> and</c><00:07:08.000><c> so</c><00:07:08.199><c> on</c><00:07:08.599><c> but</c><00:07:08.759><c> you</c><00:07:08.879><c> don't</c>
+
+00:07:09.110 --> 00:07:09.120 align:start position:0%
+data engineers and so on but you don't
+ 
+
+00:07:09.120 --> 00:07:11.430 align:start position:0%
+data engineers and so on but you don't
+want<00:07:09.319><c> to</c><00:07:09.520><c> give</c><00:07:09.800><c> for</c><00:07:10.120><c> each</c><00:07:10.479><c> data</c><00:07:10.759><c> analyst</c><00:07:11.240><c> a</c>
+
+00:07:11.430 --> 00:07:11.440 align:start position:0%
+want to give for each data analyst a
+ 
+
+00:07:11.440 --> 00:07:13.830 align:start position:0%
+want to give for each data analyst a
+full<00:07:11.800><c> access</c><00:07:12.400><c> to</c><00:07:12.560><c> the</c><00:07:12.720><c> database</c><00:07:13.160><c> tables</c><00:07:13.680><c> so</c>
+
+00:07:13.830 --> 00:07:13.840 align:start position:0%
+full access to the database tables so
+ 
+
+00:07:13.840 --> 00:07:15.909 align:start position:0%
+full access to the database tables so
+you<00:07:14.000><c> have</c><00:07:14.120><c> to</c><00:07:14.360><c> protect</c><00:07:14.720><c> your</c><00:07:15.000><c> tables</c><00:07:15.720><c> The</c>
+
+00:07:15.909 --> 00:07:15.919 align:start position:0%
+you have to protect your tables The
+ 
+
+00:07:15.919 --> 00:07:18.029 align:start position:0%
+you have to protect your tables The
+Columns<00:07:16.520><c> the</c><00:07:16.680><c> rows</c><00:07:17.160><c> everything</c><00:07:17.720><c> so</c><00:07:17.919><c> you</c>
+
+00:07:18.029 --> 00:07:18.039 align:start position:0%
+Columns the rows everything so you
+ 
+
+00:07:18.039 --> 00:07:19.950 align:start position:0%
+Columns the rows everything so you
+cannot<00:07:18.360><c> leave</c><00:07:18.560><c> it</c><00:07:18.759><c> like</c><00:07:19.000><c> this</c><00:07:19.240><c> where</c><00:07:19.520><c> everyone</c>
+
+00:07:19.950 --> 00:07:19.960 align:start position:0%
+cannot leave it like this where everyone
+ 
+
+00:07:19.960 --> 00:07:22.589 align:start position:0%
+cannot leave it like this where everyone
+having<00:07:20.360><c> a</c><00:07:20.680><c> direct</c><00:07:21.160><c> access</c><00:07:21.680><c> to</c><00:07:21.879><c> the</c><00:07:22.039><c> physical</c>
+
+00:07:22.589 --> 00:07:22.599 align:start position:0%
+having a direct access to the physical
+ 
+
+00:07:22.599 --> 00:07:24.710 align:start position:0%
+having a direct access to the physical
+database<00:07:23.080><c> tables</c><00:07:23.680><c> now</c><00:07:23.879><c> enough</c><00:07:24.160><c> talking</c><00:07:24.440><c> about</c>
+
+00:07:24.710 --> 00:07:24.720 align:start position:0%
+database tables now enough talking about
+ 
+
+00:07:24.720 --> 00:07:27.309 align:start position:0%
+database tables now enough talking about
+challenges<00:07:25.360><c> problems</c><00:07:25.759><c> and</c><00:07:25.919><c> issues</c><00:07:26.440><c> let's</c><00:07:26.720><c> be</c>
+
+00:07:27.309 --> 00:07:27.319 align:start position:0%
+challenges problems and issues let's be
+ 
+
+00:07:27.319 --> 00:07:29.110 align:start position:0%
+challenges problems and issues let's be
+solution<00:07:27.759><c> oriented</c><00:07:28.440><c> so</c><00:07:28.680><c> what</c><00:07:28.840><c> are</c><00:07:29.000><c> the</c>
+
+00:07:29.110 --> 00:07:29.120 align:start position:0%
+solution oriented so what are the
+ 
+
+00:07:29.120 --> 00:07:31.230 align:start position:0%
+solution oriented so what are the
+solutions<00:07:29.520><c> ions</c><00:07:29.840><c> of</c><00:07:30.039><c> those</c><00:07:30.240><c> issues</c><00:07:30.800><c> of</c><00:07:30.960><c> course</c>
+
+00:07:31.230 --> 00:07:31.240 align:start position:0%
+solutions ions of those issues of course
+ 
+
+00:07:31.240 --> 00:07:32.950 align:start position:0%
+solutions ions of those issues of course
+there<00:07:31.360><c> are</c><00:07:31.560><c> many</c><00:07:31.800><c> solutions</c><00:07:32.479><c> but</c><00:07:32.720><c> we're</c><00:07:32.879><c> going</c>
+
+00:07:32.950 --> 00:07:32.960 align:start position:0%
+there are many solutions but we're going
+ 
+
+00:07:32.960 --> 00:07:35.189 align:start position:0%
+there are many solutions but we're going
+to<00:07:33.120><c> focus</c><00:07:33.400><c> now</c><00:07:33.599><c> on</c><00:07:33.960><c> five</c><00:07:34.280><c> techniques</c><00:07:34.919><c> we</c><00:07:35.039><c> can</c>
+
+00:07:35.189 --> 00:07:35.199 align:start position:0%
+to focus now on five techniques we can
+ 
+
+00:07:35.199 --> 00:07:38.309 align:start position:0%
+to focus now on five techniques we can
+go<00:07:35.319><c> and</c><00:07:35.479><c> use</c><00:07:35.720><c> subqueries</c><00:07:36.599><c> or</c><00:07:36.840><c> CTE</c><00:07:37.639><c> Comon</c><00:07:38.000><c> table</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+go and use subqueries or CTE Comon table
+ 
+
+00:07:38.319 --> 00:07:40.469 align:start position:0%
+go and use subqueries or CTE Comon table
+Expressions<00:07:39.160><c> we</c><00:07:39.240><c> can</c><00:07:39.440><c> introduce</c><00:07:39.960><c> views</c><00:07:40.319><c> to</c>
+
+00:07:40.469 --> 00:07:40.479 align:start position:0%
+Expressions we can introduce views to
+ 
+
+00:07:40.479 --> 00:07:43.589 align:start position:0%
+Expressions we can introduce views to
+our<00:07:40.759><c> database</c><00:07:41.360><c> or</c><00:07:42.080><c> temporary</c><00:07:42.680><c> tables</c><00:07:43.360><c> or</c><00:07:43.479><c> we</c>
+
+00:07:43.589 --> 00:07:43.599 align:start position:0%
+our database or temporary tables or we
+ 
+
+00:07:43.599 --> 00:07:46.309 align:start position:0%
+our database or temporary tables or we
+can<00:07:43.759><c> go</c><00:07:43.879><c> and</c><00:07:44.039><c> use</c><00:07:44.280><c> the</c><00:07:44.440><c> technique</c><00:07:44.840><c> of</c><00:07:45.000><c> the</c><00:07:45.319><c> ctas</c>
+
+00:07:46.309 --> 00:07:46.319 align:start position:0%
+can go and use the technique of the ctas
+ 
+
+00:07:46.319 --> 00:07:49.350 align:start position:0%
+can go and use the technique of the ctas
+carer<00:07:46.800><c> table</c><00:07:47.400><c> as</c><00:07:47.720><c> select</c><00:07:48.400><c> so</c><00:07:48.639><c> this</c><00:07:48.759><c> is</c><00:07:48.960><c> exactly</c>
+
+00:07:49.350 --> 00:07:49.360 align:start position:0%
+carer table as select so this is exactly
+ 
+
+00:07:49.360 --> 00:07:51.110 align:start position:0%
+carer table as select so this is exactly
+why<00:07:49.560><c> we</c><00:07:49.720><c> have</c><00:07:49.840><c> to</c><00:07:50.319><c> understand</c><00:07:50.599><c> those</c><00:07:50.879><c> five</c>
+
+00:07:51.110 --> 00:07:51.120 align:start position:0%
+why we have to understand those five
+ 
+
+00:07:51.120 --> 00:07:53.469 align:start position:0%
+why we have to understand those five
+techniques<00:07:51.879><c> in</c><00:07:52.000><c> order</c><00:07:52.280><c> to</c><00:07:52.440><c> solve</c><00:07:52.879><c> all</c><00:07:53.120><c> those</c>
+
+00:07:53.469 --> 00:07:53.479 align:start position:0%
+techniques in order to solve all those
+ 
+
+00:07:53.479 --> 00:07:55.869 align:start position:0%
+techniques in order to solve all those
+issues<00:07:54.000><c> that</c><00:07:54.199><c> we</c><00:07:54.360><c> might</c><00:07:54.599><c> face</c><00:07:54.919><c> in</c><00:07:55.120><c> our</c><00:07:55.520><c> data</c>
+
+00:07:55.869 --> 00:07:55.879 align:start position:0%
+issues that we might face in our data
+ 
+
+00:07:55.879 --> 00:08:00.390 align:start position:0%
+issues that we might face in our data
+projects
+
+00:08:00.390 --> 00:08:00.400 align:start position:0%
+ 
+ 
+
+00:08:00.400 --> 00:08:02.029 align:start position:0%
+ 
+all<00:08:00.560><c> right</c><00:08:00.759><c> friends</c><00:08:01.080><c> so</c><00:08:01.280><c> now</c><00:08:01.599><c> after</c><00:08:01.840><c> we</c>
+
+00:08:02.029 --> 00:08:02.039 align:start position:0%
+all right friends so now after we
+ 
+
+00:08:02.039 --> 00:08:04.189 align:start position:0%
+all right friends so now after we
+understood<00:08:02.720><c> the</c><00:08:02.919><c> importance</c><00:08:03.479><c> of</c><00:08:03.720><c> those</c><00:08:03.960><c> five</c>
+
+00:08:04.189 --> 00:08:04.199 align:start position:0%
+understood the importance of those five
+ 
+
+00:08:04.199 --> 00:08:06.430 align:start position:0%
+understood the importance of those five
+techniques<00:08:05.000><c> let's</c><00:08:05.319><c> take</c><00:08:05.560><c> a</c><00:08:05.800><c> quick</c><00:08:06.159><c> and</c>
+
+00:08:06.430 --> 00:08:06.440 align:start position:0%
+techniques let's take a quick and
+ 
+
+00:08:06.440 --> 00:08:08.230 align:start position:0%
+techniques let's take a quick and
+simplified<00:08:07.080><c> look</c><00:08:07.319><c> to</c><00:08:07.560><c> the</c><00:08:07.759><c> database</c>
+
+00:08:08.230 --> 00:08:08.240 align:start position:0%
+simplified look to the database
+ 
+
+00:08:08.240 --> 00:08:10.189 align:start position:0%
+simplified look to the database
+architecture<00:08:09.039><c> because</c><00:08:09.319><c> I</c><00:08:09.440><c> want</c><00:08:09.599><c> you</c><00:08:09.720><c> to</c>
+
+00:08:10.189 --> 00:08:10.199 align:start position:0%
+architecture because I want you to
+ 
+
+00:08:10.199 --> 00:08:12.029 align:start position:0%
+architecture because I want you to
+understand<00:08:10.840><c> what</c><00:08:11.120><c> happens</c><00:08:11.560><c> behind</c><00:08:11.879><c> the</c>
+
+00:08:12.029 --> 00:08:12.039 align:start position:0%
+understand what happens behind the
+ 
+
+00:08:12.039 --> 00:08:15.029 align:start position:0%
+understand what happens behind the
+scenes<00:08:12.520><c> and</c><00:08:12.759><c> how</c><00:08:12.960><c> the</c><00:08:13.199><c> database</c><00:08:14.199><c> execute</c><00:08:14.840><c> the</c>
+
+00:08:15.029 --> 00:08:15.039 align:start position:0%
+scenes and how the database execute the
+ 
+
+00:08:15.039 --> 00:08:18.350 align:start position:0%
+scenes and how the database execute the
+queries<00:08:15.879><c> from</c><00:08:16.199><c> these</c><00:08:16.720><c> five</c><00:08:17.000><c> techniques</c><00:08:17.680><c> so</c><00:08:17.919><c> by</c>
+
+00:08:18.350 --> 00:08:18.360 align:start position:0%
+queries from these five techniques so by
+ 
+
+00:08:18.360 --> 00:08:20.430 align:start position:0%
+queries from these five techniques so by
+understanding<00:08:18.720><c> this</c><00:08:18.919><c> architecture</c><00:08:19.759><c> you</c><00:08:19.919><c> will</c>
+
+00:08:20.430 --> 00:08:20.440 align:start position:0%
+understanding this architecture you will
+ 
+
+00:08:20.440 --> 00:08:22.670 align:start position:0%
+understanding this architecture you will
+understand<00:08:20.680><c> how</c><00:08:20.919><c> things</c><00:08:21.199><c> works</c><00:08:21.800><c> so</c><00:08:22.000><c> let's</c><00:08:22.240><c> go</c>
+
+00:08:22.670 --> 00:08:22.680 align:start position:0%
+understand how things works so let's go
+ 
+
+00:08:22.680 --> 00:08:25.070 align:start position:0%
+understand how things works so let's go
+for<00:08:22.919><c> each</c><00:08:23.159><c> story</c><00:08:23.599><c> there</c><00:08:23.759><c> are</c><00:08:24.039><c> two</c><00:08:24.360><c> sides</c><00:08:24.960><c> we</c>
+
+00:08:25.070 --> 00:08:25.080 align:start position:0%
+for each story there are two sides we
+ 
+
+00:08:25.080 --> 00:08:27.430 align:start position:0%
+for each story there are two sides we
+have<00:08:25.240><c> the</c><00:08:25.360><c> saver</c><00:08:25.879><c> side</c><00:08:26.240><c> and</c><00:08:26.400><c> the</c><00:08:26.560><c> client</c><00:08:27.039><c> side</c>
+
+00:08:27.430 --> 00:08:27.440 align:start position:0%
+have the saver side and the client side
+ 
+
+00:08:27.440 --> 00:08:29.189 align:start position:0%
+have the saver side and the client side
+in<00:08:27.560><c> the</c><00:08:27.720><c> client</c><00:08:28.159><c> side</c><00:08:28.400><c> it's</c><00:08:28.560><c> like</c><00:08:28.759><c> for</c><00:08:28.879><c> example</c>
+
+00:08:29.189 --> 00:08:29.199 align:start position:0%
+in the client side it's like for example
+ 
+
+00:08:29.199 --> 00:08:32.149 align:start position:0%
+in the client side it's like for example
+you<00:08:29.720><c> you</c><00:08:29.879><c> are</c><00:08:30.080><c> writing</c><00:08:30.520><c> an</c><00:08:30.720><c> SQL</c><00:08:31.199><c> query</c><00:08:31.720><c> for</c><00:08:31.960><c> a</c>
+
+00:08:32.149 --> 00:08:32.159 align:start position:0%
+you you are writing an SQL query for a
+ 
+
+00:08:32.159 --> 00:08:34.589 align:start position:0%
+you you are writing an SQL query for a
+specific<00:08:32.719><c> purpose</c><00:08:33.399><c> now</c><00:08:33.599><c> in</c><00:08:33.760><c> the</c><00:08:33.919><c> server</c><00:08:34.360><c> side</c>
+
+00:08:34.589 --> 00:08:34.599 align:start position:0%
+specific purpose now in the server side
+ 
+
+00:08:34.599 --> 00:08:36.709 align:start position:0%
+specific purpose now in the server side
+we<00:08:34.719><c> have</c><00:08:34.880><c> many</c><00:08:35.200><c> things</c><00:08:35.640><c> so</c><00:08:35.880><c> the</c><00:08:36.000><c> server</c><00:08:36.360><c> is</c>
+
+00:08:36.709 --> 00:08:36.719 align:start position:0%
+we have many things so the server is
+ 
+
+00:08:36.719 --> 00:08:39.110 align:start position:0%
+we have many things so the server is
+where<00:08:36.959><c> the</c><00:08:37.159><c> database</c><00:08:37.760><c> lives</c><00:08:38.320><c> and</c><00:08:38.479><c> it</c><00:08:38.640><c> has</c><00:08:38.800><c> many</c>
+
+00:08:39.110 --> 00:08:39.120 align:start position:0%
+where the database lives and it has many
+ 
+
+00:08:39.120 --> 00:08:41.790 align:start position:0%
+where the database lives and it has many
+components<00:08:39.760><c> like</c><00:08:40.159><c> the</c><00:08:40.360><c> database</c><00:08:40.959><c> engine</c><00:08:41.599><c> the</c>
+
+00:08:41.790 --> 00:08:41.800 align:start position:0%
+components like the database engine the
+ 
+
+00:08:41.800 --> 00:08:44.269 align:start position:0%
+components like the database engine the
+database<00:08:42.279><c> engine</c><00:08:42.680><c> is</c><00:08:43.080><c> the</c><00:08:43.320><c> brain</c><00:08:43.839><c> of</c><00:08:44.000><c> the</c>
+
+00:08:44.269 --> 00:08:44.279 align:start position:0%
+database engine is the brain of the
+ 
+
+00:08:44.279 --> 00:08:46.470 align:start position:0%
+database engine is the brain of the
+database<00:08:45.200><c> that</c><00:08:45.519><c> handles</c><00:08:46.040><c> different</c>
+
+00:08:46.470 --> 00:08:46.480 align:start position:0%
+database that handles different
+ 
+
+00:08:46.480 --> 00:08:49.790 align:start position:0%
+database that handles different
+operations<00:08:47.480><c> like</c><00:08:47.760><c> storing</c><00:08:48.600><c> retrieving</c><00:08:49.560><c> and</c>
+
+00:08:49.790 --> 00:08:49.800 align:start position:0%
+operations like storing retrieving and
+ 
+
+00:08:49.800 --> 00:08:52.070 align:start position:0%
+operations like storing retrieving and
+managing<00:08:50.399><c> data</c><00:08:50.680><c> in</c><00:08:50.800><c> the</c><00:08:51.000><c> database</c><00:08:51.680><c> so</c><00:08:51.880><c> each</c>
+
+00:08:52.070 --> 00:08:52.080 align:start position:0%
+managing data in the database so each
+ 
+
+00:08:52.080 --> 00:08:54.310 align:start position:0%
+managing data in the database so each
+time<00:08:52.320><c> you</c><00:08:52.640><c> execute</c><00:08:53.160><c> a</c><00:08:53.360><c> query</c><00:08:53.800><c> the</c><00:08:53.920><c> database</c>
+
+00:08:54.310 --> 00:08:54.320 align:start position:0%
+time you execute a query the database
+ 
+
+00:08:54.320 --> 00:08:56.150 align:start position:0%
+time you execute a query the database
+engine<00:08:54.600><c> going</c><00:08:54.720><c> to</c><00:08:54.880><c> take</c><00:08:55.080><c> care</c><00:08:55.240><c> of</c><00:08:55.399><c> it</c><00:08:55.880><c> and</c><00:08:56.000><c> now</c>
+
+00:08:56.150 --> 00:08:56.160 align:start position:0%
+engine going to take care of it and now
+ 
+
+00:08:56.160 --> 00:08:57.910 align:start position:0%
+engine going to take care of it and now
+in<00:08:56.279><c> the</c><00:08:56.480><c> database</c><00:08:56.920><c> we</c><00:08:57.040><c> have</c><00:08:57.279><c> very</c><00:08:57.480><c> important</c>
+
+00:08:57.910 --> 00:08:57.920 align:start position:0%
+in the database we have very important
+ 
+
+00:08:57.920 --> 00:09:00.230 align:start position:0%
+in the database we have very important
+component<00:08:58.760><c> that</c><00:08:58.880><c> is</c><00:08:59.079><c> the</c><00:08:59.440><c> storage</c><00:08:59.920><c> and</c><00:09:00.079><c> the</c>
+
+00:09:00.230 --> 00:09:00.240 align:start position:0%
+component that is the storage and the
+ 
+
+00:09:00.240 --> 00:09:02.710 align:start position:0%
+component that is the storage and the
+two<00:09:00.440><c> main</c><00:09:00.760><c> types</c><00:09:01.079><c> of</c><00:09:01.279><c> storage</c><00:09:01.800><c> in</c><00:09:01.959><c> a</c><00:09:02.200><c> database</c>
+
+00:09:02.710 --> 00:09:02.720 align:start position:0%
+two main types of storage in a database
+ 
+
+00:09:02.720 --> 00:09:05.829 align:start position:0%
+two main types of storage in a database
+are<00:09:03.480><c> disk</c><00:09:03.839><c> storage</c><00:09:04.440><c> and</c><00:09:04.760><c> cache</c><00:09:05.360><c> the</c><00:09:05.560><c> disk</c>
+
+00:09:05.829 --> 00:09:05.839 align:start position:0%
+are disk storage and cache the disk
+ 
+
+00:09:05.839 --> 00:09:08.389 align:start position:0%
+are disk storage and cache the disk
+storage<00:09:06.200><c> is</c><00:09:06.360><c> like</c><00:09:06.560><c> a</c><00:09:06.760><c> longterm</c><00:09:07.480><c> memory</c><00:09:08.160><c> where</c>
+
+00:09:08.389 --> 00:09:08.399 align:start position:0%
+storage is like a longterm memory where
+ 
+
+00:09:08.399 --> 00:09:10.990 align:start position:0%
+storage is like a longterm memory where
+the<00:09:08.640><c> data</c><00:09:08.880><c> is</c><00:09:09.040><c> stored</c><00:09:09.720><c> permanently</c><00:09:10.600><c> so</c><00:09:10.800><c> it's</c>
+
+00:09:10.990 --> 00:09:11.000 align:start position:0%
+the data is stored permanently so it's
+ 
+
+00:09:11.000 --> 00:09:13.470 align:start position:0%
+the data is stored permanently so it's
+like<00:09:11.240><c> the</c><00:09:11.440><c> disc</c><00:09:11.680><c> at</c><00:09:11.839><c> your</c><00:09:12.000><c> PC</c><00:09:12.640><c> it</c><00:09:12.800><c> stores</c><00:09:13.279><c> the</c>
+
+00:09:13.470 --> 00:09:13.480 align:start position:0%
+like the disc at your PC it stores the
+ 
+
+00:09:13.480 --> 00:09:15.990 align:start position:0%
+like the disc at your PC it stores the
+data<00:09:13.920><c> permanently</c><00:09:14.920><c> even</c><00:09:15.160><c> if</c><00:09:15.279><c> you</c><00:09:15.480><c> turn</c><00:09:15.760><c> off</c>
+
+00:09:15.990 --> 00:09:16.000 align:start position:0%
+data permanently even if you turn off
+ 
+
+00:09:16.000 --> 00:09:17.750 align:start position:0%
+data permanently even if you turn off
+the<00:09:16.200><c> system</c><00:09:16.720><c> and</c><00:09:16.880><c> one</c><00:09:17.040><c> important</c><00:09:17.360><c> feature</c><00:09:17.640><c> of</c>
+
+00:09:17.750 --> 00:09:17.760 align:start position:0%
+the system and one important feature of
+ 
+
+00:09:17.760 --> 00:09:20.430 align:start position:0%
+the system and one important feature of
+the<00:09:17.920><c> dis</c><00:09:18.160><c> is</c><00:09:18.360><c> that</c><00:09:18.880><c> it</c><00:09:19.040><c> can</c><00:09:19.240><c> stor</c><00:09:19.839><c> a</c><00:09:20.000><c> lot</c><00:09:20.200><c> of</c>
+
+00:09:20.430 --> 00:09:20.440 align:start position:0%
+the dis is that it can stor a lot of
+ 
+
+00:09:20.440 --> 00:09:22.470 align:start position:0%
+the dis is that it can stor a lot of
+data<00:09:20.920><c> but</c><00:09:21.079><c> the</c><00:09:21.320><c> disadvantage</c><00:09:21.920><c> of</c><00:09:22.040><c> the</c><00:09:22.200><c> dis</c>
+
+00:09:22.470 --> 00:09:22.480 align:start position:0%
+data but the disadvantage of the dis
+ 
+
+00:09:22.480 --> 00:09:25.630 align:start position:0%
+data but the disadvantage of the dis
+storage<00:09:22.880><c> is</c><00:09:23.040><c> that</c><00:09:23.560><c> it</c><00:09:23.680><c> is</c><00:09:23.959><c> slow</c><00:09:24.480><c> so</c><00:09:24.720><c> it</c><00:09:24.880><c> is</c><00:09:25.320><c> slow</c>
+
+00:09:25.630 --> 00:09:25.640 align:start position:0%
+storage is that it is slow so it is slow
+ 
+
+00:09:25.640 --> 00:09:27.829 align:start position:0%
+storage is that it is slow so it is slow
+to<00:09:25.880><c> write</c><00:09:26.160><c> and</c><00:09:26.360><c> to</c><00:09:26.519><c> read</c><00:09:27.000><c> now</c><00:09:27.200><c> in</c><00:09:27.360><c> the</c><00:09:27.560><c> other</c>
+
+00:09:27.829 --> 00:09:27.839 align:start position:0%
+to write and to read now in the other
+ 
+
+00:09:27.839 --> 00:09:30.069 align:start position:0%
+to write and to read now in the other
+hand<00:09:28.079><c> we</c><00:09:28.240><c> have</c><00:09:28.399><c> the</c><00:09:28.640><c> cache</c><00:09:29.160><c> is</c><00:09:29.399><c> a</c><00:09:29.560><c> short-term</c>
+
+00:09:30.069 --> 00:09:30.079 align:start position:0%
+hand we have the cache is a short-term
+ 
+
+00:09:30.079 --> 00:09:31.949 align:start position:0%
+hand we have the cache is a short-term
+memory<00:09:30.440><c> where</c><00:09:30.640><c> the</c><00:09:30.800><c> data</c><00:09:31.000><c> is</c><00:09:31.120><c> stored</c>
+
+00:09:31.949 --> 00:09:31.959 align:start position:0%
+memory where the data is stored
+ 
+
+00:09:31.959 --> 00:09:33.870 align:start position:0%
+memory where the data is stored
+temporarily<00:09:32.720><c> it's</c><00:09:32.880><c> like</c><00:09:33.079><c> the</c><00:09:33.279><c> Rams</c><00:09:33.560><c> at</c><00:09:33.720><c> your</c>
+
+00:09:33.870 --> 00:09:33.880 align:start position:0%
+temporarily it's like the Rams at your
+ 
+
+00:09:33.880 --> 00:09:36.670 align:start position:0%
+temporarily it's like the Rams at your
+PC<00:09:34.240><c> it</c><00:09:34.399><c> holds</c><00:09:35.079><c> the</c><00:09:35.360><c> most</c><00:09:35.720><c> frequently</c><00:09:36.279><c> used</c>
+
+00:09:36.670 --> 00:09:36.680 align:start position:0%
+PC it holds the most frequently used
+ 
+
+00:09:36.680 --> 00:09:38.910 align:start position:0%
+PC it holds the most frequently used
+data<00:09:37.200><c> so</c><00:09:37.440><c> the</c><00:09:37.560><c> database</c><00:09:38.000><c> can</c><00:09:38.320><c> access</c><00:09:38.600><c> it</c>
+
+00:09:38.910 --> 00:09:38.920 align:start position:0%
+data so the database can access it
+ 
+
+00:09:38.920 --> 00:09:41.150 align:start position:0%
+data so the database can access it
+quickly<00:09:39.600><c> in</c><00:09:39.720><c> order</c><00:09:40.000><c> to</c><00:09:40.160><c> retrieve</c><00:09:40.600><c> data</c><00:09:41.040><c> and</c>
+
+00:09:41.150 --> 00:09:41.160 align:start position:0%
+quickly in order to retrieve data and
+ 
+
+00:09:41.160 --> 00:09:43.269 align:start position:0%
+quickly in order to retrieve data and
+the<00:09:41.360><c> big</c><00:09:41.600><c> advantage</c><00:09:42.079><c> of</c><00:09:42.240><c> the</c><00:09:42.440><c> cach</c><00:09:42.720><c> is</c><00:09:42.880><c> that</c><00:09:43.160><c> it</c>
+
+00:09:43.269 --> 00:09:43.279 align:start position:0%
+the big advantage of the cach is that it
+ 
+
+00:09:43.279 --> 00:09:45.550 align:start position:0%
+the big advantage of the cach is that it
+is<00:09:43.560><c> fast</c><00:09:44.040><c> so</c><00:09:44.320><c> it</c><00:09:44.440><c> is</c><00:09:44.680><c> very</c><00:09:44.959><c> fast</c><00:09:45.240><c> for</c><00:09:45.440><c> the</c>
+
+00:09:45.550 --> 00:09:45.560 align:start position:0%
+is fast so it is very fast for the
+ 
+
+00:09:45.560 --> 00:09:47.550 align:start position:0%
+is fast so it is very fast for the
+database<00:09:45.959><c> to</c><00:09:46.079><c> retrieve</c><00:09:46.560><c> data</c><00:09:46.800><c> from</c><00:09:47.000><c> the</c><00:09:47.160><c> cache</c>
+
+00:09:47.550 --> 00:09:47.560 align:start position:0%
+database to retrieve data from the cache
+ 
+
+00:09:47.560 --> 00:09:49.190 align:start position:0%
+database to retrieve data from the cache
+compared<00:09:47.959><c> to</c><00:09:48.120><c> the</c><00:09:48.279><c> disk</c><00:09:48.760><c> but</c><00:09:48.959><c> the</c>
+
+00:09:49.190 --> 00:09:49.200 align:start position:0%
+compared to the disk but the
+ 
+
+00:09:49.200 --> 00:09:51.230 align:start position:0%
+compared to the disk but the
+disadvantage<00:09:49.800><c> of</c><00:09:49.920><c> the</c><00:09:50.120><c> cache</c><00:09:50.680><c> the</c><00:09:50.880><c> data</c><00:09:51.120><c> is</c>
+
+00:09:51.230 --> 00:09:51.240 align:start position:0%
+disadvantage of the cache the data is
+ 
+
+00:09:51.240 --> 00:09:53.590 align:start position:0%
+disadvantage of the cache the data is
+stored<00:09:51.680><c> there</c><00:09:51.920><c> only</c><00:09:52.160><c> for</c><00:09:52.440><c> short</c><00:09:52.920><c> period</c><00:09:53.440><c> so</c>
+
+00:09:53.590 --> 00:09:53.600 align:start position:0%
+stored there only for short period so
+ 
+
+00:09:53.600 --> 00:09:55.829 align:start position:0%
+stored there only for short period so
+it's<00:09:53.760><c> like</c><00:09:54.000><c> tradeoff</c><00:09:54.560><c> between</c><00:09:54.880><c> the</c><00:09:55.040><c> speed</c><00:09:55.519><c> and</c>
+
+00:09:55.829 --> 00:09:55.839 align:start position:0%
+it's like tradeoff between the speed and
+ 
+
+00:09:55.839 --> 00:09:58.150 align:start position:0%
+it's like tradeoff between the speed and
+how<00:09:56.000><c> much</c><00:09:56.320><c> data</c><00:09:56.600><c> you</c><00:09:56.720><c> can</c><00:09:56.920><c> store</c><00:09:57.360><c> and</c><00:09:57.560><c> how</c><00:09:57.760><c> long</c>
+
+00:09:58.150 --> 00:09:58.160 align:start position:0%
+how much data you can store and how long
+ 
+
+00:09:58.160 --> 00:10:00.269 align:start position:0%
+how much data you can store and how long
+now<00:09:58.320><c> let's</c><00:09:58.519><c> talk</c><00:09:58.760><c> about</c><00:09:59.000><c> the</c><00:09:59.600><c> storage</c><00:10:00.040><c> this</c><00:10:00.120><c> is</c>
+
+00:10:00.269 --> 00:10:00.279 align:start position:0%
+now let's talk about the storage this is
+ 
+
+00:10:00.279 --> 00:10:02.190 align:start position:0%
+now let's talk about the storage this is
+very<00:10:00.440><c> important</c><00:10:00.760><c> in</c><00:10:00.920><c> databases</c><00:10:01.800><c> there</c><00:10:01.920><c> are</c>
+
+00:10:02.190 --> 00:10:02.200 align:start position:0%
+very important in databases there are
+ 
+
+00:10:02.200 --> 00:10:05.030 align:start position:0%
+very important in databases there are
+typically<00:10:03.120><c> three</c><00:10:03.560><c> types</c><00:10:03.920><c> of</c><00:10:04.079><c> storage</c><00:10:04.560><c> areas</c>
+
+00:10:05.030 --> 00:10:05.040 align:start position:0%
+typically three types of storage areas
+ 
+
+00:10:05.040 --> 00:10:07.670 align:start position:0%
+typically three types of storage areas
+there<00:10:05.399><c> we</c><00:10:05.519><c> have</c><00:10:05.720><c> the</c><00:10:05.839><c> user</c><00:10:06.200><c> data</c><00:10:06.959><c> the</c><00:10:07.279><c> system</c>
+
+00:10:07.670 --> 00:10:07.680 align:start position:0%
+there we have the user data the system
+ 
+
+00:10:07.680 --> 00:10:10.389 align:start position:0%
+there we have the user data the system
+catalog<00:10:08.360><c> and</c><00:10:08.600><c> the</c><00:10:08.880><c> temporary</c><00:10:09.440><c> data</c><00:10:09.959><c> and</c><00:10:10.160><c> each</c>
+
+00:10:10.389 --> 00:10:10.399 align:start position:0%
+catalog and the temporary data and each
+ 
+
+00:10:10.399 --> 00:10:12.949 align:start position:0%
+catalog and the temporary data and each
+storage<00:10:10.839><c> type</c><00:10:11.240><c> has</c><00:10:11.480><c> a</c><00:10:11.720><c> different</c><00:10:12.079><c> purpose</c><00:10:12.640><c> so</c>
+
+00:10:12.949 --> 00:10:12.959 align:start position:0%
+storage type has a different purpose so
+ 
+
+00:10:12.959 --> 00:10:15.710 align:start position:0%
+storage type has a different purpose so
+what<00:10:13.120><c> is</c><00:10:13.360><c> user</c><00:10:13.760><c> data</c><00:10:14.040><c> storage</c><00:10:14.720><c> it</c><00:10:14.839><c> is</c><00:10:15.079><c> the</c><00:10:15.360><c> main</c>
+
+00:10:15.710 --> 00:10:15.720 align:start position:0%
+what is user data storage it is the main
+ 
+
+00:10:15.720 --> 00:10:18.710 align:start position:0%
+what is user data storage it is the main
+content<00:10:16.200><c> of</c><00:10:16.360><c> the</c><00:10:16.560><c> database</c><00:10:17.360><c> so</c><00:10:17.640><c> it</c><00:10:17.800><c> stores</c><00:10:18.480><c> the</c>
+
+00:10:18.710 --> 00:10:18.720 align:start position:0%
+content of the database so it stores the
+ 
+
+00:10:18.720 --> 00:10:21.269 align:start position:0%
+content of the database so it stores the
+actual<00:10:19.200><c> data</c><00:10:19.680><c> all</c><00:10:19.920><c> the</c><00:10:20.120><c> informations</c><00:10:21.120><c> that</c>
+
+00:10:21.269 --> 00:10:21.279 align:start position:0%
+actual data all the informations that
+ 
+
+00:10:21.279 --> 00:10:24.110 align:start position:0%
+actual data all the informations that
+are<00:10:21.560><c> relevant</c><00:10:22.320><c> for</c><00:10:22.519><c> the</c><00:10:22.680><c> users</c><00:10:23.399><c> so</c><00:10:23.560><c> it</c><00:10:23.720><c> stored</c>
+
+00:10:24.110 --> 00:10:24.120 align:start position:0%
+are relevant for the users so it stored
+ 
+
+00:10:24.120 --> 00:10:25.870 align:start position:0%
+are relevant for the users so it stored
+there<00:10:24.320><c> all</c><00:10:24.519><c> the</c><00:10:24.720><c> important</c><00:10:25.200><c> data</c><00:10:25.519><c> that</c><00:10:25.720><c> the</c>
+
+00:10:25.870 --> 00:10:25.880 align:start position:0%
+there all the important data that the
+ 
+
+00:10:25.880 --> 00:10:28.269 align:start position:0%
+there all the important data that the
+users<00:10:26.320><c> cares</c><00:10:26.720><c> about</c><00:10:27.320><c> so</c><00:10:27.519><c> this</c><00:10:27.600><c> is</c><00:10:27.760><c> the</c><00:10:27.880><c> storage</c>
+
+00:10:28.269 --> 00:10:28.279 align:start position:0%
+users cares about so this is the storage
+ 
+
+00:10:28.279 --> 00:10:30.230 align:start position:0%
+users cares about so this is the storage
+where<00:10:28.480><c> the</c><00:10:28.640><c> users</c><00:10:28.959><c> are</c><00:10:29.320><c> interacting</c><00:10:29.880><c> all</c><00:10:30.040><c> the</c>
+
+00:10:30.230 --> 00:10:30.240 align:start position:0%
+where the users are interacting all the
+ 
+
+00:10:30.240 --> 00:10:32.470 align:start position:0%
+where the users are interacting all the
+time<00:10:30.600><c> so</c><00:10:30.880><c> where</c><00:10:31.040><c> do</c><00:10:31.160><c> we</c><00:10:31.320><c> find</c><00:10:31.680><c> the</c><00:10:31.839><c> user</c><00:10:32.160><c> data</c>
+
+00:10:32.470 --> 00:10:32.480 align:start position:0%
+time so where do we find the user data
+ 
+
+00:10:32.480 --> 00:10:34.790 align:start position:0%
+time so where do we find the user data
+if<00:10:32.600><c> you</c><00:10:32.720><c> go</c><00:10:32.880><c> to</c><00:10:33.040><c> our</c><00:10:33.279><c> database</c><00:10:33.839><c> sales</c><00:10:34.200><c> DB</c><00:10:34.640><c> and</c>
+
+00:10:34.790 --> 00:10:34.800 align:start position:0%
+if you go to our database sales DB and
+ 
+
+00:10:34.800 --> 00:10:36.750 align:start position:0%
+if you go to our database sales DB and
+then<00:10:34.920><c> you</c><00:10:35.079><c> go</c><00:10:35.200><c> to</c><00:10:35.360><c> the</c><00:10:35.519><c> tables</c><00:10:36.200><c> now</c><00:10:36.360><c> we</c><00:10:36.480><c> find</c>
+
+00:10:36.750 --> 00:10:36.760 align:start position:0%
+then you go to the tables now we find
+ 
+
+00:10:36.760 --> 00:10:38.509 align:start position:0%
+then you go to the tables now we find
+all<00:10:37.000><c> these</c><00:10:37.279><c> tables</c><00:10:37.639><c> that's</c><00:10:37.839><c> we</c><00:10:38.000><c> are</c><00:10:38.200><c> already</c>
+
+00:10:38.509 --> 00:10:38.519 align:start position:0%
+all these tables that's we are already
+ 
+
+00:10:38.519 --> 00:10:40.990 align:start position:0%
+all these tables that's we are already
+used<00:10:39.000><c> the</c><00:10:39.240><c> customers</c><00:10:39.880><c> employees</c><00:10:40.399><c> orders</c><00:10:40.839><c> and</c>
+
+00:10:40.990 --> 00:10:41.000 align:start position:0%
+used the customers employees orders and
+ 
+
+00:10:41.000 --> 00:10:44.470 align:start position:0%
+used the customers employees orders and
+so<00:10:41.160><c> on</c><00:10:42.000><c> those</c><00:10:42.240><c> tables</c><00:10:42.720><c> are</c><00:10:43.079><c> the</c><00:10:43.279><c> user</c><00:10:43.680><c> data</c><00:10:44.279><c> so</c>
+
+00:10:44.470 --> 00:10:44.480 align:start position:0%
+so on those tables are the user data so
+ 
+
+00:10:44.480 --> 00:10:48.629 align:start position:0%
+so on those tables are the user data so
+now<00:10:44.639><c> if</c><00:10:44.760><c> I</c><00:10:44.959><c> go</c><00:10:45.360><c> and</c><00:10:45.560><c> say</c><00:10:45.920><c> select</c><00:10:46.920><c> from</c><00:10:47.920><c> sales</c>
+
+00:10:48.629 --> 00:10:48.639 align:start position:0%
+now if I go and say select from sales
+ 
+
+00:10:48.639 --> 00:10:50.949 align:start position:0%
+now if I go and say select from sales
+orders<00:10:49.480><c> and</c><00:10:49.639><c> all</c><00:10:49.920><c> those</c><00:10:50.200><c> informations</c><00:10:50.839><c> that</c>
+
+00:10:50.949 --> 00:10:50.959 align:start position:0%
+orders and all those informations that
+ 
+
+00:10:50.959 --> 00:10:54.150 align:start position:0%
+orders and all those informations that
+we<00:10:51.079><c> are</c><00:10:51.200><c> seeing</c><00:10:51.600><c> now</c><00:10:51.839><c> are</c><00:10:52.680><c> the</c><00:10:52.839><c> users</c><00:10:53.360><c> data</c><00:10:53.880><c> so</c>
+
+00:10:54.150 --> 00:10:54.160 align:start position:0%
+we are seeing now are the users data so
+ 
+
+00:10:54.160 --> 00:10:56.069 align:start position:0%
+we are seeing now are the users data so
+this<00:10:54.279><c> is</c><00:10:54.480><c> what</c><00:10:54.639><c> we</c><00:10:54.839><c> users</c><00:10:55.480><c> actually</c><00:10:55.800><c> care</c>
+
+00:10:56.069 --> 00:10:56.079 align:start position:0%
+this is what we users actually care
+ 
+
+00:10:56.079 --> 00:10:58.389 align:start position:0%
+this is what we users actually care
+about<00:10:56.560><c> all</c><00:10:56.800><c> other</c><00:10:57.040><c> stuff</c><00:10:57.320><c> that</c><00:10:57.560><c> we</c><00:10:57.720><c> see</c><00:10:58.000><c> inside</c>
+
+00:10:58.389 --> 00:10:58.399 align:start position:0%
+about all other stuff that we see inside
+ 
+
+00:10:58.399 --> 00:11:00.750 align:start position:0%
+about all other stuff that we see inside
+databases<00:10:58.920><c> as</c><00:10:59.320><c> user</c><00:10:59.800><c> we</c><00:10:59.959><c> don't</c><00:11:00.160><c> care</c><00:11:00.360><c> about</c><00:11:00.560><c> it</c>
+
+00:11:00.750 --> 00:11:00.760 align:start position:0%
+databases as user we don't care about it
+ 
+
+00:11:00.760 --> 00:11:03.150 align:start position:0%
+databases as user we don't care about it
+we<00:11:00.920><c> care</c><00:11:01.200><c> only</c><00:11:01.519><c> about</c><00:11:01.920><c> our</c><00:11:02.320><c> data</c><00:11:02.760><c> but</c><00:11:02.920><c> in</c><00:11:03.000><c> the</c>
+
+00:11:03.150 --> 00:11:03.160 align:start position:0%
+we care only about our data but in the
+ 
+
+00:11:03.160 --> 00:11:05.389 align:start position:0%
+we care only about our data but in the
+database<00:11:03.560><c> we</c><00:11:03.680><c> don't</c><00:11:03.920><c> have</c><00:11:04.200><c> only</c><00:11:04.880><c> the</c><00:11:05.079><c> user</c>
+
+00:11:05.389 --> 00:11:05.399 align:start position:0%
+database we don't have only the user
+ 
+
+00:11:05.399 --> 00:11:07.910 align:start position:0%
+database we don't have only the user
+data<00:11:05.720><c> we</c><00:11:05.880><c> have</c><00:11:06.240><c> many</c><00:11:06.560><c> other</c><00:11:06.800><c> informations</c><00:11:07.639><c> so</c>
+
+00:11:07.910 --> 00:11:07.920 align:start position:0%
+data we have many other informations so
+ 
+
+00:11:07.920 --> 00:11:13.750 align:start position:0%
+data we have many other informations so
+this<00:11:08.040><c> is</c><00:11:08.200><c> what</c><00:11:08.320><c> we</c><00:11:08.440><c> mean</c><00:11:08.720><c> with</c><00:11:08.920><c> the</c><00:11:09.399><c> user</c><00:11:09.880><c> data</c>
+
+00:11:13.750 --> 00:11:13.760 align:start position:0%
+ 
+ 
+
+00:11:13.760 --> 00:11:16.710 align:start position:0%
+ 
+storage<00:11:14.760><c> now</c><00:11:15.000><c> what</c><00:11:15.160><c> is</c><00:11:15.399><c> system</c><00:11:15.839><c> catalog</c><00:11:16.560><c> this</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+storage now what is system catalog this
+ 
+
+00:11:16.720 --> 00:11:19.269 align:start position:0%
+storage now what is system catalog this
+is<00:11:17.000><c> the</c><00:11:17.200><c> internal</c><00:11:17.639><c> storage</c><00:11:18.120><c> for</c><00:11:18.320><c> the</c><00:11:18.519><c> database</c>
+
+00:11:19.269 --> 00:11:19.279 align:start position:0%
+is the internal storage for the database
+ 
+
+00:11:19.279 --> 00:11:21.870 align:start position:0%
+is the internal storage for the database
+for<00:11:19.720><c> its</c><00:11:19.920><c> own</c><00:11:20.320><c> information</c><00:11:21.160><c> so</c><00:11:21.360><c> it's</c><00:11:21.560><c> like</c><00:11:21.720><c> a</c>
+
+00:11:21.870 --> 00:11:21.880 align:start position:0%
+for its own information so it's like a
+ 
+
+00:11:21.880 --> 00:11:25.110 align:start position:0%
+for its own information so it's like a
+blueprint<00:11:22.560><c> that</c><00:11:22.800><c> keeps</c><00:11:23.360><c> tracking</c><00:11:24.360><c> everything</c>
+
+00:11:25.110 --> 00:11:25.120 align:start position:0%
+blueprint that keeps tracking everything
+ 
+
+00:11:25.120 --> 00:11:27.910 align:start position:0%
+blueprint that keeps tracking everything
+about<00:11:25.360><c> the</c><00:11:25.560><c> database</c><00:11:26.240><c> itself</c><00:11:26.800><c> so</c><00:11:27.000><c> that</c><00:11:27.160><c> means</c>
+
+00:11:27.910 --> 00:11:27.920 align:start position:0%
+about the database itself so that means
+ 
+
+00:11:27.920 --> 00:11:29.910 align:start position:0%
+about the database itself so that means
+the<00:11:28.120><c> main</c><00:11:28.399><c> purpose</c><00:11:28.760><c> of</c><00:11:28.880><c> the</c><00:11:29.040><c> system</c><00:11:29.519><c> catalog</c>
+
+00:11:29.910 --> 00:11:29.920 align:start position:0%
+the main purpose of the system catalog
+ 
+
+00:11:29.920 --> 00:11:32.710 align:start position:0%
+the main purpose of the system catalog
+is<00:11:30.160><c> that</c><00:11:30.880><c> it</c><00:11:31.079><c> holds</c><00:11:31.720><c> the</c><00:11:32.000><c> metadata</c>
+
+00:11:32.710 --> 00:11:32.720 align:start position:0%
+is that it holds the metadata
+ 
+
+00:11:32.720 --> 00:11:34.910 align:start position:0%
+is that it holds the metadata
+informations<00:11:33.440><c> about</c><00:11:33.680><c> the</c><00:11:33.880><c> database</c><00:11:34.600><c> so</c><00:11:34.800><c> what</c>
+
+00:11:34.910 --> 00:11:34.920 align:start position:0%
+informations about the database so what
+ 
+
+00:11:34.920 --> 00:11:38.629 align:start position:0%
+informations about the database so what
+is<00:11:35.079><c> a</c><00:11:35.200><c> metadata</c><00:11:36.079><c> metadata</c><00:11:36.760><c> is</c><00:11:37.519><c> data</c><00:11:38.120><c> about</c>
+
+00:11:38.629 --> 00:11:38.639 align:start position:0%
+is a metadata metadata is data about
+ 
+
+00:11:38.639 --> 00:11:40.470 align:start position:0%
+is a metadata metadata is data about
+data<00:11:39.240><c> now</c><00:11:39.440><c> let's</c><00:11:39.959><c> understand</c><00:11:40.160><c> what</c><00:11:40.360><c> this</c>
+
+00:11:40.470 --> 00:11:40.480 align:start position:0%
+data now let's understand what this
+ 
+
+00:11:40.480 --> 00:11:42.430 align:start position:0%
+data now let's understand what this
+means<00:11:41.200><c> what</c><00:11:41.320><c> we</c><00:11:41.399><c> have</c><00:11:41.560><c> done</c><00:11:41.720><c> so</c><00:11:41.920><c> far</c><00:11:42.079><c> is</c><00:11:42.240><c> that</c>
+
+00:11:42.430 --> 00:11:42.440 align:start position:0%
+means what we have done so far is that
+ 
+
+00:11:42.440 --> 00:11:44.750 align:start position:0%
+means what we have done so far is that
+we<00:11:42.560><c> have</c><00:11:42.720><c> created</c><00:11:43.079><c> a</c><00:11:43.240><c> table</c><00:11:43.600><c> called</c><00:11:43.959><c> customers</c>
+
+00:11:44.750 --> 00:11:44.760 align:start position:0%
+we have created a table called customers
+ 
+
+00:11:44.760 --> 00:11:46.230 align:start position:0%
+we have created a table called customers
+and<00:11:44.880><c> we</c><00:11:45.000><c> have</c><00:11:45.120><c> defined</c><00:11:45.560><c> inside</c><00:11:45.880><c> it</c><00:11:46.040><c> like</c>
+
+00:11:46.230 --> 00:11:46.240 align:start position:0%
+and we have defined inside it like
+ 
+
+00:11:46.240 --> 00:11:48.350 align:start position:0%
+and we have defined inside it like
+multiple<00:11:46.680><c> columns</c><00:11:47.200><c> like</c><00:11:47.360><c> the</c><00:11:47.480><c> customer</c><00:11:47.880><c> ID</c>
+
+00:11:48.350 --> 00:11:48.360 align:start position:0%
+multiple columns like the customer ID
+ 
+
+00:11:48.360 --> 00:11:50.230 align:start position:0%
+multiple columns like the customer ID
+first<00:11:48.639><c> name</c><00:11:48.920><c> last</c><00:11:49.160><c> name</c><00:11:49.639><c> and</c><00:11:49.760><c> then</c><00:11:49.920><c> we</c><00:11:50.040><c> have</c>
+
+00:11:50.230 --> 00:11:50.240 align:start position:0%
+first name last name and then we have
+ 
+
+00:11:50.240 --> 00:11:52.710 align:start position:0%
+first name last name and then we have
+inserted<00:11:50.760><c> our</c><00:11:51.120><c> data</c><00:11:51.399><c> inside</c><00:11:51.720><c> this</c><00:11:51.920><c> table</c><00:11:52.519><c> so</c>
+
+00:11:52.710 --> 00:11:52.720 align:start position:0%
+inserted our data inside this table so
+ 
+
+00:11:52.720 --> 00:11:55.670 align:start position:0%
+inserted our data inside this table so
+we<00:11:52.839><c> have</c><00:11:53.000><c> inserted</c><00:11:53.959><c> five</c><00:11:54.320><c> customers</c><00:11:55.079><c> so</c><00:11:55.399><c> those</c>
+
+00:11:55.670 --> 00:11:55.680 align:start position:0%
+we have inserted five customers so those
+ 
+
+00:11:55.680 --> 00:11:58.230 align:start position:0%
+we have inserted five customers so those
+informations<00:11:56.320><c> are</c><00:11:56.639><c> my</c><00:11:56.920><c> data</c><00:11:57.399><c> I</c><00:11:57.560><c> have</c><00:11:57.800><c> created</c>
+
+00:11:58.230 --> 00:11:58.240 align:start position:0%
+informations are my data I have created
+ 
+
+00:11:58.240 --> 00:11:59.910 align:start position:0%
+informations are my data I have created
+those<00:11:58.519><c> informations</c><00:11:59.079><c> and</c><00:11:59.240><c> and</c><00:11:59.360><c> stored</c><00:11:59.720><c> it</c>
+
+00:11:59.910 --> 00:11:59.920 align:start position:0%
+those informations and and stored it
+ 
+
+00:11:59.920 --> 00:12:02.190 align:start position:0%
+those informations and and stored it
+inside<00:12:00.200><c> the</c><00:12:00.440><c> database</c><00:12:01.440><c> that's</c><00:12:01.680><c> why</c><00:12:01.839><c> we</c><00:12:02.000><c> call</c>
+
+00:12:02.190 --> 00:12:02.200 align:start position:0%
+inside the database that's why we call
+ 
+
+00:12:02.200 --> 00:12:04.829 align:start position:0%
+inside the database that's why we call
+it<00:12:02.680><c> the</c><00:12:02.839><c> user</c><00:12:03.240><c> data</c><00:12:03.720><c> so</c><00:12:04.000><c> nothing</c><00:12:04.279><c> so</c><00:12:04.480><c> far</c><00:12:04.639><c> is</c>
+
+00:12:04.829 --> 00:12:04.839 align:start position:0%
+it the user data so nothing so far is
+ 
+
+00:12:04.839 --> 00:12:06.670 align:start position:0%
+it the user data so nothing so far is
+New<00:12:05.320><c> so</c><00:12:05.480><c> now</c><00:12:05.680><c> what</c><00:12:05.839><c> happens</c><00:12:06.240><c> behind</c><00:12:06.519><c> the</c>
+
+00:12:06.670 --> 00:12:06.680 align:start position:0%
+New so now what happens behind the
+ 
+
+00:12:06.680 --> 00:12:09.509 align:start position:0%
+New so now what happens behind the
+scenes<00:12:07.040><c> is</c><00:12:07.279><c> that</c><00:12:07.760><c> the</c><00:12:07.959><c> database</c><00:12:08.440><c> server</c><00:12:09.200><c> will</c>
+
+00:12:09.509 --> 00:12:09.519 align:start position:0%
+scenes is that the database server will
+ 
+
+00:12:09.519 --> 00:12:11.509 align:start position:0%
+scenes is that the database server will
+not<00:12:09.760><c> only</c><00:12:10.079><c> store</c><00:12:10.480><c> the</c><00:12:10.600><c> user</c><00:12:10.959><c> data</c><00:12:11.279><c> that</c><00:12:11.399><c> you</c>
+
+00:12:11.509 --> 00:12:11.519 align:start position:0%
+not only store the user data that you
+ 
+
+00:12:11.519 --> 00:12:13.670 align:start position:0%
+not only store the user data that you
+have<00:12:11.720><c> provided</c><00:12:12.600><c> but</c><00:12:12.839><c> also</c><00:12:13.160><c> it's</c><00:12:13.320><c> going</c><00:12:13.399><c> to</c><00:12:13.560><c> go</c>
+
+00:12:13.670 --> 00:12:13.680 align:start position:0%
+have provided but also it's going to go
+ 
+
+00:12:13.680 --> 00:12:15.829 align:start position:0%
+have provided but also it's going to go
+and<00:12:13.880><c> store</c><00:12:14.360><c> a</c><00:12:14.639><c> different</c><00:12:15.040><c> type</c><00:12:15.360><c> of</c><00:12:15.519><c> data</c>
+
+00:12:15.829 --> 00:12:15.839 align:start position:0%
+and store a different type of data
+ 
+
+00:12:15.839 --> 00:12:18.670 align:start position:0%
+and store a different type of data
+inside<00:12:16.120><c> the</c><00:12:16.279><c> database</c><00:12:17.079><c> and</c><00:12:17.279><c> this</c><00:12:17.519><c> data</c><00:12:17.839><c> is</c><00:12:18.440><c> the</c>
+
+00:12:18.670 --> 00:12:18.680 align:start position:0%
+inside the database and this data is the
+ 
+
+00:12:18.680 --> 00:12:20.949 align:start position:0%
+inside the database and this data is the
+metadata<00:12:19.639><c> so</c><00:12:19.920><c> the</c><00:12:20.079><c> database</c><00:12:20.440><c> server</c><00:12:20.720><c> going</c><00:12:20.839><c> to</c>
+
+00:12:20.949 --> 00:12:20.959 align:start position:0%
+metadata so the database server going to
+ 
+
+00:12:20.959 --> 00:12:24.069 align:start position:0%
+metadata so the database server going to
+store<00:12:21.639><c> the</c><00:12:22.079><c> metadata</c><00:12:23.079><c> of</c><00:12:23.360><c> the</c><00:12:23.600><c> customers</c>
+
+00:12:24.069 --> 00:12:24.079 align:start position:0%
+store the metadata of the customers
+ 
+
+00:12:24.079 --> 00:12:26.030 align:start position:0%
+store the metadata of the customers
+table<00:12:24.600><c> and</c><00:12:24.720><c> it's</c><00:12:24.880><c> going</c><00:12:24.959><c> to</c><00:12:25.120><c> look</c><00:12:25.320><c> like</c><00:12:25.560><c> this</c>
+
+00:12:26.030 --> 00:12:26.040 align:start position:0%
+table and it's going to look like this
+ 
+
+00:12:26.040 --> 00:12:27.910 align:start position:0%
+table and it's going to look like this
+there<00:12:26.160><c> is</c><00:12:26.360><c> like</c><00:12:26.480><c> a</c><00:12:26.639><c> table</c><00:12:27.000><c> name</c><00:12:27.480><c> there</c><00:12:27.600><c> is</c><00:12:27.720><c> a</c>
+
+00:12:27.910 --> 00:12:27.920 align:start position:0%
+there is like a table name there is a
+ 
+
+00:12:27.920 --> 00:12:30.269 align:start position:0%
+there is like a table name there is a
+column<00:12:28.240><c> names</c><00:12:29.000><c> and</c><00:12:29.320><c> those</c><00:12:29.480><c> are</c><00:12:29.720><c> the</c><00:12:29.959><c> column</c>
+
+00:12:30.269 --> 00:12:30.279 align:start position:0%
+column names and those are the column
+ 
+
+00:12:30.279 --> 00:12:32.509 align:start position:0%
+column names and those are the column
+names<00:12:30.680><c> that</c><00:12:30.839><c> you</c><00:12:30.959><c> have</c><00:12:31.199><c> defined</c><00:12:31.920><c> inside</c><00:12:32.320><c> your</c>
+
+00:12:32.509 --> 00:12:32.519 align:start position:0%
+names that you have defined inside your
+ 
+
+00:12:32.519 --> 00:12:35.189 align:start position:0%
+names that you have defined inside your
+database<00:12:33.360><c> and</c><00:12:33.560><c> those</c><00:12:33.720><c> are</c><00:12:34.240><c> the</c><00:12:34.480><c> column</c><00:12:34.800><c> names</c>
+
+00:12:35.189 --> 00:12:35.199 align:start position:0%
+database and those are the column names
+ 
+
+00:12:35.199 --> 00:12:37.230 align:start position:0%
+database and those are the column names
+that<00:12:35.320><c> you</c><00:12:35.480><c> have</c><00:12:35.720><c> defined</c><00:12:36.720><c> as</c><00:12:36.880><c> you</c><00:12:37.000><c> are</c>
+
+00:12:37.230 --> 00:12:37.240 align:start position:0%
+that you have defined as you are
+ 
+
+00:12:37.240 --> 00:12:39.150 align:start position:0%
+that you have defined as you are
+creating<00:12:37.600><c> the</c><00:12:37.760><c> table</c><00:12:38.079><c> customers</c><00:12:38.880><c> and</c><00:12:39.040><c> it's</c>
+
+00:12:39.150 --> 00:12:39.160 align:start position:0%
+creating the table customers and it's
+ 
+
+00:12:39.160 --> 00:12:40.829 align:start position:0%
+creating the table customers and it's
+going<00:12:39.279><c> to</c><00:12:39.399><c> store</c><00:12:39.720><c> as</c><00:12:39.839><c> well</c><00:12:40.360><c> additional</c>
+
+00:12:40.829 --> 00:12:40.839 align:start position:0%
+going to store as well additional
+ 
+
+00:12:40.839 --> 00:12:43.110 align:start position:0%
+going to store as well additional
+informations<00:12:41.600><c> like</c><00:12:41.839><c> which</c><00:12:42.199><c> data</c><00:12:42.560><c> type</c><00:12:43.000><c> like</c>
+
+00:12:43.110 --> 00:12:43.120 align:start position:0%
+informations like which data type like
+ 
+
+00:12:43.120 --> 00:12:45.350 align:start position:0%
+informations like which data type like
+the<00:12:43.240><c> customer</c><00:12:43.600><c> ID</c><00:12:43.880><c> is</c><00:12:44.079><c> int</c><00:12:44.560><c> and</c><00:12:44.720><c> the</c><00:12:44.839><c> last</c><00:12:45.079><c> name</c>
+
+00:12:45.350 --> 00:12:45.360 align:start position:0%
+the customer ID is int and the last name
+ 
+
+00:12:45.360 --> 00:12:47.750 align:start position:0%
+the customer ID is int and the last name
+is<00:12:45.560><c> V</c><00:12:45.880><c> charts</c><00:12:46.399><c> and</c><00:12:46.560><c> many</c><00:12:46.800><c> other</c><00:12:47.079><c> informations</c>
+
+00:12:47.750 --> 00:12:47.760 align:start position:0%
+is V charts and many other informations
+ 
+
+00:12:47.760 --> 00:12:49.949 align:start position:0%
+is V charts and many other informations
+like<00:12:47.959><c> the</c><00:12:48.199><c> length</c><00:12:48.600><c> of</c><00:12:48.800><c> the</c><00:12:49.000><c> column</c><00:12:49.720><c> and</c>
+
+00:12:49.949 --> 00:12:49.959 align:start position:0%
+like the length of the column and
+ 
+
+00:12:49.959 --> 00:12:52.670 align:start position:0%
+like the length of the column and
+whether<00:12:50.639><c> the</c><00:12:50.839><c> column</c><00:12:51.160><c> is</c><00:12:51.320><c> nullable</c><00:12:51.920><c> or</c><00:12:52.120><c> not</c><00:12:52.519><c> so</c>
+
+00:12:52.670 --> 00:12:52.680 align:start position:0%
+whether the column is nullable or not so
+ 
+
+00:12:52.680 --> 00:12:54.509 align:start position:0%
+whether the column is nullable or not so
+as<00:12:52.760><c> you</c><00:12:52.839><c> can</c><00:12:52.959><c> see</c><00:12:53.160><c> in</c><00:12:53.279><c> the</c><00:12:53.440><c> metadata</c><00:12:54.079><c> we</c><00:12:54.240><c> are</c>
+
+00:12:54.509 --> 00:12:54.519 align:start position:0%
+as you can see in the metadata we are
+ 
+
+00:12:54.519 --> 00:12:57.750 align:start position:0%
+as you can see in the metadata we are
+having<00:12:55.240><c> a</c><00:12:55.519><c> description</c><00:12:56.240><c> a</c><00:12:56.480><c> data</c><00:12:56.920><c> about</c><00:12:57.560><c> the</c>
+
+00:12:57.750 --> 00:12:57.760 align:start position:0%
+having a description a data about the
+ 
+
+00:12:57.760 --> 00:12:59.670 align:start position:0%
+having a description a data about the
+structure<00:12:58.320><c> of</c><00:12:58.560><c> the</c><00:12:58.760><c> customer</c>
+
+00:12:59.670 --> 00:12:59.680 align:start position:0%
+structure of the customer
+ 
+
+00:12:59.680 --> 00:13:01.750 align:start position:0%
+structure of the customer
+and<00:12:59.839><c> in</c><00:12:59.959><c> the</c><00:13:00.120><c> metadata</c><00:13:00.680><c> we</c><00:13:00.760><c> can</c><00:13:00.959><c> find</c><00:13:01.240><c> a</c><00:13:01.399><c> lot</c><00:13:01.560><c> of</c>
+
+00:13:01.750 --> 00:13:01.760 align:start position:0%
+and in the metadata we can find a lot of
+ 
+
+00:13:01.760 --> 00:13:03.710 align:start position:0%
+and in the metadata we can find a lot of
+informations<00:13:02.440><c> about</c><00:13:02.720><c> not</c><00:13:02.920><c> only</c><00:13:03.199><c> the</c><00:13:03.360><c> tables</c>
+
+00:13:03.710 --> 00:13:03.720 align:start position:0%
+informations about not only the tables
+ 
+
+00:13:03.720 --> 00:13:05.629 align:start position:0%
+informations about not only the tables
+and<00:13:03.920><c> columns</c><00:13:04.639><c> but</c><00:13:04.839><c> as</c><00:13:05.000><c> well</c><00:13:05.240><c> about</c><00:13:05.480><c> the</c>
+
+00:13:05.629 --> 00:13:05.639 align:start position:0%
+and columns but as well about the
+ 
+
+00:13:05.639 --> 00:13:08.110 align:start position:0%
+and columns but as well about the
+schemas<00:13:06.240><c> and</c><00:13:06.360><c> the</c><00:13:06.560><c> database</c><00:13:07.320><c> so</c><00:13:07.519><c> you</c><00:13:07.639><c> can</c><00:13:07.839><c> find</c>
+
+00:13:08.110 --> 00:13:08.120 align:start position:0%
+schemas and the database so you can find
+ 
+
+00:13:08.120 --> 00:13:10.870 align:start position:0%
+schemas and the database so you can find
+a<00:13:08.320><c> full</c><00:13:08.720><c> catalog</c><00:13:09.720><c> about</c><00:13:10.240><c> the</c><00:13:10.360><c> structure</c><00:13:10.760><c> of</c>
+
+00:13:10.870 --> 00:13:10.880 align:start position:0%
+a full catalog about the structure of
+ 
+
+00:13:10.880 --> 00:13:13.069 align:start position:0%
+a full catalog about the structure of
+your<00:13:11.040><c> database</c><00:13:11.760><c> basic</c><00:13:12.120><c> table</c><00:13:12.440><c> the</c><00:13:12.600><c> customer</c>
+
+00:13:13.069 --> 00:13:13.079 align:start position:0%
+your database basic table the customer
+ 
+
+00:13:13.079 --> 00:13:16.150 align:start position:0%
+your database basic table the customer
+table<00:13:13.760><c> it</c><00:13:13.920><c> contains</c><00:13:14.639><c> data</c><00:13:15.000><c> about</c><00:13:15.560><c> the</c><00:13:15.760><c> actual</c>
+
+00:13:16.150 --> 00:13:16.160 align:start position:0%
+table it contains data about the actual
+ 
+
+00:13:16.160 --> 00:13:18.389 align:start position:0%
+table it contains data about the actual
+data<00:13:16.760><c> so</c><00:13:16.959><c> it</c><00:13:17.079><c> stores</c><00:13:17.600><c> data</c><00:13:17.920><c> about</c><00:13:18.199><c> the</c>
+
+00:13:18.389 --> 00:13:18.399 align:start position:0%
+data so it stores data about the
+ 
+
+00:13:18.399 --> 00:13:20.509 align:start position:0%
+data so it stores data about the
+customers<00:13:19.079><c> but</c><00:13:19.279><c> the</c><00:13:19.560><c> metadata</c><00:13:20.240><c> of</c><00:13:20.360><c> the</c>
+
+00:13:20.509 --> 00:13:20.519 align:start position:0%
+customers but the metadata of the
+ 
+
+00:13:20.519 --> 00:13:24.230 align:start position:0%
+customers but the metadata of the
+customers<00:13:21.000><c> table</c><00:13:21.639><c> contains</c><00:13:22.639><c> data</c><00:13:23.240><c> about</c><00:13:23.760><c> data</c>
+
+00:13:24.230 --> 00:13:24.240 align:start position:0%
+customers table contains data about data
+ 
+
+00:13:24.240 --> 00:13:26.389 align:start position:0%
+customers table contains data about data
+so<00:13:24.440><c> in</c><00:13:24.560><c> the</c><00:13:24.760><c> databases</c><00:13:25.440><c> each</c><00:13:25.720><c> table</c><00:13:26.160><c> that</c><00:13:26.279><c> you</c>
+
+00:13:26.389 --> 00:13:26.399 align:start position:0%
+so in the databases each table that you
+ 
+
+00:13:26.399 --> 00:13:28.389 align:start position:0%
+so in the databases each table that you
+are<00:13:26.600><c> using</c><00:13:26.920><c> in</c><00:13:27.040><c> order</c><00:13:27.279><c> to</c><00:13:27.399><c> store</c><00:13:27.680><c> your</c><00:13:27.880><c> data</c>
+
+00:13:28.389 --> 00:13:28.399 align:start position:0%
+are using in order to store your data
+ 
+
+00:13:28.399 --> 00:13:31.550 align:start position:0%
+are using in order to store your data
+has<00:13:28.680><c> a</c><00:13:28.880><c> table</c><00:13:29.440><c> twin</c><00:13:30.160><c> that</c><00:13:30.519><c> describes</c><00:13:31.279><c> the</c>
+
+00:13:31.550 --> 00:13:31.560 align:start position:0%
+has a table twin that describes the
+ 
+
+00:13:31.560 --> 00:13:33.910 align:start position:0%
+has a table twin that describes the
+structure<00:13:32.399><c> of</c><00:13:32.560><c> your</c><00:13:32.760><c> data</c><00:13:33.279><c> so</c><00:13:33.519><c> this</c><00:13:33.639><c> is</c><00:13:33.800><c> what</c>
+
+00:13:33.910 --> 00:13:33.920 align:start position:0%
+structure of your data so this is what
+ 
+
+00:13:33.920 --> 00:13:36.350 align:start position:0%
+structure of your data so this is what
+we<00:13:34.040><c> mean</c><00:13:34.320><c> with</c><00:13:34.600><c> a</c><00:13:34.760><c> system</c><00:13:35.160><c> catalog</c><00:13:35.880><c> or</c><00:13:36.160><c> a</c>
+
+00:13:36.350 --> 00:13:36.360 align:start position:0%
+we mean with a system catalog or a
+ 
+
+00:13:36.360 --> 00:13:38.189 align:start position:0%
+we mean with a system catalog or a
+metadata<00:13:37.120><c> and</c><00:13:37.240><c> now</c><00:13:37.360><c> you</c><00:13:37.440><c> might</c><00:13:37.680><c> ask</c><00:13:37.920><c> where</c><00:13:38.079><c> I</c>
+
+00:13:38.189 --> 00:13:38.199 align:start position:0%
+metadata and now you might ask where I
+ 
+
+00:13:38.199 --> 00:13:40.189 align:start position:0%
+metadata and now you might ask where I
+can<00:13:38.360><c> find</c><00:13:38.639><c> all</c><00:13:38.880><c> those</c><00:13:39.120><c> system</c><00:13:39.519><c> catalog</c><00:13:39.959><c> and</c>
+
+00:13:40.189 --> 00:13:40.199 align:start position:0%
+can find all those system catalog and
+ 
+
+00:13:40.199 --> 00:13:42.870 align:start position:0%
+can find all those system catalog and
+metadata<00:13:41.199><c> inside</c><00:13:41.519><c> our</c><00:13:41.760><c> client</c><00:13:42.120><c> here</c><00:13:42.519><c> well</c><00:13:42.720><c> you</c>
+
+00:13:42.870 --> 00:13:42.880 align:start position:0%
+metadata inside our client here well you
+ 
+
+00:13:42.880 --> 00:13:44.310 align:start position:0%
+metadata inside our client here well you
+cannot<00:13:43.320><c> navigate</c><00:13:43.800><c> through</c><00:13:44.079><c> those</c>
+
+00:13:44.310 --> 00:13:44.320 align:start position:0%
+cannot navigate through those
+ 
+
+00:13:44.320 --> 00:13:46.629 align:start position:0%
+cannot navigate through those
+informations<00:13:45.279><c> in</c><00:13:45.440><c> the</c><00:13:45.600><c> object</c><00:13:45.959><c> Explorer</c><00:13:46.480><c> like</c>
+
+00:13:46.629 --> 00:13:46.639 align:start position:0%
+informations in the object Explorer like
+ 
+
+00:13:46.639 --> 00:13:48.870 align:start position:0%
+informations in the object Explorer like
+we<00:13:46.800><c> used</c><00:13:47.000><c> to</c><00:13:47.160><c> do</c><00:13:47.360><c> for</c><00:13:47.600><c> the</c><00:13:47.720><c> user</c><00:13:48.040><c> data</c><00:13:48.560><c> but</c><00:13:48.760><c> you</c>
+
+00:13:48.870 --> 00:13:48.880 align:start position:0%
+we used to do for the user data but you
+ 
+
+00:13:48.880 --> 00:13:51.470 align:start position:0%
+we used to do for the user data but you
+can<00:13:49.079><c> find</c><00:13:49.399><c> those</c><00:13:49.639><c> informations</c><00:13:50.320><c> in</c><00:13:50.560><c> a</c><00:13:50.880><c> special</c>
+
+00:13:51.470 --> 00:13:51.480 align:start position:0%
+can find those informations in a special
+ 
+
+00:13:51.480 --> 00:13:54.389 align:start position:0%
+can find those informations in a special
+hidden<00:13:52.360><c> schema</c><00:13:53.160><c> called</c><00:13:53.639><c> the</c><00:13:53.839><c> information</c>
+
+00:13:54.389 --> 00:13:54.399 align:start position:0%
+hidden schema called the information
+ 
+
+00:13:54.399 --> 00:13:56.590 align:start position:0%
+hidden schema called the information
+schema<00:13:55.000><c> the</c><00:13:55.160><c> information</c><00:13:55.680><c> schema</c><00:13:56.040><c> in</c><00:13:56.160><c> SQL</c>
+
+00:13:56.590 --> 00:13:56.600 align:start position:0%
+schema the information schema in SQL
+ 
+
+00:13:56.600 --> 00:13:59.590 align:start position:0%
+schema the information schema in SQL
+Server<00:13:57.040><c> is</c><00:13:57.639><c> a</c><00:13:57.880><c> system</c><00:13:58.360><c> defined</c><00:13:58.720><c> schema</c>
+
+00:13:59.590 --> 00:13:59.600 align:start position:0%
+Server is a system defined schema
+ 
+
+00:13:59.600 --> 00:14:03.110 align:start position:0%
+Server is a system defined schema
+that<00:13:59.800><c> contains</c><00:14:00.440><c> a</c><00:14:00.680><c> set</c><00:14:01.000><c> of</c><00:14:01.560><c> buil-in</c><00:14:02.120><c> views</c>
+
+00:14:03.110 --> 00:14:03.120 align:start position:0%
+that contains a set of buil-in views
+ 
+
+00:14:03.120 --> 00:14:05.269 align:start position:0%
+that contains a set of buil-in views
+that<00:14:03.360><c> help</c><00:14:03.639><c> us</c><00:14:03.839><c> to</c><00:14:04.040><c> find</c><00:14:04.360><c> information</c><00:14:04.959><c> about</c>
+
+00:14:05.269 --> 00:14:05.279 align:start position:0%
+that help us to find information about
+ 
+
+00:14:05.279 --> 00:14:08.310 align:start position:0%
+that help us to find information about
+our<00:14:05.600><c> database</c><00:14:06.440><c> like</c><00:14:06.720><c> tables</c><00:14:07.440><c> columns</c><00:14:08.079><c> and</c>
+
+00:14:08.310 --> 00:14:08.320 align:start position:0%
+our database like tables columns and
+ 
+
+00:14:08.320 --> 00:14:10.829 align:start position:0%
+our database like tables columns and
+other<00:14:08.639><c> objects</c><00:14:09.240><c> so</c><00:14:09.399><c> let's</c><00:14:09.600><c> go</c><00:14:09.800><c> and</c><00:14:10.000><c> explore</c><00:14:10.399><c> it</c>
+
+00:14:10.829 --> 00:14:10.839 align:start position:0%
+other objects so let's go and explore it
+ 
+
+00:14:10.839 --> 00:14:13.710 align:start position:0%
+other objects so let's go and explore it
+we're<00:14:10.959><c> going</c><00:14:11.040><c> to</c><00:14:11.199><c> go</c><00:14:11.399><c> and</c><00:14:11.639><c> say</c><00:14:12.000><c> select</c><00:14:12.720><c> star</c>
+
+00:14:13.710 --> 00:14:13.720 align:start position:0%
+we're going to go and say select star
+ 
+
+00:14:13.720 --> 00:14:15.110 align:start position:0%
+we're going to go and say select star
+from
+
+00:14:15.110 --> 00:14:15.120 align:start position:0%
+from
+ 
+
+00:14:15.120 --> 00:14:17.629 align:start position:0%
+from
+information<00:14:16.120><c> schema</c><00:14:16.839><c> and</c><00:14:16.920><c> then</c><00:14:17.079><c> let's</c><00:14:17.240><c> have</c><00:14:17.399><c> a</c>
+
+00:14:17.629 --> 00:14:17.639 align:start position:0%
+information schema and then let's have a
+ 
+
+00:14:17.639 --> 00:14:20.110 align:start position:0%
+information schema and then let's have a
+dots<00:14:18.199><c> and</c><00:14:18.320><c> now</c><00:14:18.480><c> we</c><00:14:18.600><c> get</c><00:14:18.759><c> from</c><00:14:18.959><c> SQL</c><00:14:19.440><c> a</c><00:14:19.639><c> list</c><00:14:19.920><c> of</c>
+
+00:14:20.110 --> 00:14:20.120 align:start position:0%
+dots and now we get from SQL a list of
+ 
+
+00:14:20.120 --> 00:14:22.670 align:start position:0%
+dots and now we get from SQL a list of
+all<00:14:20.399><c> views</c><00:14:21.199><c> that</c><00:14:21.320><c> are</c><00:14:21.639><c> available</c><00:14:22.120><c> in</c><00:14:22.240><c> order</c><00:14:22.480><c> to</c>
+
+00:14:22.670 --> 00:14:22.680 align:start position:0%
+all views that are available in order to
+ 
+
+00:14:22.680 --> 00:14:25.470 align:start position:0%
+all views that are available in order to
+browse<00:14:23.199><c> the</c><00:14:23.440><c> metadata</c><00:14:24.120><c> of</c><00:14:24.240><c> our</c><00:14:24.480><c> database</c><00:14:25.279><c> so</c>
+
+00:14:25.470 --> 00:14:25.480 align:start position:0%
+browse the metadata of our database so
+ 
+
+00:14:25.480 --> 00:14:27.710 align:start position:0%
+browse the metadata of our database so
+for<00:14:25.720><c> example</c><00:14:26.040><c> you</c><00:14:26.160><c> can</c><00:14:26.279><c> see</c><00:14:26.560><c> here</c><00:14:26.880><c> tables</c><00:14:27.639><c> you</c>
+
+00:14:27.710 --> 00:14:27.720 align:start position:0%
+for example you can see here tables you
+ 
+
+00:14:27.720 --> 00:14:30.430 align:start position:0%
+for example you can see here tables you
+can<00:14:27.839><c> see</c><00:14:28.079><c> informations</c><00:14:28.680><c> about</c><00:14:29.120><c> the</c><00:14:29.279><c> views</c><00:14:30.000><c> and</c>
+
+00:14:30.430 --> 00:14:30.440 align:start position:0%
+can see informations about the views and
+ 
+
+00:14:30.440 --> 00:14:32.790 align:start position:0%
+can see informations about the views and
+as<00:14:30.600><c> well</c><00:14:30.920><c> about</c><00:14:31.279><c> the</c><00:14:31.560><c> columns</c><00:14:32.199><c> so</c><00:14:32.360><c> let's</c><00:14:32.560><c> go</c>
+
+00:14:32.790 --> 00:14:32.800 align:start position:0%
+as well about the columns so let's go
+ 
+
+00:14:32.800 --> 00:14:35.150 align:start position:0%
+as well about the columns so let's go
+and<00:14:33.000><c> select</c><00:14:33.360><c> the</c><00:14:33.600><c> columns</c><00:14:34.320><c> and</c><00:14:34.480><c> let's</c><00:14:34.680><c> go</c><00:14:34.920><c> and</c>
+
+00:14:35.150 --> 00:14:35.160 align:start position:0%
+and select the columns and let's go and
+ 
+
+00:14:35.160 --> 00:14:36.949 align:start position:0%
+and select the columns and let's go and
+execute<00:14:35.560><c> it</c><00:14:35.920><c> and</c><00:14:36.040><c> now</c><00:14:36.160><c> in</c><00:14:36.279><c> the</c><00:14:36.399><c> output</c><00:14:36.759><c> we</c><00:14:36.839><c> can</c>
+
+00:14:36.949 --> 00:14:36.959 align:start position:0%
+execute it and now in the output we can
+ 
+
+00:14:36.959 --> 00:14:39.910 align:start position:0%
+execute it and now in the output we can
+find<00:14:37.240><c> informations</c><00:14:37.959><c> about</c><00:14:38.279><c> the</c><00:14:38.560><c> schema</c><00:14:39.560><c> about</c>
+
+00:14:39.910 --> 00:14:39.920 align:start position:0%
+find informations about the schema about
+ 
+
+00:14:39.920 --> 00:14:42.350 align:start position:0%
+find informations about the schema about
+the<00:14:40.160><c> table</c><00:14:40.519><c> names</c><00:14:41.399><c> like</c><00:14:41.560><c> for</c><00:14:41.759><c> example</c><00:14:42.160><c> here</c>
+
+00:14:42.350 --> 00:14:42.360 align:start position:0%
+the table names like for example here
+ 
+
+00:14:42.360 --> 00:14:45.310 align:start position:0%
+the table names like for example here
+the<00:14:42.759><c> customers</c><00:14:43.440><c> let</c><00:14:43.560><c> me</c><00:14:43.759><c> just</c><00:14:43.920><c> go</c><00:14:44.120><c> and</c><00:14:44.360><c> select</c>
+
+00:14:45.310 --> 00:14:45.320 align:start position:0%
+the customers let me just go and select
+ 
+
+00:14:45.320 --> 00:14:47.389 align:start position:0%
+the customers let me just go and select
+this<00:14:45.519><c> table</c><00:14:46.120><c> and</c><00:14:46.240><c> then</c><00:14:46.399><c> we</c><00:14:46.560><c> find</c><00:14:46.959><c> all</c><00:14:47.199><c> the</c>
+
+00:14:47.389 --> 00:14:47.399 align:start position:0%
+this table and then we find all the
+ 
+
+00:14:47.399 --> 00:14:50.030 align:start position:0%
+this table and then we find all the
+columns<00:14:47.920><c> inside</c><00:14:48.360><c> this</c><00:14:48.600><c> table</c><00:14:49.480><c> how</c><00:14:49.680><c> they</c><00:14:49.800><c> are</c>
+
+00:14:50.030 --> 00:14:50.040 align:start position:0%
+columns inside this table how they are
+ 
+
+00:14:50.040 --> 00:14:52.629 align:start position:0%
+columns inside this table how they are
+sorted<00:14:50.720><c> so</c><00:14:50.920><c> we</c><00:14:51.040><c> have</c><00:14:51.199><c> here</c><00:14:51.399><c> the</c><00:14:51.600><c> order</c><00:14:52.120><c> of</c><00:14:52.360><c> each</c>
+
+00:14:52.629 --> 00:14:52.639 align:start position:0%
+sorted so we have here the order of each
+ 
+
+00:14:52.639 --> 00:14:55.590 align:start position:0%
+sorted so we have here the order of each
+column<00:14:53.440><c> and</c><00:14:53.680><c> as</c><00:14:53.839><c> well</c><00:14:54.079><c> the</c><00:14:54.240><c> data</c><00:14:54.560><c> type</c><00:14:55.120><c> and</c><00:14:55.320><c> the</c>
+
+00:14:55.590 --> 00:14:55.600 align:start position:0%
+column and as well the data type and the
+ 
+
+00:14:55.600 --> 00:14:58.790 align:start position:0%
+column and as well the data type and the
+size<00:14:56.240><c> of</c><00:14:56.720><c> each</c><00:14:57.000><c> column</c><00:14:57.600><c> and</c><00:14:57.880><c> many</c><00:14:58.199><c> other</c><00:14:58.519><c> stuff</c>
+
+00:14:58.790 --> 00:14:58.800 align:start position:0%
+size of each column and many other stuff
+ 
+
+00:14:58.800 --> 00:15:01.470 align:start position:0%
+size of each column and many other stuff
+so<00:14:59.040><c> so</c><00:14:59.120><c> as</c><00:14:59.240><c> you</c><00:14:59.320><c> can</c><00:14:59.480><c> see</c><00:14:59.759><c> we</c><00:14:59.959><c> got</c><00:15:00.320><c> here</c><00:15:01.079><c> all</c><00:15:01.320><c> the</c>
+
+00:15:01.470 --> 00:15:01.480 align:start position:0%
+so so as you can see we got here all the
+ 
+
+00:15:01.480 --> 00:15:04.150 align:start position:0%
+so so as you can see we got here all the
+informations<00:15:02.199><c> all</c><00:15:02.399><c> the</c><00:15:02.560><c> metadata</c><00:15:03.560><c> of</c><00:15:03.880><c> each</c>
+
+00:15:04.150 --> 00:15:04.160 align:start position:0%
+informations all the metadata of each
+ 
+
+00:15:04.160 --> 00:15:07.069 align:start position:0%
+informations all the metadata of each
+table<00:15:04.839><c> and</c><00:15:05.079><c> as</c><00:15:05.240><c> well</c><00:15:05.800><c> for</c><00:15:06.120><c> each</c><00:15:06.399><c> column</c><00:15:06.759><c> inside</c>
+
+00:15:07.069 --> 00:15:07.079 align:start position:0%
+table and as well for each column inside
+ 
+
+00:15:07.079 --> 00:15:08.790 align:start position:0%
+table and as well for each column inside
+the<00:15:07.240><c> table</c><00:15:07.759><c> so</c><00:15:07.959><c> with</c><00:15:08.120><c> that</c><00:15:08.240><c> you</c><00:15:08.360><c> can</c><00:15:08.519><c> check</c>
+
+00:15:08.790 --> 00:15:08.800 align:start position:0%
+the table so with that you can check
+ 
+
+00:15:08.800 --> 00:15:10.990 align:start position:0%
+the table so with that you can check
+which<00:15:09.000><c> tables</c><00:15:09.480><c> does</c><00:15:09.839><c> exist</c><00:15:10.199><c> in</c><00:15:10.320><c> your</c><00:15:10.560><c> database</c>
+
+00:15:10.990 --> 00:15:11.000 align:start position:0%
+which tables does exist in your database
+ 
+
+00:15:11.000 --> 00:15:12.430 align:start position:0%
+which tables does exist in your database
+for<00:15:11.160><c> example</c><00:15:11.440><c> I</c><00:15:11.560><c> find</c><00:15:11.800><c> here</c><00:15:11.959><c> like</c><00:15:12.160><c> something</c>
+
+00:15:12.430 --> 00:15:12.440 align:start position:0%
+for example I find here like something
+ 
+
+00:15:12.440 --> 00:15:15.110 align:start position:0%
+for example I find here like something
+called<00:15:12.720><c> test</c><00:15:13.000><c> two</c><00:15:13.519><c> so</c><00:15:13.720><c> maybe</c><00:15:13.959><c> I</c><00:15:14.079><c> was</c><00:15:14.480><c> trying</c><00:15:15.000><c> to</c>
+
+00:15:15.110 --> 00:15:15.120 align:start position:0%
+called test two so maybe I was trying to
+ 
+
+00:15:15.120 --> 00:15:17.590 align:start position:0%
+called test two so maybe I was trying to
+test<00:15:15.399><c> something</c><00:15:16.160><c> I</c><00:15:16.279><c> can</c><00:15:16.440><c> go</c><00:15:16.639><c> now</c><00:15:16.880><c> and</c><00:15:17.040><c> clean</c><00:15:17.320><c> up</c>
+
+00:15:17.590 --> 00:15:17.600 align:start position:0%
+test something I can go now and clean up
+ 
+
+00:15:17.600 --> 00:15:19.590 align:start position:0%
+test something I can go now and clean up
+stuff<00:15:17.959><c> right</c><00:15:18.279><c> and</c><00:15:18.480><c> this</c><00:15:18.600><c> is</c><00:15:18.839><c> exactly</c><00:15:19.279><c> why</c><00:15:19.440><c> the</c>
+
+00:15:19.590 --> 00:15:19.600 align:start position:0%
+stuff right and this is exactly why the
+ 
+
+00:15:19.600 --> 00:15:22.069 align:start position:0%
+stuff right and this is exactly why the
+database<00:15:20.079><c> maintain</c><00:15:20.959><c> such</c><00:15:21.160><c> a</c><00:15:21.320><c> catalog</c><00:15:21.959><c> it</c>
+
+00:15:22.069 --> 00:15:22.079 align:start position:0%
+database maintain such a catalog it
+ 
+
+00:15:22.079 --> 00:15:24.389 align:start position:0%
+database maintain such a catalog it
+helps<00:15:22.440><c> the</c><00:15:22.560><c> database</c><00:15:23.000><c> to</c><00:15:23.120><c> quickly</c><00:15:23.480><c> find</c><00:15:24.120><c> the</c>
+
+00:15:24.389 --> 00:15:24.399 align:start position:0%
+helps the database to quickly find the
+ 
+
+00:15:24.399 --> 00:15:26.629 align:start position:0%
+helps the database to quickly find the
+structure<00:15:25.160><c> of</c><00:15:25.360><c> each</c><00:15:25.600><c> table</c><00:15:26.040><c> and</c><00:15:26.240><c> of</c><00:15:26.399><c> each</c>
+
+00:15:26.629 --> 00:15:26.639 align:start position:0%
+structure of each table and of each
+ 
+
+00:15:26.639 --> 00:15:28.710 align:start position:0%
+structure of each table and of each
+column<00:15:27.199><c> and</c><00:15:27.399><c> it</c><00:15:27.560><c> helps</c><00:15:27.800><c> me</c><00:15:27.959><c> as</c><00:15:28.079><c> well</c><00:15:28.240><c> as</c><00:15:28.399><c> user</c>
+
+00:15:28.710 --> 00:15:28.720 align:start position:0%
+column and it helps me as well as user
+ 
+
+00:15:28.720 --> 00:15:31.230 align:start position:0%
+column and it helps me as well as user
+to<00:15:29.000><c> browse</c><00:15:29.680><c> the</c><00:15:29.839><c> catalog</c><00:15:30.199><c> of</c><00:15:30.279><c> the</c><00:15:30.440><c> database</c><00:15:31.079><c> so</c>
+
+00:15:31.230 --> 00:15:31.240 align:start position:0%
+to browse the catalog of the database so
+ 
+
+00:15:31.240 --> 00:15:33.030 align:start position:0%
+to browse the catalog of the database so
+for<00:15:31.399><c> example</c><00:15:31.720><c> I</c><00:15:31.839><c> can</c><00:15:32.000><c> go</c><00:15:32.160><c> over</c><00:15:32.360><c> here</c><00:15:32.519><c> and</c><00:15:32.680><c> say</c>
+
+00:15:33.030 --> 00:15:33.040 align:start position:0%
+for example I can go over here and say
+ 
+
+00:15:33.040 --> 00:15:37.350 align:start position:0%
+for example I can go over here and say
+okay<00:15:33.319><c> let's</c><00:15:33.560><c> get</c><00:15:33.759><c> a</c><00:15:34.360><c> distinct</c><00:15:35.360><c> table</c><00:15:36.120><c> name</c><00:15:37.120><c> so</c>
+
+00:15:37.350 --> 00:15:37.360 align:start position:0%
+okay let's get a distinct table name so
+ 
+
+00:15:37.360 --> 00:15:39.550 align:start position:0%
+okay let's get a distinct table name so
+with<00:15:37.519><c> that</c><00:15:37.759><c> I</c><00:15:37.839><c> will</c><00:15:38.040><c> get</c><00:15:38.279><c> a</c><00:15:38.519><c> list</c><00:15:39.000><c> of</c>
+
+00:15:39.550 --> 00:15:39.560 align:start position:0%
+with that I will get a list of
+ 
+
+00:15:39.560 --> 00:15:41.030 align:start position:0%
+with that I will get a list of
+everything<00:15:40.040><c> that</c><00:15:40.199><c> I</c><00:15:40.360><c> have</c><00:15:40.600><c> inside</c><00:15:40.880><c> the</c>
+
+00:15:41.030 --> 00:15:41.040 align:start position:0%
+everything that I have inside the
+ 
+
+00:15:41.040 --> 00:15:42.829 align:start position:0%
+everything that I have inside the
+database<00:15:41.720><c> so</c><00:15:41.880><c> we</c><00:15:42.000><c> have</c><00:15:42.120><c> the</c><00:15:42.319><c> customers</c>
+
+00:15:42.829 --> 00:15:42.839 align:start position:0%
+database so we have the customers
+ 
+
+00:15:42.839 --> 00:15:44.710 align:start position:0%
+database so we have the customers
+employees<00:15:43.480><c> and</c><00:15:43.639><c> some</c><00:15:43.920><c> tests</c><00:15:44.319><c> that</c><00:15:44.480><c> I</c><00:15:44.600><c> have</c>
+
+00:15:44.710 --> 00:15:44.720 align:start position:0%
+employees and some tests that I have
+ 
+
+00:15:44.720 --> 00:15:49.790 align:start position:0%
+employees and some tests that I have
+done<00:15:45.160><c> so</c><00:15:45.480><c> metadata</c><00:15:46.079><c> are</c>
+
+00:15:49.790 --> 00:15:49.800 align:start position:0%
+ 
+ 
+
+00:15:49.800 --> 00:15:52.350 align:start position:0%
+ 
+awesome<00:15:50.800><c> now</c><00:15:50.920><c> we</c><00:15:51.079><c> come</c><00:15:51.199><c> to</c><00:15:51.319><c> the</c><00:15:51.480><c> third</c><00:15:51.720><c> storage</c>
+
+00:15:52.350 --> 00:15:52.360 align:start position:0%
+awesome now we come to the third storage
+ 
+
+00:15:52.360 --> 00:15:54.870 align:start position:0%
+awesome now we come to the third storage
+the<00:15:52.639><c> temporary</c><00:15:53.519><c> data</c><00:15:53.839><c> storage</c><00:15:54.440><c> it</c><00:15:54.560><c> is</c><00:15:54.720><c> a</c>
+
+00:15:54.870 --> 00:15:54.880 align:start position:0%
+the temporary data storage it is a
+ 
+
+00:15:54.880 --> 00:15:57.430 align:start position:0%
+the temporary data storage it is a
+temporary<00:15:55.399><c> space</c><00:15:55.759><c> used</c><00:15:56.079><c> by</c><00:15:56.240><c> the</c><00:15:56.480><c> database</c><00:15:57.199><c> for</c>
+
+00:15:57.430 --> 00:15:57.440 align:start position:0%
+temporary space used by the database for
+ 
+
+00:15:57.440 --> 00:16:00.509 align:start position:0%
+temporary space used by the database for
+shortterm<00:15:58.199><c> task</c><00:15:58.600><c> like</c><00:15:59.040><c> processing</c><00:15:59.680><c> query</c><00:16:00.120><c> or</c>
+
+00:16:00.509 --> 00:16:00.519 align:start position:0%
+shortterm task like processing query or
+ 
+
+00:16:00.519 --> 00:16:02.910 align:start position:0%
+shortterm task like processing query or
+sorting<00:16:01.040><c> data</c><00:16:01.560><c> and</c><00:16:01.720><c> once</c><00:16:02.079><c> these</c><00:16:02.319><c> tasks</c><00:16:02.720><c> are</c>
+
+00:16:02.910 --> 00:16:02.920 align:start position:0%
+sorting data and once these tasks are
+ 
+
+00:16:02.920 --> 00:16:04.910 align:start position:0%
+sorting data and once these tasks are
+done<00:16:03.440><c> what's</c><00:16:03.600><c> going</c><00:16:03.720><c> to</c><00:16:03.880><c> happen</c><00:16:04.399><c> the</c><00:16:04.560><c> database</c>
+
+00:16:04.910 --> 00:16:04.920 align:start position:0%
+done what's going to happen the database
+ 
+
+00:16:04.920 --> 00:16:06.790 align:start position:0%
+done what's going to happen the database
+going<00:16:05.040><c> to</c><00:16:05.160><c> go</c><00:16:05.360><c> and</c><00:16:05.560><c> clean</c><00:16:05.839><c> up</c><00:16:06.000><c> the</c><00:16:06.160><c> storage</c><00:16:06.680><c> and</c>
+
+00:16:06.790 --> 00:16:06.800 align:start position:0%
+going to go and clean up the storage and
+ 
+
+00:16:06.800 --> 00:16:08.030 align:start position:0%
+going to go and clean up the storage and
+now<00:16:06.959><c> of</c><00:16:07.040><c> course</c><00:16:07.199><c> the</c><00:16:07.360><c> question</c><00:16:07.560><c> is</c><00:16:07.759><c> where</c><00:16:07.920><c> we</c>
+
+00:16:08.030 --> 00:16:08.040 align:start position:0%
+now of course the question is where we
+ 
+
+00:16:08.040 --> 00:16:10.350 align:start position:0%
+now of course the question is where we
+can<00:16:08.199><c> find</c><00:16:08.480><c> these</c><00:16:08.759><c> temporary</c><00:16:09.360><c> tables</c><00:16:10.040><c> that</c><00:16:10.199><c> is</c>
+
+00:16:10.350 --> 00:16:10.360 align:start position:0%
+can find these temporary tables that is
+ 
+
+00:16:10.360 --> 00:16:12.790 align:start position:0%
+can find these temporary tables that is
+using<00:16:10.759><c> the</c><00:16:11.000><c> temporary</c><00:16:11.440><c> storage</c><00:16:11.800><c> in</c><00:16:11.920><c> the</c><00:16:12.120><c> disk</c>
+
+00:16:12.790 --> 00:16:12.800 align:start position:0%
+using the temporary storage in the disk
+ 
+
+00:16:12.800 --> 00:16:14.550 align:start position:0%
+using the temporary storage in the disk
+well<00:16:13.160><c> actually</c><00:16:13.440><c> if</c><00:16:13.519><c> you</c><00:16:13.639><c> go</c><00:16:13.800><c> to</c><00:16:14.000><c> the</c><00:16:14.160><c> object</c>
+
+00:16:14.550 --> 00:16:14.560 align:start position:0%
+well actually if you go to the object
+ 
+
+00:16:14.560 --> 00:16:17.230 align:start position:0%
+well actually if you go to the object
+Explorer<00:16:15.199><c> you</c><00:16:15.319><c> will</c><00:16:15.480><c> not</c><00:16:15.720><c> find</c><00:16:15.959><c> it</c><00:16:16.240><c> inside</c><00:16:16.959><c> our</c>
+
+00:16:17.230 --> 00:16:17.240 align:start position:0%
+Explorer you will not find it inside our
+ 
+
+00:16:17.240 --> 00:16:19.829 align:start position:0%
+Explorer you will not find it inside our
+database<00:16:17.800><c> sales</c><00:16:18.199><c> DB</c><00:16:18.839><c> but</c><00:16:19.000><c> you</c><00:16:19.120><c> will</c><00:16:19.319><c> find</c><00:16:19.519><c> it</c>
+
+00:16:19.829 --> 00:16:19.839 align:start position:0%
+database sales DB but you will find it
+ 
+
+00:16:19.839 --> 00:16:22.309 align:start position:0%
+database sales DB but you will find it
+inside<00:16:20.279><c> the</c><00:16:20.519><c> system</c><00:16:21.000><c> databases</c><00:16:21.839><c> now</c><00:16:22.040><c> since</c><00:16:22.240><c> we</c>
+
+00:16:22.309 --> 00:16:22.319 align:start position:0%
+inside the system databases now since we
+ 
+
+00:16:22.319 --> 00:16:24.389 align:start position:0%
+inside the system databases now since we
+are<00:16:22.480><c> working</c><00:16:22.959><c> locally</c><00:16:23.440><c> we</c><00:16:23.600><c> have</c><00:16:23.800><c> the</c><00:16:24.000><c> full</c>
+
+00:16:24.389 --> 00:16:24.399 align:start position:0%
+are working locally we have the full
+ 
+
+00:16:24.399 --> 00:16:26.670 align:start position:0%
+are working locally we have the full
+access<00:16:24.800><c> to</c><00:16:25.079><c> everything</c><00:16:25.600><c> inside</c><00:16:26.160><c> the</c><00:16:26.279><c> SQL</c>
+
+00:16:26.670 --> 00:16:26.680 align:start position:0%
+access to everything inside the SQL
+ 
+
+00:16:26.680 --> 00:16:28.470 align:start position:0%
+access to everything inside the SQL
+server<00:16:27.240><c> but</c><00:16:27.360><c> in</c><00:16:27.519><c> real</c><00:16:27.800><c> project</c><00:16:28.120><c> if</c><00:16:28.199><c> you</c><00:16:28.319><c> are</c>
+
+00:16:28.470 --> 00:16:28.480 align:start position:0%
+server but in real project if you are
+ 
+
+00:16:28.480 --> 00:16:30.870 align:start position:0%
+server but in real project if you are
+just<00:16:28.959><c> user</c><00:16:29.279><c> or</c><00:16:29.519><c> let's</c><00:16:29.680><c> say</c><00:16:30.000><c> developer</c><00:16:30.759><c> you</c>
+
+00:16:30.870 --> 00:16:30.880 align:start position:0%
+just user or let's say developer you
+ 
+
+00:16:30.880 --> 00:16:32.749 align:start position:0%
+just user or let's say developer you
+will<00:16:31.079><c> not</c><00:16:31.319><c> have</c><00:16:31.600><c> access</c><00:16:31.920><c> to</c><00:16:32.120><c> the</c><00:16:32.319><c> system</c>
+
+00:16:32.749 --> 00:16:32.759 align:start position:0%
+will not have access to the system
+ 
+
+00:16:32.759 --> 00:16:34.829 align:start position:0%
+will not have access to the system
+databases<00:16:33.639><c> only</c><00:16:33.880><c> for</c><00:16:34.120><c> the</c><00:16:34.279><c> database</c>
+
+00:16:34.829 --> 00:16:34.839 align:start position:0%
+databases only for the database
+ 
+
+00:16:34.839 --> 00:16:36.870 align:start position:0%
+databases only for the database
+administrators<00:16:35.839><c> but</c><00:16:36.000><c> now</c><00:16:36.120><c> we</c><00:16:36.240><c> are</c><00:16:36.360><c> working</c><00:16:36.680><c> on</c>
+
+00:16:36.870 --> 00:16:36.880 align:start position:0%
+administrators but now we are working on
+ 
+
+00:16:36.880 --> 00:16:39.590 align:start position:0%
+administrators but now we are working on
+the<00:16:37.000><c> local</c><00:16:37.399><c> K</c><00:16:37.880><c> so</c><00:16:38.440><c> let's</c><00:16:38.680><c> go</c><00:16:38.800><c> to</c><00:16:39.000><c> the</c><00:16:39.160><c> system</c>
+
+00:16:39.590 --> 00:16:39.600 align:start position:0%
+the local K so let's go to the system
+ 
+
+00:16:39.600 --> 00:16:41.550 align:start position:0%
+the local K so let's go to the system
+database<00:16:40.360><c> and</c><00:16:40.519><c> here</c><00:16:40.639><c> you</c><00:16:40.800><c> have</c><00:16:40.959><c> a</c><00:16:41.120><c> special</c>
+
+00:16:41.550 --> 00:16:41.560 align:start position:0%
+database and here you have a special
+ 
+
+00:16:41.560 --> 00:16:44.629 align:start position:0%
+database and here you have a special
+database<00:16:42.440><c> from</c><00:16:42.680><c> the</c><00:16:42.839><c> SQL</c><00:16:43.240><c> Server</c><00:16:43.639><c> called</c><00:16:44.120><c> temp</c>
+
+00:16:44.629 --> 00:16:44.639 align:start position:0%
+database from the SQL Server called temp
+ 
+
+00:16:44.639 --> 00:16:47.350 align:start position:0%
+database from the SQL Server called temp
+DB<00:16:45.440><c> and</c><00:16:45.600><c> if</c><00:16:45.680><c> you</c><00:16:45.839><c> go</c><00:16:46.079><c> inside</c><00:16:46.480><c> it</c><00:16:46.880><c> we</c><00:16:47.000><c> will</c><00:16:47.160><c> find</c>
+
+00:16:47.350 --> 00:16:47.360 align:start position:0%
+DB and if you go inside it we will find
+ 
+
+00:16:47.360 --> 00:16:50.150 align:start position:0%
+DB and if you go inside it we will find
+here<00:16:47.639><c> tables</c><00:16:48.120><c> and</c><00:16:48.480><c> temporary</c><00:16:49.040><c> tables</c><00:16:49.720><c> so</c><00:16:50.040><c> this</c>
+
+00:16:50.150 --> 00:16:50.160 align:start position:0%
+here tables and temporary tables so this
+ 
+
+00:16:50.160 --> 00:16:52.430 align:start position:0%
+here tables and temporary tables so this
+is<00:16:50.480><c> exactly</c><00:16:51.040><c> where</c><00:16:51.199><c> you</c><00:16:51.319><c> can</c><00:16:51.600><c> find</c><00:16:52.040><c> all</c><00:16:52.240><c> the</c>
+
+00:16:52.430 --> 00:16:52.440 align:start position:0%
+is exactly where you can find all the
+ 
+
+00:16:52.440 --> 00:16:54.629 align:start position:0%
+is exactly where you can find all the
+temporary<00:16:52.959><c> tables</c><00:16:53.360><c> that</c><00:16:53.480><c> you</c><00:16:53.600><c> are</c><00:16:53.839><c> generating</c>
+
+00:16:54.629 --> 00:16:54.639 align:start position:0%
+temporary tables that you are generating
+ 
+
+00:16:54.639 --> 00:16:56.430 align:start position:0%
+temporary tables that you are generating
+now<00:16:54.800><c> currently</c><00:16:55.240><c> we</c><00:16:55.360><c> didn't</c><00:16:55.759><c> create</c><00:16:56.199><c> any</c>
+
+00:16:56.430 --> 00:16:56.440 align:start position:0%
+now currently we didn't create any
+ 
+
+00:16:56.440 --> 00:16:58.509 align:start position:0%
+now currently we didn't create any
+temporary<00:16:56.920><c> tables</c><00:16:57.399><c> that's</c><00:16:57.639><c> why</c><00:16:57.880><c> it's</c><00:16:58.079><c> empty</c>
+
+00:16:58.509 --> 00:16:58.519 align:start position:0%
+temporary tables that's why it's empty
+ 
+
+00:16:58.519 --> 00:17:00.110 align:start position:0%
+temporary tables that's why it's empty
+but<00:16:58.680><c> once</c><00:16:58.880><c> once</c><00:16:59.040><c> we</c><00:16:59.199><c> start</c><00:16:59.600><c> creating</c>
+
+00:17:00.110 --> 00:17:00.120 align:start position:0%
+but once once we start creating
+ 
+
+00:17:00.120 --> 00:17:02.150 align:start position:0%
+but once once we start creating
+temporary<00:17:00.560><c> tables</c><00:17:01.279><c> you</c><00:17:01.399><c> will</c><00:17:01.600><c> find</c><00:17:01.920><c> those</c>
+
+00:17:02.150 --> 00:17:02.160 align:start position:0%
+temporary tables you will find those
+ 
+
+00:17:02.160 --> 00:17:04.350 align:start position:0%
+temporary tables you will find those
+tables<00:17:02.680><c> underneath</c><00:17:03.360><c> this</c><00:17:03.480><c> folder</c><00:17:04.079><c> we</c><00:17:04.199><c> will</c>
+
+00:17:04.350 --> 00:17:04.360 align:start position:0%
+tables underneath this folder we will
+ 
+
+00:17:04.360 --> 00:17:06.630 align:start position:0%
+tables underneath this folder we will
+learn<00:17:04.640><c> about</c><00:17:04.880><c> the</c><00:17:05.120><c> temporary</c><00:17:05.559><c> tables</c><00:17:06.360><c> in</c><00:17:06.480><c> the</c>
+
+00:17:06.630 --> 00:17:06.640 align:start position:0%
+learn about the temporary tables in the
+ 
+
+00:17:06.640 --> 00:17:10.590 align:start position:0%
+learn about the temporary tables in the
+next
+
+00:17:10.590 --> 00:17:10.600 align:start position:0%
+ 
+ 
+
+00:17:10.600 --> 00:17:13.270 align:start position:0%
+ 
+sections<00:17:11.600><c> so</c><00:17:11.839><c> these</c><00:17:12.000><c> are</c><00:17:12.240><c> the</c><00:17:12.439><c> main</c><00:17:12.760><c> component</c>
+
+00:17:13.270 --> 00:17:13.280 align:start position:0%
+sections so these are the main component
+ 
+
+00:17:13.280 --> 00:17:15.510 align:start position:0%
+sections so these are the main component
+of<00:17:13.480><c> the</c><00:17:13.959><c> database</c><00:17:14.480><c> architecture</c><00:17:15.280><c> so</c><00:17:15.400><c> now</c>
+
+00:17:15.510 --> 00:17:15.520 align:start position:0%
+of the database architecture so now
+ 
+
+00:17:15.520 --> 00:17:16.949 align:start position:0%
+of the database architecture so now
+let's<00:17:15.720><c> have</c><00:17:15.799><c> an</c><00:17:15.959><c> example</c><00:17:16.439><c> now</c><00:17:16.600><c> we</c><00:17:16.679><c> have</c><00:17:16.799><c> a</c>
+
+00:17:16.949 --> 00:17:16.959 align:start position:0%
+let's have an example now we have a
+ 
+
+00:17:16.959 --> 00:17:18.909 align:start position:0%
+let's have an example now we have a
+table<00:17:17.199><c> called</c><00:17:17.480><c> orders</c><00:17:18.160><c> that</c><00:17:18.319><c> is</c><00:17:18.439><c> stored</c>
+
+00:17:18.909 --> 00:17:18.919 align:start position:0%
+table called orders that is stored
+ 
+
+00:17:18.919 --> 00:17:21.309 align:start position:0%
+table called orders that is stored
+inside<00:17:19.280><c> the</c><00:17:19.520><c> user</c><00:17:19.959><c> storage</c><00:17:20.600><c> and</c><00:17:20.720><c> the</c><00:17:20.839><c> metadata</c>
+
+00:17:21.309 --> 00:17:21.319 align:start position:0%
+inside the user storage and the metadata
+ 
+
+00:17:21.319 --> 00:17:23.429 align:start position:0%
+inside the user storage and the metadata
+of<00:17:21.439><c> this</c><00:17:21.600><c> table</c><00:17:21.880><c> is</c><00:17:22.079><c> stored</c><00:17:22.480><c> in</c><00:17:22.600><c> the</c><00:17:22.880><c> catalog</c>
+
+00:17:23.429 --> 00:17:23.439 align:start position:0%
+of this table is stored in the catalog
+ 
+
+00:17:23.439 --> 00:17:24.990 align:start position:0%
+of this table is stored in the catalog
+so<00:17:23.600><c> now</c><00:17:23.760><c> let's</c><00:17:23.959><c> say</c><00:17:24.160><c> that</c><00:17:24.280><c> you</c><00:17:24.439><c> are</c><00:17:24.640><c> at</c><00:17:24.799><c> the</c>
+
+00:17:24.990 --> 00:17:25.000 align:start position:0%
+so now let's say that you are at the
+ 
+
+00:17:25.000 --> 00:17:26.829 align:start position:0%
+so now let's say that you are at the
+client<00:17:25.439><c> side</c><00:17:25.880><c> and</c><00:17:25.959><c> you</c><00:17:26.120><c> write</c><00:17:26.360><c> a</c><00:17:26.480><c> symbol</c>
+
+00:17:26.829 --> 00:17:26.839 align:start position:0%
+client side and you write a symbol
+ 
+
+00:17:26.839 --> 00:17:28.590 align:start position:0%
+client side and you write a symbol
+select<00:17:27.240><c> query</c><00:17:27.640><c> in</c><00:17:27.760><c> order</c><00:17:27.959><c> to</c><00:17:28.079><c> select</c><00:17:28.319><c> the</c><00:17:28.439><c> data</c>
+
+00:17:28.590 --> 00:17:28.600 align:start position:0%
+select query in order to select the data
+ 
+
+00:17:28.600 --> 00:17:30.789 align:start position:0%
+select query in order to select the data
+of<00:17:28.720><c> the</c><00:17:28.919><c> orders</c><00:17:29.400><c> so</c><00:17:29.559><c> now</c><00:17:29.720><c> that</c><00:17:29.919><c> query</c><00:17:30.240><c> is</c><00:17:30.400><c> sent</c>
+
+00:17:30.789 --> 00:17:30.799 align:start position:0%
+of the orders so now that query is sent
+ 
+
+00:17:30.799 --> 00:17:32.870 align:start position:0%
+of the orders so now that query is sent
+to<00:17:30.960><c> the</c><00:17:31.120><c> server</c><00:17:31.559><c> in</c><00:17:31.679><c> order</c><00:17:31.919><c> to</c><00:17:32.039><c> be</c><00:17:32.200><c> executed</c>
+
+00:17:32.870 --> 00:17:32.880 align:start position:0%
+to the server in order to be executed
+ 
+
+00:17:32.880 --> 00:17:34.230 align:start position:0%
+to the server in order to be executed
+and<00:17:33.000><c> the</c><00:17:33.120><c> database</c><00:17:33.559><c> engine</c><00:17:33.799><c> going</c><00:17:33.919><c> to</c><00:17:34.080><c> take</c>
+
+00:17:34.230 --> 00:17:34.240 align:start position:0%
+and the database engine going to take
+ 
+
+00:17:34.240 --> 00:17:36.350 align:start position:0%
+and the database engine going to take
+the<00:17:34.440><c> query</c><00:17:34.919><c> in</c><00:17:35.080><c> order</c><00:17:35.360><c> to</c><00:17:35.559><c> process</c><00:17:35.919><c> it</c><00:17:36.200><c> so</c>
+
+00:17:36.350 --> 00:17:36.360 align:start position:0%
+the query in order to process it so
+ 
+
+00:17:36.360 --> 00:17:38.549 align:start position:0%
+the query in order to process it so
+first<00:17:36.679><c> the</c><00:17:36.880><c> database</c><00:17:37.360><c> engine</c><00:17:37.919><c> going</c><00:17:38.080><c> to</c><00:17:38.240><c> check</c>
+
+00:17:38.549 --> 00:17:38.559 align:start position:0%
+first the database engine going to check
+ 
+
+00:17:38.559 --> 00:17:40.310 align:start position:0%
+first the database engine going to check
+whether<00:17:38.840><c> we</c><00:17:38.960><c> have</c><00:17:39.120><c> the</c><00:17:39.320><c> data</c><00:17:39.559><c> in</c><00:17:39.679><c> the</c><00:17:39.840><c> cache</c>
+
+00:17:40.310 --> 00:17:40.320 align:start position:0%
+whether we have the data in the cache
+ 
+
+00:17:40.320 --> 00:17:41.750 align:start position:0%
+whether we have the data in the cache
+because<00:17:40.559><c> if</c><00:17:40.679><c> the</c><00:17:40.880><c> data</c><00:17:41.080><c> is</c><00:17:41.160><c> stored</c><00:17:41.480><c> in</c><00:17:41.600><c> the</c>
+
+00:17:41.750 --> 00:17:41.760 align:start position:0%
+because if the data is stored in the
+ 
+
+00:17:41.760 --> 00:17:43.310 align:start position:0%
+because if the data is stored in the
+cache<00:17:42.160><c> then</c><00:17:42.320><c> things</c><00:17:42.600><c> going</c><00:17:42.720><c> to</c><00:17:42.840><c> be</c><00:17:43.039><c> really</c>
+
+00:17:43.310 --> 00:17:43.320 align:start position:0%
+cache then things going to be really
+ 
+
+00:17:43.320 --> 00:17:45.350 align:start position:0%
+cache then things going to be really
+fast<00:17:43.760><c> and</c><00:17:43.919><c> the</c><00:17:44.080><c> database</c><00:17:44.480><c> engine</c><00:17:44.880><c> can</c><00:17:45.080><c> solve</c>
+
+00:17:45.350 --> 00:17:45.360 align:start position:0%
+fast and the database engine can solve
+ 
+
+00:17:45.360 --> 00:17:47.270 align:start position:0%
+fast and the database engine can solve
+the<00:17:45.520><c> task</c><00:17:45.760><c> quickly</c><00:17:46.280><c> but</c><00:17:46.440><c> in</c><00:17:46.600><c> this</c><00:17:46.760><c> scenario</c><00:17:47.160><c> we</c>
+
+00:17:47.270 --> 00:17:47.280 align:start position:0%
+the task quickly but in this scenario we
+ 
+
+00:17:47.280 --> 00:17:48.870 align:start position:0%
+the task quickly but in this scenario we
+don't<00:17:47.480><c> have</c><00:17:47.600><c> the</c><00:17:47.720><c> orders</c><00:17:48.160><c> informations</c><00:17:48.720><c> in</c>
+
+00:17:48.870 --> 00:17:48.880 align:start position:0%
+don't have the orders informations in
+ 
+
+00:17:48.880 --> 00:17:51.270 align:start position:0%
+don't have the orders informations in
+the<00:17:49.080><c> cache</c><00:17:49.720><c> that's</c><00:17:50.039><c> why</c><00:17:50.320><c> the</c><00:17:50.520><c> database</c><00:17:50.960><c> engine</c>
+
+00:17:51.270 --> 00:17:51.280 align:start position:0%
+the cache that's why the database engine
+ 
+
+00:17:51.280 --> 00:17:52.990 align:start position:0%
+the cache that's why the database engine
+can<00:17:51.400><c> to</c><00:17:51.520><c> say</c><00:17:51.760><c> okay</c><00:17:51.960><c> it's</c><00:17:52.120><c> not</c><00:17:52.280><c> in</c><00:17:52.400><c> the</c><00:17:52.559><c> cache</c>
+
+00:17:52.990 --> 00:17:53.000 align:start position:0%
+can to say okay it's not in the cache
+ 
+
+00:17:53.000 --> 00:17:54.830 align:start position:0%
+can to say okay it's not in the cache
+let's<00:17:53.240><c> check</c><00:17:53.480><c> the</c><00:17:53.640><c> dis</c><00:17:54.000><c> so</c><00:17:54.120><c> it</c><00:17:54.240><c> will</c><00:17:54.440><c> find</c><00:17:54.679><c> the</c>
+
+00:17:54.830 --> 00:17:54.840 align:start position:0%
+let's check the dis so it will find the
+ 
+
+00:17:54.840 --> 00:17:56.870 align:start position:0%
+let's check the dis so it will find the
+orders<00:17:55.320><c> information</c><00:17:55.880><c> in</c><00:17:56.039><c> the</c><00:17:56.200><c> dis</c><00:17:56.600><c> and</c><00:17:56.760><c> the</c>
+
+00:17:56.870 --> 00:17:56.880 align:start position:0%
+orders information in the dis and the
+ 
+
+00:17:56.880 --> 00:17:59.230 align:start position:0%
+orders information in the dis and the
+query<00:17:57.159><c> can</c><00:17:57.280><c> to</c><00:17:57.360><c> be</c><00:17:57.559><c> executed</c><00:17:58.400><c> then</c><00:17:58.559><c> the</c><00:17:58.919><c> result</c>
+
+00:17:59.230 --> 00:17:59.240 align:start position:0%
+query can to be executed then the result
+ 
+
+00:17:59.240 --> 00:18:01.789 align:start position:0%
+query can to be executed then the result
+of<00:17:59.440><c> this</c><00:17:59.640><c> query</c><00:18:00.280><c> going</c><00:18:00.400><c> to</c><00:18:00.600><c> be</c><00:18:00.799><c> sent</c><00:18:01.280><c> back</c><00:18:01.600><c> to</c>
+
+00:18:01.789 --> 00:18:01.799 align:start position:0%
+of this query going to be sent back to
+ 
+
+00:18:01.799 --> 00:18:04.029 align:start position:0%
+of this query going to be sent back to
+the<00:18:02.000><c> client</c><00:18:02.400><c> side</c><00:18:02.799><c> where</c><00:18:03.000><c> at</c><00:18:03.159><c> the</c><00:18:03.280><c> end</c><00:18:03.679><c> in</c>
+
+00:18:04.029 --> 00:18:04.039 align:start position:0%
+the client side where at the end in
+ 
+
+00:18:04.039 --> 00:18:05.950 align:start position:0%
+the client side where at the end in
+return<00:18:04.240><c> you</c><00:18:04.360><c> will</c><00:18:04.520><c> see</c><00:18:04.799><c> in</c><00:18:04.919><c> the</c><00:18:05.039><c> output</c><00:18:05.720><c> the</c>
+
+00:18:05.950 --> 00:18:05.960 align:start position:0%
+return you will see in the output the
+ 
+
+00:18:05.960 --> 00:18:08.029 align:start position:0%
+return you will see in the output the
+result<00:18:06.280><c> of</c><00:18:06.400><c> the</c><00:18:06.559><c> table</c><00:18:06.880><c> orders</c><00:18:07.480><c> so</c><00:18:07.760><c> this</c><00:18:07.880><c> is</c>
+
+00:18:08.029 --> 00:18:08.039 align:start position:0%
+result of the table orders so this is
+ 
+
+00:18:08.039 --> 00:18:11.350 align:start position:0%
+result of the table orders so this is
+how<00:18:08.280><c> the</c><00:18:08.520><c> SQL</c><00:18:09.000><c> database</c><00:18:09.720><c> execute</c><00:18:10.720><c> very</c><00:18:10.919><c> simple</c>
+
+00:18:11.350 --> 00:18:11.360 align:start position:0%
+how the SQL database execute very simple
+ 
+
+00:18:11.360 --> 00:18:13.390 align:start position:0%
+how the SQL database execute very simple
+select<00:18:11.799><c> query</c><00:18:12.480><c> all</c><00:18:12.640><c> right</c><00:18:12.799><c> so</c><00:18:13.000><c> with</c><00:18:13.159><c> that</c><00:18:13.280><c> we</c>
+
+00:18:13.390 --> 00:18:13.400 align:start position:0%
+select query all right so with that we
+ 
+
+00:18:13.400 --> 00:18:15.510 align:start position:0%
+select query all right so with that we
+have<00:18:13.559><c> covered</c><00:18:14.320><c> why</c><00:18:14.520><c> we</c><00:18:14.640><c> need</c><00:18:15.000><c> these</c><00:18:15.240><c> five</c>
+
+00:18:15.510 --> 00:18:15.520 align:start position:0%
+have covered why we need these five
+ 
+
+00:18:15.520 --> 00:18:17.470 align:start position:0%
+have covered why we need these five
+techniques<00:18:16.200><c> and</c><00:18:16.320><c> we</c><00:18:16.440><c> have</c><00:18:16.600><c> as</c><00:18:16.720><c> well</c><00:18:16.960><c> good</c>
+
+00:18:17.470 --> 00:18:17.480 align:start position:0%
+techniques and we have as well good
+ 
+
+00:18:17.480 --> 00:18:18.590 align:start position:0%
+techniques and we have as well good
+understanding<00:18:17.799><c> of</c><00:18:17.919><c> the</c><00:18:18.120><c> database</c>
+
+00:18:18.590 --> 00:18:18.600 align:start position:0%
+understanding of the database
+ 
+
+00:18:18.600 --> 00:18:20.110 align:start position:0%
+understanding of the database
+architecture<00:18:19.360><c> now</c><00:18:19.559><c> next</c><00:18:19.760><c> we're</c><00:18:19.880><c> going</c><00:18:19.960><c> to</c>
+
+00:18:20.110 --> 00:18:20.120 align:start position:0%
+architecture now next we're going to
+ 
+
+00:18:20.120 --> 00:18:22.190 align:start position:0%
+architecture now next we're going to
+Deep<00:18:20.360><c> dive</c><00:18:20.640><c> into</c><00:18:20.960><c> each</c><00:18:21.280><c> technique</c><00:18:21.919><c> and</c><00:18:22.120><c> we</c>
+
+00:18:22.190 --> 00:18:22.200 align:start position:0%
+Deep dive into each technique and we
+ 
+
+00:18:22.200 --> 00:18:24.270 align:start position:0%
+Deep dive into each technique and we
+will<00:18:22.400><c> start</c><00:18:22.799><c> with</c><00:18:22.960><c> the</c><00:18:23.120><c> subqueries</c><00:18:24.080><c> if</c><00:18:24.159><c> you</c>
+
+00:18:24.270 --> 00:18:24.280 align:start position:0%
+will start with the subqueries if you
+ 
+
+00:18:24.280 --> 00:18:25.470 align:start position:0%
+will start with the subqueries if you
+like<00:18:24.520><c> this</c><00:18:24.679><c> video</c><00:18:24.880><c> and</c><00:18:25.000><c> you</c><00:18:25.080><c> want</c><00:18:25.240><c> me</c><00:18:25.360><c> to</c>
+
+00:18:25.470 --> 00:18:25.480 align:start position:0%
+like this video and you want me to
+ 
+
+00:18:25.480 --> 00:18:27.590 align:start position:0%
+like this video and you want me to
+create<00:18:25.799><c> more</c><00:18:26.120><c> content</c><00:18:26.559><c> like</c><00:18:26.840><c> this</c><00:18:27.360><c> I'm</c><00:18:27.480><c> going</c>
+
+00:18:27.590 --> 00:18:27.600 align:start position:0%
+create more content like this I'm going
+ 
+
+00:18:27.600 --> 00:18:29.310 align:start position:0%
+create more content like this I'm going
+to<00:18:27.760><c> really</c><00:18:28.000><c> appreciate</c><00:18:28.480><c> it</c><00:18:28.799><c> if</c><00:18:28.880><c> you</c><00:18:29.000><c> support</c>
+
+00:18:29.310 --> 00:18:29.320 align:start position:0%
+to really appreciate it if you support
+ 
+
+00:18:29.320 --> 00:18:31.710 align:start position:0%
+to really appreciate it if you support
+the<00:18:29.520><c> channel</c><00:18:30.159><c> by</c><00:18:30.440><c> subscribing</c><00:18:31.280><c> liking</c>
+
+00:18:31.710 --> 00:18:31.720 align:start position:0%
+the channel by subscribing liking
+ 
+
+00:18:31.720 --> 00:18:33.990 align:start position:0%
+the channel by subscribing liking
+sharing<00:18:32.280><c> commenting</c><00:18:33.159><c> all</c><00:18:33.440><c> those</c><00:18:33.640><c> stuff</c><00:18:33.880><c> going</c>
+
+00:18:33.990 --> 00:18:34.000 align:start position:0%
+sharing commenting all those stuff going
+ 
+
+00:18:34.000 --> 00:18:35.909 align:start position:0%
+sharing commenting all those stuff going
+to<00:18:34.159><c> help</c><00:18:34.440><c> the</c><00:18:34.600><c> Channel</c><00:18:35.320><c> with</c><00:18:35.440><c> the</c><00:18:35.600><c> YouTube</c>
+
+00:18:35.909 --> 00:18:35.919 align:start position:0%
+to help the Channel with the YouTube
+ 
+
+00:18:35.919 --> 00:18:37.870 align:start position:0%
+to help the Channel with the YouTube
+algorithm<00:18:36.520><c> and</c><00:18:36.760><c> as</c><00:18:36.919><c> well</c><00:18:37.120><c> my</c><00:18:37.400><c> content</c><00:18:37.760><c> going</c>
+
+00:18:37.870 --> 00:18:37.880 align:start position:0%
+algorithm and as well my content going
+ 
+
+00:18:37.880 --> 00:18:40.789 align:start position:0%
+algorithm and as well my content going
+to<00:18:38.000><c> reach</c><00:18:38.200><c> to</c><00:18:38.360><c> the</c><00:18:38.520><c> others</c><00:18:39.360><c> so</c><00:18:40.080><c> thank</c><00:18:40.320><c> you</c><00:18:40.559><c> so</c>
+
+00:18:40.789 --> 00:18:40.799 align:start position:0%
+to reach to the others so thank you so
+ 
+
+00:18:40.799 --> 00:18:42.710 align:start position:0%
+to reach to the others so thank you so
+much<00:18:41.000><c> for</c><00:18:41.280><c> watching</c><00:18:41.840><c> and</c><00:18:42.080><c> I</c><00:18:42.159><c> will</c><00:18:42.360><c> see</c><00:18:42.520><c> you</c><00:18:42.600><c> in</c>
+
+00:18:42.710 --> 00:18:42.720 align:start position:0%
+much for watching and I will see you in
+ 
+
+00:18:42.720 --> 00:18:47.000 align:start position:0%
+much for watching and I will see you in
+the<00:18:42.840><c> next</c><00:18:43.039><c> tutorial</c><00:18:44.000><c> bye</c>
+
